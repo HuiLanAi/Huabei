@@ -39,6 +39,21 @@ A_MATRIX a_matrix(
 );
 
 
+wire    [399:0]                         mult_res_w;
+wire                                    mult_res_v_w;
+
+
+CONV1_LAYER1_DENSE_MXMULT conv1_layer_dense_mxmult(
+    .clk                        (clk),
+    .rst                        (rst),
+    .start                      (start),
+    .data_v                     (data_v_w),
+    .in_fea_w                   (in_fea_w),
+    .a_mx_w                     (a_mx_w),
+    .mult_res                   (mult_res_w),
+    .mult_res_v                 (mult_res_v_w)
+);
+
 
 
 endmodule

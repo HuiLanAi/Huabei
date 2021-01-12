@@ -1,12 +1,62 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: F:/18.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b2e45a7405bc41279b37bf8e879ef099 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot clk_rst_behav xil_defaultlib.clk_rst xil_defaultlib.glbl -log elaborate.log 
+Running: F:/18.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b2e45a7405bc41279b37bf8e879ef099 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot clk_rst_behav xil_defaultlib.clk_rst xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:209]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:210]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:211]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:212]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:213]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:214]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:215]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:216]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:217]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:218]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:219]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:220]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:221]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:222]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:223]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:224]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:225]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:226]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:227]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:228]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:229]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:230]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:231]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:232]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 'b' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:233]
+WARNING: [VRFC 10-3091] actual bit length 400 differs from formal bit length 800 for port 'mult_res' [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_top.v:53]
+WARNING: [VRFC 10-3283] element index 415 into 'a_mx_w' is out of bounds [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:221]
+WARNING: [VRFC 10-3283] element index 447 into 'a_mx_w' is out of bounds [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:222]
+WARNING: [VRFC 10-3283] element index 479 into 'a_mx_w' is out of bounds [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:223]
+WARNING: [VRFC 10-3283] element index 511 into 'a_mx_w' is out of bounds [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:224]
+WARNING: [VRFC 10-3283] element index 543 into 'a_mx_w' is out of bounds [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:225]
+WARNING: [VRFC 10-3283] element index 575 into 'a_mx_w' is out of bounds [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:226]
+WARNING: [VRFC 10-3283] element index 607 into 'a_mx_w' is out of bounds [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:227]
+WARNING: [VRFC 10-3283] element index 639 into 'a_mx_w' is out of bounds [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:228]
+WARNING: [VRFC 10-3283] element index 671 into 'a_mx_w' is out of bounds [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:229]
+WARNING: [VRFC 10-3283] element index 703 into 'a_mx_w' is out of bounds [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:230]
+WARNING: [VRFC 10-3283] element index 735 into 'a_mx_w' is out of bounds [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:231]
+WARNING: [VRFC 10-3283] element index 767 into 'a_mx_w' is out of bounds [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:232]
+WARNING: [VRFC 10-3283] element index 799 into 'a_mx_w' is out of bounds [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_mxmult.v:233]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package mult_gen_v12_0_14.mult_gen_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package mult_gen_v12_0_14.mult_gen_v12_0_14_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package mult_gen_v12_0_14.dsp_pkg
 Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
 Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
 Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
@@ -21,6 +71,13 @@ Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
 Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
 Compiling module xil_defaultlib.A_MATRIX_BRAM
 Compiling module xil_defaultlib.A_MATRIX
+Compiling architecture xilinx of entity mult_gen_v12_0_14.delay_line [\delay_line(c_xdevicefamily="kin...]
+Compiling architecture xilinx of entity mult_gen_v12_0_14.op_resize [\op_resize(ao_width=27)\]
+Compiling architecture xilinx of entity mult_gen_v12_0_14.dsp [\dsp(c_xdevicefamily="kintexu",c...]
+Compiling architecture xilinx of entity mult_gen_v12_0_14.mult_gen_v12_0_14_viv [\mult_gen_v12_0_14_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_14.mult_gen_v12_0_14 [\mult_gen_v12_0_14(c_xdevicefami...]
+Compiling architecture mult_16x16_arch of entity xil_defaultlib.MULT_16X16 [mult_16x16_default]
+Compiling module xil_defaultlib.CONV1_LAYER1_DENSE_MXMULT
 Compiling module xil_defaultlib.CONV1_LAYER1_DENSE_TOP
 Compiling module xil_defaultlib.clk_rst
 Compiling module xil_defaultlib.glbl

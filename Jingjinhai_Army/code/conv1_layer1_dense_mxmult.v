@@ -22,31 +22,31 @@ reg     [3:0]                           cnter;
 reg     [3:0]                           state;
 reg                                     mult_en;
 
-wire    [31:0]                          mult_out_0
-wire    [31:0]                          mult_out_1
-wire    [31:0]                          mult_out_2
-wire    [31:0]                          mult_out_3
-wire    [31:0]                          mult_out_4
-wire    [31:0]                          mult_out_5
-wire    [31:0]                          mult_out_6
-wire    [31:0]                          mult_out_7
-wire    [31:0]                          mult_out_8
-wire    [31:0]                          mult_out_9
-wire    [31:0]                          mult_out_10
-wire    [31:0]                          mult_out_11
-wire    [31:0]                          mult_out_12
-wire    [31:0]                          mult_out_13
-wire    [31:0]                          mult_out_14
-wire    [31:0]                          mult_out_15
-wire    [31:0]                          mult_out_16
-wire    [31:0]                          mult_out_17
-wire    [31:0]                          mult_out_18
-wire    [31:0]                          mult_out_19
-wire    [31:0]                          mult_out_20
-wire    [31:0]                          mult_out_21
-wire    [31:0]                          mult_out_22
-wire    [31:0]                          mult_out_23
-wire    [31:0]                          mult_out_24
+wire    [31:0]                          mult_out_0;
+wire    [31:0]                          mult_out_1;
+wire    [31:0]                          mult_out_2;
+wire    [31:0]                          mult_out_3;
+wire    [31:0]                          mult_out_4;
+wire    [31:0]                          mult_out_5;
+wire    [31:0]                          mult_out_6;
+wire    [31:0]                          mult_out_7;
+wire    [31:0]                          mult_out_8;
+wire    [31:0]                          mult_out_9;
+wire    [31:0]                          mult_out_10;
+wire    [31:0]                          mult_out_11;
+wire    [31:0]                          mult_out_12;
+wire    [31:0]                          mult_out_13;
+wire    [31:0]                          mult_out_14;
+wire    [31:0]                          mult_out_15;
+wire    [31:0]                          mult_out_16;
+wire    [31:0]                          mult_out_17;
+wire    [31:0]                          mult_out_18;
+wire    [31:0]                          mult_out_19;
+wire    [31:0]                          mult_out_20;
+wire    [31:0]                          mult_out_21;
+wire    [31:0]                          mult_out_22;
+wire    [31:0]                          mult_out_23;
+wire    [31:0]                          mult_out_24;
 
 
 
@@ -71,7 +71,7 @@ always @ (posedge clk) begin
         else if (state == COMPUTE_0) begin
             state <= COMPUTE_1;
         end
-        else if (state == COMPUTE_1 && cnter == 'd3) begin
+        else if (state == COMPUTE_1 && cnter == 'd1) begin
             state <= START;
         end
         else begin
@@ -86,32 +86,151 @@ end
 
 
 
+
+// cnter
+always @ (posedge clk) begin
+    if(!rst) begin
+        case (state)
+        COMPUTE_1: begin
+            cnter <= cnter + 'd1;
+        end
+        default: begin
+            cnter <= 'd0;
+        end
+        endcase
+    end
+    else begin
+        cnter <= 'd0;
+    end
+end
+
+
+
+
+
+// mult_res_v and mult_res
+always @ (posedge clk) begin
+    if(!rst) begin
+        case (state)
+        COMPUTE_1: begin
+            if(cnter == 'd1) begin
+                mult_res_v <= 'd1;
+                mult_res <= {
+                    mult_out_24
+                    ,mult_out_23
+                    ,mult_out_22
+                    ,mult_out_21
+                    ,mult_out_20
+                    ,mult_out_19
+                    ,mult_out_18
+                    ,mult_out_17
+                    ,mult_out_16
+                    ,mult_out_15
+                    ,mult_out_14
+                    ,mult_out_13
+                    ,mult_out_12
+                    ,mult_out_11
+                    ,mult_out_10
+                    ,mult_out_9
+                    ,mult_out_8
+                    ,mult_out_7
+                    ,mult_out_6
+                    ,mult_out_5
+                    ,mult_out_4
+                    ,mult_out_3
+                    ,mult_out_2
+                    ,mult_out_1
+                    ,mult_out_0};
+            end
+            else begin
+                mult_res_v <= 'd0;
+                mult_res <= mult_res;
+            end
+        end
+
+        default: begin
+            mult_res_v <= 'd0;
+            mult_res <= mult_res;
+        end
+        endcase
+    end
+
+    else begin
+        mult_res_v <= 'd0;
+        mult_res <= 'd0;
+    end
+end
+
+
+
+
+
+
+// mult_en
+always @ (posedge clk) begin
+    if(!rst) begin
+        case (state)
+        START: begin
+            if(data_v)
+                mult_en <= 'd1;
+            else 
+                mult_en <= 'd0;
+        end
+
+        COMPUTE_0: begin
+            mult_en <= 'd1;
+        end
+
+        COMPUTE_1: begin
+            if(cnter < 'd1)
+                mult_en <= 'd1;
+            else 
+                mult_en <= 'd0;
+        end
+
+        default: begin
+            mult_en <= 'd0;
+        end
+        endcase
+    end
+    else begin
+        cnter <= 'd0;
+    end
+end
+
+
+
+
+
+
+
+
 // DSP array
-MULT_16x16 mult_16x16_0(.clk(clk), .ce(mult_en), .A(in_fea_w[15:0]), .B(a_mx_w[15:0]), .P(mult_out_0));
-MULT_16x16 mult_16x16_1(.clk(clk), .ce(mult_en), .A(in_fea_w[31:16]), .B(a_mx_w[31:16]), .P(mult_out_1));
-MULT_16x16 mult_16x16_2(.clk(clk), .ce(mult_en), .A(in_fea_w[47:32]), .B(a_mx_w[47:32]), .P(mult_out_2));
-MULT_16x16 mult_16x16_3(.clk(clk), .ce(mult_en), .A(in_fea_w[59:48]), .B(a_mx_w[59:48]), .P(mult_out_3));
-MULT_16x16 mult_16x16_4(.clk(clk), .ce(mult_en), .A(in_fea_w[71:64]), .B(a_mx_w[71:64]), .P(mult_out_4));
-MULT_16x16 mult_16x16_5(.clk(clk), .ce(mult_en), .A(in_fea_w[83:80]), .B(a_mx_w[83:80]), .P(mult_out_5));
-MULT_16x16 mult_16x16_6(.clk(clk), .ce(mult_en), .A(in_fea_w[111:96]), .B(a_mx_w[111:96]), .P(mult_out_6));
-MULT_16x16 mult_16x16_7(.clk(clk), .ce(mult_en), .A(in_fea_w[127:112]), .B(a_mx_w[127:112]), .P(mult_out_7));
-MULT_16x16 mult_16x16_8(.clk(clk), .ce(mult_en), .A(in_fea_w[143:128]), .B(a_mx_w[143:128]), .P(mult_out_8));
-MULT_16x16 mult_16x16_9(.clk(clk), .ce(mult_en), .A(in_fea_w[159:144]), .B(a_mx_w[159:144]), .P(mult_out_9));
-MULT_16x16 mult_16x16_10(.clk(clk), .ce(mult_en), .A(in_fea_w[175:160]), .B(a_mx_w[175:160]), .P(mult_out_10));
-MULT_16x16 mult_16x16_11(.clk(clk), .ce(mult_en), .A(in_fea_w[191:176]), .B(a_mx_w[191:176]), .P(mult_out_11));
-MULT_16x16 mult_16x16_12(.clk(clk), .ce(mult_en), .A(in_fea_w[207:192]), .B(a_mx_w[207:192]), .P(mult_out_12));
-MULT_16x16 mult_16x16_13(.clk(clk), .ce(mult_en), .A(in_fea_w[223:208]), .B(a_mx_w[223:208]), .P(mult_out_13));
-MULT_16x16 mult_16x16_14(.clk(clk), .ce(mult_en), .A(in_fea_w[239:224]), .B(a_mx_w[239:224]), .P(mult_out_14));
-MULT_16x16 mult_16x16_15(.clk(clk), .ce(mult_en), .A(in_fea_w[255:240]), .B(a_mx_w[255:240]), .P(mult_out_15));
-MULT_16x16 mult_16x16_16(.clk(clk), .ce(mult_en), .A(in_fea_w[271:256]), .B(a_mx_w[271:256]), .P(mult_out_16));
-MULT_16x16 mult_16x16_17(.clk(clk), .ce(mult_en), .A(in_fea_w[287:272]), .B(a_mx_w[287:272]), .P(mult_out_17));
-MULT_16x16 mult_16x16_18(.clk(clk), .ce(mult_en), .A(in_fea_w[303:288]), .B(a_mx_w[303:288]), .P(mult_out_18));
-MULT_16x16 mult_16x16_19(.clk(clk), .ce(mult_en), .A(in_fea_w[319:304]), .B(a_mx_w[319:304]), .P(mult_out_19));
-MULT_16x16 mult_16x16_20(.clk(clk), .ce(mult_en), .A(in_fea_w[335:320]), .B(a_mx_w[335:320]), .P(mult_out_20));
-MULT_16x16 mult_16x16_21(.clk(clk), .ce(mult_en), .A(in_fea_w[351:336]), .B(a_mx_w[351:336]), .P(mult_out_21));
-MULT_16x16 mult_16x16_22(.clk(clk), .ce(mult_en), .A(in_fea_w[367:352]), .B(a_mx_w[367:352]), .P(mult_out_22));
-MULT_16x16 mult_16x16_23(.clk(clk), .ce(mult_en), .A(in_fea_w[383:368]), .B(a_mx_w[383:368]), .P(mult_out_23));
-MULT_16x16 mult_16x16_24(.clk(clk), .ce(mult_en), .A(in_fea_w[399:384]), .B(a_mx_w[399:384]), .P(mult_out_24));
+MULT_16X16 mult_16X16_0(.clk(clk), .ce(mult_en), .A(in_fea_w[15:0]), .B(a_mx_w[31:0]), .P(mult_out_0));
+MULT_16X16 mult_16X16_1(.clk(clk), .ce(mult_en), .A(in_fea_w[31:16]), .B(a_mx_w[63:32]), .P(mult_out_1));
+MULT_16X16 mult_16X16_2(.clk(clk), .ce(mult_en), .A(in_fea_w[47:32]), .B(a_mx_w[95:64]), .P(mult_out_2));
+MULT_16X16 mult_16X16_3(.clk(clk), .ce(mult_en), .A(in_fea_w[63:48]), .B(a_mx_w[127:96]), .P(mult_out_3));
+MULT_16X16 mult_16X16_4(.clk(clk), .ce(mult_en), .A(in_fea_w[79:64]), .B(a_mx_w[159:128]), .P(mult_out_4));
+MULT_16X16 mult_16X16_5(.clk(clk), .ce(mult_en), .A(in_fea_w[95:80]), .B(a_mx_w[191:160]), .P(mult_out_5));
+MULT_16X16 mult_16X16_6(.clk(clk), .ce(mult_en), .A(in_fea_w[111:96]), .B(a_mx_w[223:192]), .P(mult_out_6));
+MULT_16X16 mult_16X16_7(.clk(clk), .ce(mult_en), .A(in_fea_w[127:112]), .B(a_mx_w[255:224]), .P(mult_out_7));
+MULT_16X16 mult_16X16_8(.clk(clk), .ce(mult_en), .A(in_fea_w[143:128]), .B(a_mx_w[287:256]), .P(mult_out_8));
+MULT_16X16 mult_16X16_9(.clk(clk), .ce(mult_en), .A(in_fea_w[159:144]), .B(a_mx_w[319:288]), .P(mult_out_9));
+MULT_16X16 mult_16X16_10(.clk(clk), .ce(mult_en), .A(in_fea_w[175:160]), .B(a_mx_w[351:320]), .P(mult_out_10));
+MULT_16X16 mult_16X16_11(.clk(clk), .ce(mult_en), .A(in_fea_w[191:176]), .B(a_mx_w[383:352]), .P(mult_out_11));
+MULT_16X16 mult_16X16_12(.clk(clk), .ce(mult_en), .A(in_fea_w[207:192]), .B(a_mx_w[415:384]), .P(mult_out_12));
+MULT_16X16 mult_16X16_13(.clk(clk), .ce(mult_en), .A(in_fea_w[223:208]), .B(a_mx_w[447:416]), .P(mult_out_13));
+MULT_16X16 mult_16X16_14(.clk(clk), .ce(mult_en), .A(in_fea_w[239:224]), .B(a_mx_w[479:448]), .P(mult_out_14));
+MULT_16X16 mult_16X16_15(.clk(clk), .ce(mult_en), .A(in_fea_w[255:240]), .B(a_mx_w[511:480]), .P(mult_out_15));
+MULT_16X16 mult_16X16_16(.clk(clk), .ce(mult_en), .A(in_fea_w[271:256]), .B(a_mx_w[543:512]), .P(mult_out_16));
+MULT_16X16 mult_16X16_17(.clk(clk), .ce(mult_en), .A(in_fea_w[287:272]), .B(a_mx_w[575:544]), .P(mult_out_17));
+MULT_16X16 mult_16X16_18(.clk(clk), .ce(mult_en), .A(in_fea_w[303:288]), .B(a_mx_w[607:576]), .P(mult_out_18));
+MULT_16X16 mult_16X16_19(.clk(clk), .ce(mult_en), .A(in_fea_w[319:304]), .B(a_mx_w[639:608]), .P(mult_out_19));
+MULT_16X16 mult_16X16_20(.clk(clk), .ce(mult_en), .A(in_fea_w[335:320]), .B(a_mx_w[671:640]), .P(mult_out_20));
+MULT_16X16 mult_16X16_21(.clk(clk), .ce(mult_en), .A(in_fea_w[351:336]), .B(a_mx_w[703:672]), .P(mult_out_21));
+MULT_16X16 mult_16X16_22(.clk(clk), .ce(mult_en), .A(in_fea_w[367:352]), .B(a_mx_w[735:704]), .P(mult_out_22));
+MULT_16X16 mult_16X16_23(.clk(clk), .ce(mult_en), .A(in_fea_w[383:368]), .B(a_mx_w[767:736]), .P(mult_out_23));
+MULT_16X16 mult_16X16_24(.clk(clk), .ce(mult_en), .A(in_fea_w[399:384]), .B(a_mx_w[799:768]), .P(mult_out_24));
 
 
 
