@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Huabei_JJH_Ar.srcs/sources_1/ip/A_MATRIX_BRAM/sim/A_MATRIX_BRAM.v" \
+"../../../../Huabei_JJH_Ar.srcs/sources_1/ip/IN_FEA_BRAM/sim/IN_FEA_BRAM.v" \
+"../../../../../code/A_matrix.v" \
+"../../../../../code/conv1_layer1_dense_top.v" \
+"../../../../../code/global_in_fea.v" \
+"../../../../../code/clk_rst.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

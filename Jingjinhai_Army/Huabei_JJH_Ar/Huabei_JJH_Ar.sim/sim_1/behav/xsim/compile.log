@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/A_MATRIX_BRAM/sim/A_MATRIX_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module A_MATRIX_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/IN_FEA_BRAM/sim/IN_FEA_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IN_FEA_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/A_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module A_MATRIX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CONV1_LAYER1_DENSE_TOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/global_in_fea.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GLOBAL_IN_FEA
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/code/clk_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_rst

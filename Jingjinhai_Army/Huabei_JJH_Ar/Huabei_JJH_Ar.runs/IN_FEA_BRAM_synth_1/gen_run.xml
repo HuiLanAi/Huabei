@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="IN_FEA_BRAM_synth_1" LaunchPart="xcku115-flvd1517-1-i" LaunchTime="1610414350">
+  <File Type="PA-TCL" Name="IN_FEA_BRAM.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="IN_FEA_BRAM_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="IN_FEA_BRAM_reports.tcl"/>
+  <File Type="RDS-RDS" Name="IN_FEA_BRAM.vds"/>
+  <File Type="RDS-UTIL" Name="IN_FEA_BRAM_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="IN_FEA_BRAM_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="IN_FEA_BRAM.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="IN_FEA_BRAM_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="IN_FEA_BRAM_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/IN_FEA_BRAM">
+    <File Path="$PSRCDIR/sources_1/ip/IN_FEA_BRAM/IN_FEA_BRAM.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="IN_FEA_BRAM"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/IN_FEA_BRAM">
+    <File Path="$PSRCDIR/sources_1/ip/IN_FEA_BRAM/IN_FEA_BRAM.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="IN_FEA_BRAM"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
