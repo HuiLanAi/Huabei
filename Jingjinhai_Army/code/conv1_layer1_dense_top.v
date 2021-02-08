@@ -19,7 +19,7 @@ wire    [399:0]                     a_mx_w;
 
 
 
-
+// global bram storage
 GLOBAL_IN_FEA global_in_fea(
     .clk                        (clk),
     .rst                        (rst),
@@ -30,17 +30,11 @@ GLOBAL_IN_FEA global_in_fea(
 );
 
 
-A_MATRIX a_matrix(
-    .clk                        (clk),
-    .rst                        (rst),
-    .start                      (start),
-    .need_data                  (need_data),
-    .in_fea                     (a_mx_w)
-);
 
 
 wire    [399:0]                         mult_res_w;
 wire                                    mult_res_v_w;
+
 
 
 CONV1_LAYER1_DENSE_MXMULT conv1_layer_dense_mxmult(
