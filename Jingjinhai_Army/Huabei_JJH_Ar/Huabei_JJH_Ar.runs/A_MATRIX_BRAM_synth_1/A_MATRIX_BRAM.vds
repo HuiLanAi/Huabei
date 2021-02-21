@@ -2,12 +2,12 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Jan 12 10:17:21 2021
-# Process ID: 12488
-# Current directory: C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1
+# Start of session at: Mon Feb 15 15:00:47 2021
+# Process ID: 15572
+# Current directory: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1
 # Command line: vivado.exe -log A_MATRIX_BRAM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source A_MATRIX_BRAM.tcl
-# Log file: C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1/A_MATRIX_BRAM.vds
-# Journal file: C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1\vivado.jou
+# Log file: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1/A_MATRIX_BRAM.vds
+# Journal file: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1\vivado.jou
 #-----------------------------------------------------------
 source A_MATRIX_BRAM.tcl -notrace
 Command: synth_design -top A_MATRIX_BRAM -part xcku115-flvd1517-1-i -mode out_of_context
@@ -15,11 +15,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xcku115'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku115'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6056 
+INFO: Helper process launched with PID 4968 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 469.984 ; gain = 97.148
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 469.754 ; gain = 96.617
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'A_MATRIX_BRAM' [c:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/A_MATRIX_BRAM/synth/A_MATRIX_BRAM.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'A_MATRIX_BRAM' [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/A_MATRIX_BRAM/synth/A_MATRIX_BRAM.vhd:70]
 	Parameter C_FAMILY bound to: kintexu - type: string 
 	Parameter C_XDEVICEFAMILY bound to: kintexu - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -95,8 +95,8 @@ INFO: [Synth 8-638] synthesizing module 'A_MATRIX_BRAM' [c:/Users/310-w/Desktop/
 	Parameter C_COUNT_36K_BRAM bound to: 6 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     40.726924 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_2' declared at 'c:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/A_MATRIX_BRAM/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_2' [c:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/A_MATRIX_BRAM/synth/A_MATRIX_BRAM.vhd:236]
-INFO: [Synth 8-256] done synthesizing module 'A_MATRIX_BRAM' (9#1) [c:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/A_MATRIX_BRAM/synth/A_MATRIX_BRAM.vhd:70]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_2' declared at 'b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/A_MATRIX_BRAM/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_2' [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/A_MATRIX_BRAM/synth/A_MATRIX_BRAM.vhd:236]
+INFO: [Synth 8-256] done synthesizing module 'A_MATRIX_BRAM' (9#1) [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/A_MATRIX_BRAM/synth/A_MATRIX_BRAM.vhd:70]
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized4 has unconnected port SSRA
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized4 has unconnected port CLKB
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized4 has unconnected port SSRB
@@ -199,7 +199,7 @@ WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized3 has
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized3 has unconnected port ADDRB[7]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 742.508 ; gain = 369.672
+Finished RTL Elaboration : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 742.129 ; gain = 368.992
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -212,30 +212,30 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 742.508 ; gain = 369.672
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 742.129 ; gain = 368.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 742.508 ; gain = 369.672
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 742.129 ; gain = 368.992
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xcku115-flvd1517-1-i
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/A_MATRIX_BRAM/A_MATRIX_BRAM_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/A_MATRIX_BRAM/A_MATRIX_BRAM_ooc.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1/dont_touch.xdc]
+Parsing XDC File [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/A_MATRIX_BRAM/A_MATRIX_BRAM_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/A_MATRIX_BRAM/A_MATRIX_BRAM_ooc.xdc] for cell 'U0'
+Parsing XDC File [B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1212.281 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1212.902 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1212.281 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1213.848 ; gain = 1.566
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1212.902 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1214.000 ; gain = 1.098
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1213.848 ; gain = 841.012
+Finished Constraint Validation : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1214.000 ; gain = 840.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -243,17 +243,17 @@ Start Loading Part and Timing Information
 Loading part: xcku115-flvd1517-1-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1213.848 ; gain = 841.012
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1214.000 ; gain = 840.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for U0. (constraint file  B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1213.848 ; gain = 841.012
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1214.000 ; gain = 840.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1213.848 ; gain = 841.012
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1214.000 ; gain = 840.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -289,7 +289,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1213.848 ; gain = 841.012
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1214.000 ; gain = 840.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -301,13 +301,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1398.973 ; gain = 1026.137
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1393.715 ; gain = 1020.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1399.781 ; gain = 1026.945
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1394.383 ; gain = 1021.246
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -319,7 +319,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1409.848 ; gain = 1037.012
+Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1404.813 ; gain = 1031.676
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -343,7 +343,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1409.848 ; gain = 1037.012
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1404.813 ; gain = 1031.676
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -356,7 +356,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1409.848 ; gain = 1037.012
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1404.813 ; gain = 1031.676
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -368,25 +368,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1409.848 ; gain = 1037.012
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1404.813 ; gain = 1031.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1409.848 ; gain = 1037.012
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1404.813 ; gain = 1031.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1409.848 ; gain = 1037.012
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1404.813 ; gain = 1031.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1409.848 ; gain = 1037.012
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1404.813 ; gain = 1031.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -429,11 +429,11 @@ Report Instance Areas:
 |17    |            \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized4 |     1|
 +------+---------------------------------------------+----------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1409.848 ; gain = 1037.012
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1404.813 ; gain = 1031.676
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 926 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:01:10 . Memory (MB): peak = 1409.848 ; gain = 565.672
-Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1409.848 ; gain = 1037.012
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:01:03 . Memory (MB): peak = 1404.813 ; gain = 559.805
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1404.813 ; gain = 1031.676
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -443,23 +443,23 @@ INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/inst_blk_mem_
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_8SERIES.NO_BMM_INFO.SP.WIDE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_8SERIES.NO_BMM_INFO.SP.WIDE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_init.ram/DEVICE_8SERIES.NO_BMM_INFO.SP.WIDE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1463.270 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1457.395 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 20 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 1463.270 ; gain = 1090.434
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1463.270 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 1457.395 ; gain = 1084.258
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1457.395 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1/A_MATRIX_BRAM.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP A_MATRIX_BRAM, cache-ID = bac5ef293cf0235f
+INFO: [Common 17-1381] The checkpoint 'B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1/A_MATRIX_BRAM.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP A_MATRIX_BRAM, cache-ID = d105aa311532f5b8
 INFO: [Coretcl 2-1174] Renamed 16 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1466.102 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1460.227 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1/A_MATRIX_BRAM.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1/A_MATRIX_BRAM.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file A_MATRIX_BRAM_utilization_synth.rpt -pb A_MATRIX_BRAM_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jan 12 10:18:49 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 15 15:02:08 2021...

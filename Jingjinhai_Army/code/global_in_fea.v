@@ -120,6 +120,7 @@ end
 
 
 // input feature's storage
+// BARM stores the whole input feature, 150*25*3*2B = 2250B
 IN_FEA_BRAM in_fea_bram(
     .clka                       (clk),
     .addra                      (raddr),

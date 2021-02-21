@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="12920000fs"></ZoomStartTime>
-      <ZoomEndTime time="29020001fs"></ZoomEndTime>
-      <Cursor1Time time="21000000fs"></Cursor1Time>
+      <ZoomStartTime time="45000000fs"></ZoomStartTime>
+      <ZoomEndTime time="103806628fs"></ZoomEndTime>
+      <Cursor1Time time="8437000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="204"></ValueColumnWidth>
+      <ValueColumnWidth column_width="96"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="17" />
+   <WVObjectSize size="15" />
    <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -28,66 +28,57 @@
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/start" type="logic">
-      <obj_property name="ElementShortName">start</obj_property>
-      <obj_property name="ObjectShortName">start</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/in_fea_w" type="array">
-      <obj_property name="ElementShortName">in_fea_w[399:0]</obj_property>
-      <obj_property name="ObjectShortName">in_fea_w[399:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_mx_w" type="array">
-      <obj_property name="ElementShortName">a_mx_w[399:0]</obj_property>
-      <obj_property name="ObjectShortName">a_mx_w[399:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_layer_dense_mxmult/mult_out_0" type="array">
-      <obj_property name="ElementShortName">mult_out_0[31:0]</obj_property>
-      <obj_property name="ObjectShortName">mult_out_0[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_layer_dense_mxmult/mult_out_1" type="array">
-      <obj_property name="ElementShortName">mult_out_1[31:0]</obj_property>
-      <obj_property name="ObjectShortName">mult_out_1[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_layer_dense_mxmult/mult_out_2" type="array">
-      <obj_property name="ElementShortName">mult_out_2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">mult_out_2[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_layer_dense_mxmult/mult_out_3" type="array">
-      <obj_property name="ElementShortName">mult_out_3[31:0]</obj_property>
-      <obj_property name="ObjectShortName">mult_out_3[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_layer_dense_mxmult/mult_out_4" type="array">
-      <obj_property name="ElementShortName">mult_out_4[31:0]</obj_property>
-      <obj_property name="ObjectShortName">mult_out_4[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_layer_dense_mxmult/mult_out_5" type="array">
-      <obj_property name="ElementShortName">mult_out_5[31:0]</obj_property>
-      <obj_property name="ObjectShortName">mult_out_5[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_layer_dense_mxmult/mult_out_6" type="array">
-      <obj_property name="ElementShortName">mult_out_6[31:0]</obj_property>
-      <obj_property name="ObjectShortName">mult_out_6[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/data_v" type="logic">
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/fanout_16_1024/data_v" type="logic">
       <obj_property name="ElementShortName">data_v</obj_property>
       <obj_property name="ObjectShortName">data_v</obj_property>
    </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_layer_dense_mxmult/mult_en" type="logic">
-      <obj_property name="ElementShortName">mult_en</obj_property>
-      <obj_property name="ObjectShortName">mult_en</obj_property>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/addertree_25wise_0/in_add_w" type="array">
+      <obj_property name="ElementShortName">in_add_w[399:0]</obj_property>
+      <obj_property name="ObjectShortName">in_add_w[399:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_layer_dense_mxmult/cnter" type="array">
-      <obj_property name="ElementShortName">cnter[3:0]</obj_property>
-      <obj_property name="ObjectShortName">cnter[3:0]</obj_property>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/addertree_25wise_0/add_res_v_w" type="logic">
+      <obj_property name="ElementShortName">add_res_v_w</obj_property>
+      <obj_property name="ObjectShortName">add_res_v_w</obj_property>
    </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_layer_dense_mxmult/mult_res_v" type="logic">
-      <obj_property name="ElementShortName">mult_res_v</obj_property>
-      <obj_property name="ObjectShortName">mult_res_v</obj_property>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/addertree_25wise_0/add_res_w" type="array">
+      <obj_property name="ElementShortName">add_res_w[15:0]</obj_property>
+      <obj_property name="ObjectShortName">add_res_w[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_layer_dense_mxmult/state" type="array">
-      <obj_property name="ElementShortName">state[3:0]</obj_property>
-      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/fanout_16_1024/data_v" type="logic">
+      <obj_property name="ElementShortName">data_v</obj_property>
+      <obj_property name="ObjectShortName">data_v</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/fanout_16_1024/in_data" type="array">
+      <obj_property name="ElementShortName">in_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">in_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/fanout_16_1024/brdcast_data0_l0_w" type="array">
+      <obj_property name="ElementShortName">brdcast_data0_l0_w[63:0]</obj_property>
+      <obj_property name="ObjectShortName">brdcast_data0_l0_w[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/fanout_16_1024/brdcast_data_v_l0_w" type="logic">
+      <obj_property name="ElementShortName">brdcast_data_v_l0_w</obj_property>
+      <obj_property name="ObjectShortName">brdcast_data_v_l0_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/fanout_16_1024/brdcast_data0_l1_w" type="array">
+      <obj_property name="ElementShortName">brdcast_data0_l1_w[63:0]</obj_property>
+      <obj_property name="ObjectShortName">brdcast_data0_l1_w[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/fanout_16_1024/brdcast_data1_l1_w" type="array">
+      <obj_property name="ElementShortName">brdcast_data1_l1_w[63:0]</obj_property>
+      <obj_property name="ObjectShortName">brdcast_data1_l1_w[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/fanout_16_1024/brdcast_data2_l1_w" type="array">
+      <obj_property name="ElementShortName">brdcast_data2_l1_w[63:0]</obj_property>
+      <obj_property name="ObjectShortName">brdcast_data2_l1_w[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/fanout_16_1024/brdcast_data3_l1_w" type="array">
+      <obj_property name="ElementShortName">brdcast_data3_l1_w[63:0]</obj_property>
+      <obj_property name="ObjectShortName">brdcast_data3_l1_w[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/fanout_16_1024/brdcast_data_v_l1_w" type="logic">
+      <obj_property name="ElementShortName">brdcast_data_v_l1_w</obj_property>
+      <obj_property name="ObjectShortName">brdcast_data_v_l1_w</obj_property>
    </wvobject>
 </wave_config>

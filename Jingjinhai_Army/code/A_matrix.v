@@ -16,14 +16,14 @@ module A_MATRIX(
     input                               need_data,
     
     output    reg                       data_v,
-    output    reg[399:0]                in_fea  
+    output    reg[399:0]                matrix_para  
 );
 
 
 
 reg     [4:0]                   raddr;
 reg     [3:0]                   state;
-wire    [399:0]                 in_fea_w;
+wire    [399:0]                 matrix_para_w;
 
 // tb
 reg     [399:0]                 wdata;
@@ -103,19 +103,19 @@ always @ (posedge clk) begin
         case (state)
         READ_DATA_0: begin
             data_v <= 'd1;
-            in_fea <= in_fea_w;
+            matrix_para <= matrix_para_w;
         end
 
         default: begin
             data_v <= 'd0;
-            in_fea <= in_fea;
+            matrix_para <= matrix_para;
         end
         endcase
     end
 
     else begin
         data_v <= 'd0;
-        in_fea <= 'd0;
+        matrix_para <= 'd0;
     end
 end
 
@@ -130,7 +130,7 @@ A_MATRIX_BRAM a_matrix_bram(
     .addra                      (raddr),
     .ena                        ('d1),
     .wea                        ('d0),
-    .douta                      (in_fea_w)                
+    .douta                      (matrix_para_w)                
 );
 
 

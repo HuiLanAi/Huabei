@@ -14,7 +14,8 @@ module CONV1_LAYER1_DENSE_MXMULT(
     input   [399:0]                     in_fea_w,
     input   [399:0]                     a_mx_w,
 
-    output  reg [799:0]                 mult_res,
+    // output  reg [399:0]                 mult_res,
+    output  [399:0]                     mult_res,
     output  reg                         mult_res_v
 );
 
@@ -116,49 +117,49 @@ always @ (posedge clk) begin
         COMPUTE_1: begin
             if(cnter == 'd1) begin
                 mult_res_v <= 'd1;
-                mult_res <= {
-                    mult_out_24
-                    ,mult_out_23
-                    ,mult_out_22
-                    ,mult_out_21
-                    ,mult_out_20
-                    ,mult_out_19
-                    ,mult_out_18
-                    ,mult_out_17
-                    ,mult_out_16
-                    ,mult_out_15
-                    ,mult_out_14
-                    ,mult_out_13
-                    ,mult_out_12
-                    ,mult_out_11
-                    ,mult_out_10
-                    ,mult_out_9
-                    ,mult_out_8
-                    ,mult_out_7
-                    ,mult_out_6
-                    ,mult_out_5
-                    ,mult_out_4
-                    ,mult_out_3
-                    ,mult_out_2
-                    ,mult_out_1
-                    ,mult_out_0};
+                // mult_res <= {
+                //     // mult_out_24[23:8]
+                //     // ,mult_out_23[23:8]
+                //     // ,mult_out_22[23:8]
+                //     // ,mult_out_21[23:8]
+                //     // ,mult_out_20[23:8]
+                //     // ,mult_out_19[23:8]
+                //     // ,mult_out_18[23:8]
+                //     // ,mult_out_17[23:8]
+                //     // ,mult_out_16[23:8]
+                //     // ,mult_out_15[23:8]
+                //     // ,mult_out_14[23:8]
+                //     // ,mult_out_13[23:8]
+                //     // ,mult_out_12[23:8]
+                //     // ,mult_out_11[23:8]
+                //     // ,mult_out_10[23:8]
+                //     // ,mult_out_9[23:8]
+                //     // ,mult_out_8[23:8]
+                //     // ,mult_out_7[23:8]
+                //     // ,mult_out_6[23:8]
+                //     // ,mult_out_5[23:8]
+                //     // ,mult_out_4[23:8]
+                //     // ,mult_out_3[23:8]
+                //     // ,mult_out_2[23:8]
+                //     // ,mult_out_1[23:8]
+                //     mult_out_0[23:8]};
             end
             else begin
                 mult_res_v <= 'd0;
-                mult_res <= mult_res;
+                // mult_res <= mult_res;
             end
         end
 
         default: begin
             mult_res_v <= 'd0;
-            mult_res <= mult_res;
+            // mult_res <= mult_res;
         end
         endcase
     end
 
     else begin
         mult_res_v <= 'd0;
-        mult_res <= 'd0;
+        // mult_res <= 'd0;
     end
 end
 
@@ -206,8 +207,43 @@ end
 
 
 
+assign mult_res = {
+            mult_out_24[23:8]
+            ,mult_out_23[23:8]
+            ,mult_out_22[23:8]
+            ,mult_out_21[23:8]
+            ,mult_out_20[23:8]
+            ,mult_out_19[23:8]
+            ,mult_out_18[23:8]
+            ,mult_out_17[23:8]
+            ,mult_out_16[23:8]
+            ,mult_out_15[23:8]
+            ,mult_out_14[23:8]
+            ,mult_out_13[23:8]
+            ,mult_out_12[23:8]
+            ,mult_out_11[23:8]
+            ,mult_out_10[23:8]
+            ,mult_out_9[23:8]
+            ,mult_out_8[23:8]
+            ,mult_out_7[23:8]
+            ,mult_out_6[23:8]
+            ,mult_out_5[23:8]
+            ,mult_out_4[23:8]
+            ,mult_out_3[23:8]
+            ,mult_out_2[23:8]
+            ,mult_out_1[23:8]
+            ,mult_out_0[23:8]};
+
+
+
+
+
+
+
+
+
 // DSP array
-MULT_16X16 mult_16X16_0(.clk(clk), .ce(mult_en), .A(in_fea_w[15:0]), .B(a_mx_w[15:0]]), .P(mult_out_0));
+MULT_16X16 mult_16X16_0(.clk(clk), .ce(mult_en), .A(in_fea_w[15:0]), .B(a_mx_w[15:0]), .P(mult_out_0));
 MULT_16X16 mult_16X16_1(.clk(clk), .ce(mult_en), .A(in_fea_w[31:16]), .B(a_mx_w[31:16]), .P(mult_out_1));
 MULT_16X16 mult_16X16_2(.clk(clk), .ce(mult_en), .A(in_fea_w[47:32]), .B(a_mx_w[47:32]), .P(mult_out_2));
 MULT_16X16 mult_16X16_3(.clk(clk), .ce(mult_en), .A(in_fea_w[63:48]), .B(a_mx_w[63:48]), .P(mult_out_3));
@@ -232,8 +268,6 @@ MULT_16X16 mult_16X16_21(.clk(clk), .ce(mult_en), .A(in_fea_w[351:336]), .B(a_mx
 MULT_16X16 mult_16X16_22(.clk(clk), .ce(mult_en), .A(in_fea_w[367:352]), .B(a_mx_w[367:352]), .P(mult_out_22));
 MULT_16X16 mult_16X16_23(.clk(clk), .ce(mult_en), .A(in_fea_w[383:368]), .B(a_mx_w[383:368]), .P(mult_out_23));
 MULT_16X16 mult_16X16_24(.clk(clk), .ce(mult_en), .A(in_fea_w[399:384]), .B(a_mx_w[399:384]), .P(mult_out_24));
-
-
 
 
 endmodule

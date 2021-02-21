@@ -14,7 +14,7 @@ module CONV1_LAYER1_DENSE_TOP(
 
 wire                                data_v_w;
 wire    [399:0]                     in_fea_w;
-wire    [399:0]                     a_mx_w;
+wire    [399:0]                     matrix_para_w;
 
 
 
@@ -31,6 +31,17 @@ GLOBAL_IN_FEA global_in_fea(
 
 
 
+// A_Matrix bram storage
+A_MATRIX a_matrix(
+    .clk                        (clk), 
+    .rst                        (rst),
+    .start                      (start),
+    .need_data                  (need_data),
+    // .data_v                     (data_v_w),
+    .matrix_para                (matrix_para_w)
+);
+
+
 
 wire    [399:0]                         mult_res_w;
 wire                                    mult_res_v_w;
@@ -43,11 +54,34 @@ CONV1_LAYER1_DENSE_MXMULT conv1_layer_dense_mxmult(
     .start                      (start),
     .data_v                     (data_v_w),
     .in_fea_w                   (in_fea_w),
-    .a_mx_w                     (a_mx_w),
+    .a_mx_w                     (matrix_para_w),
     .mult_res                   (mult_res_w),
     .mult_res_v                 (mult_res_v_w)
 );
 
+
+
+wire    [15:0]                          mxmultadd_res_w;
+wire                                    mxmultadd_res_v_w;
+
+
+ADDERTREE_25WISE addertree_25wise_0(
+    .clk                        (clk),
+    .rst                        (rst),
+    .start                      (start),
+    .data_v                     (mult_res_v_w),
+    .in_add_w                   (mult_res_w),
+    .add_res_w                  (mxmultadd_res_w),
+    .add_res_v_w                (mxmultadd_res_v_w)
+);
+
+
+FANOUT_16_1024_5LAYER fanout_16_1024(
+    .clk                        (clk),
+    .rst                        (rst),
+    .data_v                     (mxmultadd_res_v_w),
+    .in_data                    (mxmultadd_res_w)
+);
 
 
 endmodule

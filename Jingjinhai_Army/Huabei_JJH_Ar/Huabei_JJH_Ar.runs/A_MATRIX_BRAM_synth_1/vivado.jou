@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Jan 12 10:17:21 2021
-# Process ID: 12488
-# Current directory: C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1
+# Start of session at: Mon Feb 15 15:00:47 2021
+# Process ID: 15572
+# Current directory: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1
 # Command line: vivado.exe -log A_MATRIX_BRAM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source A_MATRIX_BRAM.tcl
-# Log file: C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1/A_MATRIX_BRAM.vds
-# Journal file: C:/Users/310-w/Desktop/TempGit/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1\vivado.jou
+# Log file: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1/A_MATRIX_BRAM.vds
+# Journal file: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/A_MATRIX_BRAM_synth_1\vivado.jou
 #-----------------------------------------------------------
 source A_MATRIX_BRAM.tcl -notrace
