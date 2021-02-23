@@ -49,7 +49,7 @@ module ADDERTREE_25WISE(
 
 reg                                     adder_en_l0;
 reg                                     addres_v_l0;
-reg     [3:0]                           busy_flag_l0;
+reg     [2:0]                           busy_flag_l0;
 
 
 
@@ -173,7 +173,7 @@ end
 // use busy_flag to control adder_en
 always @ (busy_flag_l0) begin
     if(!rst) begin
-        adder_en_l0 = busy_flag_l0[0] || busy_flag_l0[1] || busy_flag_l0[2];
+        adder_en_l0 = busy_flag_l0[0];
     end
     else begin
         adder_en_l0 = 'd0;
@@ -186,7 +186,7 @@ end
 // use busy_flag to control add_res_v
 always @ (busy_flag_l0) begin
     if(!rst) begin
-        addres_v_l0 = busy_flag_l0[3];
+        addres_v_l0 = busy_flag_l0[2];
     end
     else begin
         addres_v_l0 = 'd0;
@@ -315,7 +315,7 @@ assign adder2_in_b_w_l1 = add_res5_l0;
 
 reg                                     adder_en_l1;
 reg                                     addres_v_l1;
-reg     [3:0]                           busy_flag_l1;
+reg     [2:0]                           busy_flag_l1;
 
 
 
@@ -350,7 +350,7 @@ end
 // use busy_flag to control adder_en
 always @ (busy_flag_l1) begin
     if(!rst) begin
-        adder_en_l1 = busy_flag_l1[0] || busy_flag_l1[1] || busy_flag_l1[2];
+        adder_en_l1 = busy_flag_l1[0];
     end
     else begin
         adder_en_l1 = 'd0;
@@ -361,7 +361,7 @@ end
 // use busy_flag to control add_res_v
 always @ (busy_flag_l1) begin
     if(!rst) begin
-        addres_v_l1 = busy_flag_l1[3];
+        addres_v_l1 = busy_flag_l1[2];
     end
     else begin
         addres_v_l1 = 'd0;
@@ -456,7 +456,7 @@ ADDER_16P16 adder2_l1(.A(adder2_in_a_w_l1), .B(adder2_in_b_w_l1), .CE(adder_en_l
 
 reg                                     adder_en_l2;
 reg                                     addres_v_l2;
-reg     [3:0]                           busy_flag_l2;
+reg     [2:0]                           busy_flag_l2;
 
 
 wire    [31:0] adder0_in_a_w_l2;
@@ -500,7 +500,7 @@ end
 // use busy_flag to control adder_en
 always @ (busy_flag_l2) begin
     if(!rst) begin
-        adder_en_l2 = busy_flag_l2[0] || busy_flag_l2[1] || busy_flag_l2[2];
+        adder_en_l2 = busy_flag_l2[0];
     end
     else begin
         adder_en_l2 = 'd0;
@@ -511,7 +511,7 @@ end
 // use busy_flag to control add_res_v
 always @ (busy_flag_l2) begin
     if(!rst) begin
-        addres_v_l2 = busy_flag_l2[3];
+        addres_v_l2 = busy_flag_l2[2];
     end
     else begin
         addres_v_l2 = 'd0;
@@ -561,7 +561,7 @@ ADDER_16P16 adder1_l2(.A(adder1_in_a_w_l2), .B(adder1_in_b_w_l2), .CE(adder_en_l
 
 reg                                     adder_en_l3;
 reg                                     addres_v_l3;
-reg     [3:0]                           busy_flag_l3;
+reg     [2:0]                           busy_flag_l3;
 
 
 wire    [31:0] adder0_in_a_w_l3;
@@ -597,7 +597,7 @@ end
 // use busy_flag to control adder_en
 always @ (busy_flag_l3) begin
     if(!rst) begin
-        adder_en_l3 = busy_flag_l3[0] || busy_flag_l3[1] || busy_flag_l3[2];
+        adder_en_l3 = busy_flag_l3[0];
     end
     else begin
         adder_en_l3 = 'd0;
@@ -608,7 +608,7 @@ end
 // use busy_flag to control add_res_v
 always @ (busy_flag_l3) begin
     if(!rst) begin
-        addres_v_l3 = busy_flag_l3[3];
+        addres_v_l3 = busy_flag_l3[2];
     end
     else begin
         addres_v_l3 = 'd0;
@@ -654,7 +654,7 @@ ADDER_16P16 adder0_l3(.A(adder0_in_a_w_l3), .B(adder0_in_b_w_l3), .CE(adder_en_l
 
 reg                                     adder_en_l4;
 reg                                     addres_v_l4;
-reg     [3:0]                           busy_flag_l4;
+reg     [2:0]                           busy_flag_l4;
 
 
 wire    [31:0] adder0_in_a_w_l4;
@@ -690,7 +690,7 @@ end
 // use busy_flag to control adder_en
 always @ (busy_flag_l4) begin
     if(!rst) begin
-        adder_en_l4 = busy_flag_l4[0] || busy_flag_l4[1] || busy_flag_l4[2];
+        adder_en_l4 = busy_flag_l4[0];
     end
     else begin
         adder_en_l4 = 'd0;
@@ -701,7 +701,7 @@ end
 // use busy_flag to control add_res_v
 always @ (busy_flag_l4) begin
     if(!rst) begin
-        addres_v_l4 = busy_flag_l4[3];
+        addres_v_l4 = busy_flag_l4[2];
     end
     else begin
         addres_v_l4 = 'd0;

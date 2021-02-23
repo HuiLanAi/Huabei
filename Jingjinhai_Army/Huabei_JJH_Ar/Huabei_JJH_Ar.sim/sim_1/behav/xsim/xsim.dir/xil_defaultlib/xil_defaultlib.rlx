@@ -17,5 +17,5 @@ B:/wd/Huabei/Huabei/Jingjinhai_Army/code/fanout_16_64_1layer.v,1613912037,verilo
 B:/wd/Huabei/Huabei/Jingjinhai_Army/code/global_in_fea.v,1613371127,verilog,,B:/wd/Huabei/Huabei/Jingjinhai_Army/code/paramult_1_64.v,,GLOBAL_IN_FEA,,,,,,,,
 B:/wd/Huabei/Huabei/Jingjinhai_Army/code/paramult_1_64.v,1614050064,verilog,,B:/wd/Huabei/Huabei/Jingjinhai_Army/code/clk_rst.v,,PARAMULT_1_64,,,,,,,,
 B:/wd/Huabei/Huabei/Jingjinhai_Army/code/regheap_64_16b.v,1614061521,verilog,,B:/wd/Huabei/Huabei/Jingjinhai_Army/code/25element_wise_adder_tree.v,,REGHEAP_SELFADD_64x16b,,,,,,,,
-B:/wd/Huabei/Huabei/Jingjinhai_Army/code/selfadd_reg_16bx2.v,1614066609,verilog,,B:/wd/Huabei/Huabei/Jingjinhai_Army/code/regheap_64_16b.v,,SELFADD_REG_16bx2,,,,,,,,
+B:/wd/Huabei/Huabei/Jingjinhai_Army/code/selfadd_reg_16bx2.v,1614066936,verilog,,B:/wd/Huabei/Huabei/Jingjinhai_Army/code/regheap_64_16b.v,,SELFADD_REG_16bx2,,,,,,,,
 B:/wd/Huabei/Huabei/Jingjinhai_Army/code/simtest4paramult_regheap.v,1614048699,verilog,,,,TB4PARAMULT_REGHEAP,,,,,,,,

@@ -4,12 +4,11 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army
 INFO: [VRFC 10-311] analyzing module A_MATRIX_BRAM
 INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/selfadd_reg_16bx2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module SELFADD_REG_16bx2
-INFO: [VRFC 10-2458] undeclared symbol add_res_v_w, assumed default net type wire [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/selfadd_reg_16bx2.v:135]
+INFO: [VRFC 10-2458] undeclared symbol add_res_v_w, assumed default net type wire [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/selfadd_reg_16bx2.v:136]
 WARNING: [VRFC 10-3380] identifier 'addres_v' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/selfadd_reg_16bx2.v:55]
 WARNING: [VRFC 10-3380] identifier 'addres' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/selfadd_reg_16bx2.v:56]
 WARNING: [VRFC 10-3380] identifier 'addres' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/selfadd_reg_16bx2.v:57]
 WARNING: [VRFC 10-3380] identifier 'addres_v' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/selfadd_reg_16bx2.v:70]
-WARNING: [VRFC 10-3380] identifier 'addres' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/selfadd_reg_16bx2.v:89]
 INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/regheap_64_16b.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module REGHEAP_SELFADD_64x16b
 INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/25element_wise_adder_tree.v" into library xil_defaultlib

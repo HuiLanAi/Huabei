@@ -87,6 +87,7 @@ wire    [31:0] adder0_in_b_w;
 
 
 assign adder0_in_a_w = {addres[31:16], addres[15:0]};
+// assign adder0_in_a_w = {reg_b, reg_a};
 assign adder0_in_b_w = {in_data_b, in_data_a};
 
 
@@ -113,7 +114,6 @@ end
 // use busy_flag to control adder_en
 always @ (busy_flag) begin
     if(!rst && !usr_rst) begin
-        // adder_en = busy_flag[0] || busy_flag[1] || busy_flag[2];
         adder_en = busy_flag[0];
     end
     else begin
@@ -137,7 +137,7 @@ assign add_res_v_w = addres_v;
 
 
 
-ADDER_16P16 adder(.A(adder0_in_a_w), .B(adder0_in_b_w), .CE(adder_en), .S(addres), .clk(clk), .SCLR(usr_rst));
+ADDER_16P16 adder(.A(adder0_in_a_w), .B(adder0_in_b_w), .CE(adder_en), .S(addres), .clk(clk), .SCLR(usr_rst || rst));
 
 
 
