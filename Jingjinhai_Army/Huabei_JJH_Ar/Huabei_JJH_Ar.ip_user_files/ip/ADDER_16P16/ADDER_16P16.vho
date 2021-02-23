@@ -58,6 +58,7 @@ COMPONENT ADDER_16P16
     B : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     CLK : IN STD_LOGIC;
     CE : IN STD_LOGIC;
+    SCLR : IN STD_LOGIC;
     S : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
 END COMPONENT;
@@ -73,6 +74,7 @@ your_instance_name : ADDER_16P16
     B => B,
     CLK => CLK,
     CE => CE,
+    SCLR => SCLR,
     S => S
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ---------

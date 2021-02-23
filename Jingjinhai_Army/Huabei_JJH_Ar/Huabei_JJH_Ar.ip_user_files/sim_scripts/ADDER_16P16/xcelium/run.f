@@ -1,3 +1,9 @@
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+-endlib
+-makelib xcelium_lib/xpm \
+  "C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd" \
+-endlib
 -makelib xcelium_lib/xbip_utils_v3_0_9 \
   "../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
 -endlib
@@ -21,5 +27,8 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../../Huabei_JJH_Ar.srcs/sources_1/ip/ADDER_16P16/sim/ADDER_16P16.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  glbl.v
 -endlib
 

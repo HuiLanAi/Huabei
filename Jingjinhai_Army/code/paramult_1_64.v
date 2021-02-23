@@ -81,7 +81,7 @@ end
 
 
 // assign module's output_valid: mult_res_v_w
-assign mult_res_v_w = busy_flag[4];
+assign mult_res_v_w = busy_flag[3];
 
 
 // control mult_en signal

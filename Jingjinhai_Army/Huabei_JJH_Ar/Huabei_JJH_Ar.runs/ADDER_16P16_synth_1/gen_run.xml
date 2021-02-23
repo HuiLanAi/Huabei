@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="ADDER_16P16_synth_1" LaunchPart="xcku115-flvd1517-1-i" LaunchTime="1613460710">
+<GenRun Id="ADDER_16P16_synth_1" LaunchPart="xcku115-flvd1517-1-i" LaunchTime="1614066588">
   <File Type="PA-TCL" Name="ADDER_16P16.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="ADDER_16P16_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ADDER_16P16_reports.tcl"/>
   <File Type="RDS-RDS" Name="ADDER_16P16.vds"/>
   <File Type="RDS-UTIL" Name="ADDER_16P16_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="ADDER_16P16_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="ADDER_16P16.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ADDER_16P16_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ADDER_16P16_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ADDER_16P16">
     <File Path="$PSRCDIR/sources_1/ip/ADDER_16P16/ADDER_16P16.xci">
       <FileInfo>
