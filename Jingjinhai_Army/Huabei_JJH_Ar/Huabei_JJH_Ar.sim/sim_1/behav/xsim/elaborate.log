@@ -3,8 +3,6 @@ Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b2e45a7405bc41279b37bf8e879ef099 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L c_reg_fd_v12_0_5 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_5 -L xbip_dsp48_addsub_v3_0_5 -L xbip_addsub_v3_0_5 -L c_addsub_v12_0_12 -L xil_defaultlib -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot clk_rst_behav xil_defaultlib.clk_rst xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'data_v' [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_top.v:82]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'in_data' [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_top.v:83]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -63,7 +61,7 @@ Compiling architecture xilinx of entity c_addsub_v12_0_12.c_addsub_v12_0_12 [\c_
 Compiling architecture adder_16p16_arch of entity xil_defaultlib.ADDER_16P16 [adder_16p16_default]
 Compiling module xil_defaultlib.ADDERTREE_25WISE
 Compiling module xil_defaultlib.FANOUT_16_64
-Compiling module xil_defaultlib.FANOUT_16_1024_5LAYER
+Compiling module xil_defaultlib.FANOUT_16_1024
 Compiling module xil_defaultlib.CONV1_LAYER1_DENSE_TOP
 Compiling module xil_defaultlib.clk_rst
 Compiling module xil_defaultlib.glbl

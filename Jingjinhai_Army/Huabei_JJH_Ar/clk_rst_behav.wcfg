@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="45000000fs"></ZoomStartTime>
-      <ZoomEndTime time="103806628fs"></ZoomEndTime>
-      <Cursor1Time time="8437000fs"></Cursor1Time>
+      <ZoomStartTime time="70000000fs"></ZoomStartTime>
+      <ZoomEndTime time="125808463fs"></ZoomEndTime>
+      <Cursor1Time time="20021000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="96"></ValueColumnWidth>
+      <ValueColumnWidth column_width="88"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="16" />
    <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -77,8 +77,12 @@
       <obj_property name="ElementShortName">brdcast_data3_l1_w[63:0]</obj_property>
       <obj_property name="ObjectShortName">brdcast_data3_l1_w[63:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/fanout_16_1024/brdcast_data_v_l1_w" type="logic">
-      <obj_property name="ElementShortName">brdcast_data_v_l1_w</obj_property>
-      <obj_property name="ObjectShortName">brdcast_data_v_l1_w</obj_property>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/fanout_16_1024/brdcast_data_v_w" type="logic">
+      <obj_property name="ElementShortName">brdcast_data_v_w</obj_property>
+      <obj_property name="ObjectShortName">brdcast_data_v_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/fanout_16_1024/brdcast_data_w" type="array">
+      <obj_property name="ElementShortName">brdcast_data_w[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">brdcast_data_w[1023:0]</obj_property>
    </wvobject>
 </wave_config>

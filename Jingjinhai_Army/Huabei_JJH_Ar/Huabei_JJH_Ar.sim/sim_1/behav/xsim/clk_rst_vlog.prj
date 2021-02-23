@@ -6,6 +6,8 @@ verilog xil_defaultlib  \
 "../../../../../code/A_matrix.v" \
 "../../../../../code/conv1_layer1_dense_mxmult.v" \
 "../../../../../code/conv1_layer1_dense_top.v" \
+"../../../../../code/fanout_16_1024_5layer.v" \
+"../../../../../code/fanout_16_64_1layer.v" \
 "../../../../../code/global_in_fea.v" \
 "../../../../../code/clk_rst.v" \
 

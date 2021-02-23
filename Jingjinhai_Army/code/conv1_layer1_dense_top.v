@@ -76,11 +76,9 @@ ADDERTREE_25WISE addertree_25wise_0(
 );
 
 
-FANOUT_16_1024_5LAYER fanout_16_1024(
+PARAMULT_1_64 parallel_mult_1_64(
     .clk                        (clk),
-    .rst                        (rst),
-    .data_v                     (mxmultadd_res_v_w),
-    .in_data                    (mxmultadd_res_w)
+    .rst                        (rst)
 );
 
 

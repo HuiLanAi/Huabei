@@ -81,7 +81,7 @@ wire                                brdcast_data0_v_l2_w;
 
 
 
-FANOUT_16_64 fan0_l2(.clk(clk), .rst(rst), .data_v(brdcast_data0_v_l1_w), .in_data(brdcast_data0_l1_w[15:0]), .brdcast_data_v_w(brdcast_data_v_l1_w), .brdcast_data_w(brdcast_data0_l2_w));
+FANOUT_16_64 fan0_l2(.clk(clk), .rst(rst), .data_v(brdcast_data0_v_l1_w), .in_data(brdcast_data0_l1_w[15:0]), .brdcast_data_v_w(brdcast_data0_v_l2_w), .brdcast_data_w(brdcast_data0_l2_w));
 FANOUT_16_64 fan1_l2(.clk(clk), .rst(rst), .data_v(brdcast_data0_v_l1_w), .in_data(brdcast_data0_l1_w[31:16]), .brdcast_data_w(brdcast_data1_l2_w));
 FANOUT_16_64 fan2_l2(.clk(clk), .rst(rst), .data_v(brdcast_data0_v_l1_w), .in_data(brdcast_data0_l1_w[47:32]), .brdcast_data_w(brdcast_data2_l2_w));
 FANOUT_16_64 fan3_l2(.clk(clk), .rst(rst), .data_v(brdcast_data0_v_l1_w), .in_data(brdcast_data0_l1_w[63:48]), .brdcast_data_w(brdcast_data3_l2_w));

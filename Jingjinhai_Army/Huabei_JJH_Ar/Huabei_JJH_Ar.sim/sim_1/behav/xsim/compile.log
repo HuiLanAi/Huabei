@@ -10,6 +10,10 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army
 INFO: [VRFC 10-311] analyzing module CONV1_LAYER1_DENSE_MXMULT
 INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/conv1_layer1_dense_top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module CONV1_LAYER1_DENSE_TOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/fanout_16_1024_5layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FANOUT_16_1024
+INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/fanout_16_64_1layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FANOUT_16_64
 INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/global_in_fea.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module GLOBAL_IN_FEA
 INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/clk_rst.v" into library xil_defaultlib
