@@ -21,14 +21,14 @@ module PARAMULT_1_64(
     input                           clk,
     input                           rst, 
 
-    input                           data_v,
+    input                           sigdata_v,
+    input                           vecdata_v,
+    input                           halt,
     input   [1023:0]                in_veca_data,
     input   [15:0]                  in_sig_data,
 
     output                          mult_res_v_w,
-    output  [1023:0]                mult_res_w,
-    
-    output                          need_data_w
+    output  [1023:0]                mult_res_w
 );
 
 
@@ -40,7 +40,7 @@ wire    [1023:0]                    brdcast_data_w;
 FANOUT_16_1024 fanout_16_1024(
     .clk                        (clk),
     .rst                        (rst),
-    .data_v                     (data_v),
+    .data_v                     (sigdata_v),
     .in_data                    (in_sig_data),
     .brdcast_data_v_w           (brdcast_data_v_w),
     .brdcast_data_w             (brdcast_data_w)
@@ -81,30 +81,30 @@ end
 
 
 // assign module's output_valid: mult_res_v_w
-assign mult_res_v_w = busy_flag[3];
+assign mult_res_v_w = busy_flag[2];
 
 
 // control mult_en signal
-always @ (busy_flag) begin
+always @ (busy_flag or brdcast_data_v_w) begin
     if(!rst) begin
-        mult_en_0_7 <= busy_flag[0]||busy_flag[1]||busy_flag[2]||busy_flag[3];
-        mult_en_8_15 <= busy_flag[0]||busy_flag[1]||busy_flag[2]||busy_flag[3];
-        mult_en_16_23 <= busy_flag[0]||busy_flag[1]||busy_flag[2]||busy_flag[3];
-        mult_en_24_31 <= busy_flag[0]||busy_flag[1]||busy_flag[2]||busy_flag[3];
-        mult_en_32_39 <= busy_flag[0]||busy_flag[1]||busy_flag[2]||busy_flag[3];
-        mult_en_40_47 <= busy_flag[0]||busy_flag[1]||busy_flag[2]||busy_flag[3];
-        mult_en_48_55 <= busy_flag[0]||busy_flag[1]||busy_flag[2]||busy_flag[3];
-        mult_en_56_63 <= busy_flag[0]||busy_flag[1]||busy_flag[2]||busy_flag[3];
+        mult_en_0_7 = busy_flag[0]||busy_flag[1]||busy_flag[2]||busy_flag[3] || brdcast_data_v_w;
+        mult_en_8_15 = busy_flag[0]||busy_flag[1]||busy_flag[2]||busy_flag[3] || brdcast_data_v_w;
+        mult_en_16_23 = busy_flag[0]||busy_flag[1]||busy_flag[2]||busy_flag[3] || brdcast_data_v_w;
+        mult_en_24_31 = busy_flag[0]||busy_flag[1]||busy_flag[2]||busy_flag[3] || brdcast_data_v_w;
+        mult_en_32_39 = busy_flag[0]||busy_flag[1]||busy_flag[2]||busy_flag[3] || brdcast_data_v_w;
+        mult_en_40_47 = busy_flag[0]||busy_flag[1]||busy_flag[2]||busy_flag[3] || brdcast_data_v_w;
+        mult_en_48_55 = busy_flag[0]||busy_flag[1]||busy_flag[2]||busy_flag[3] || brdcast_data_v_w;
+        mult_en_56_63 = busy_flag[0]||busy_flag[1]||busy_flag[2]||busy_flag[3] || brdcast_data_v_w;
     end
     else begin
-        mult_en_0_7 <= 'd0;
-        mult_en_8_15 <= 'd0;
-        mult_en_16_23 <= 'd0;
-        mult_en_24_31 <= 'd0;
-        mult_en_32_39 <= 'd0;
-        mult_en_40_47 <= 'd0;
-        mult_en_48_55 <= 'd0;
-        mult_en_56_63 <= 'd0;
+        mult_en_0_7 = 'd0;
+        mult_en_8_15 = 'd0;
+        mult_en_16_23 = 'd0;
+        mult_en_24_31 = 'd0;
+        mult_en_32_39 = 'd0;
+        mult_en_40_47 = 'd0;
+        mult_en_48_55 = 'd0;
+        mult_en_56_63 = 'd0;
     end
 end
 

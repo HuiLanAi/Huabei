@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="clk_rst_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="clk_rst" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="17347153fs"></ZoomEndTime>
+      <Cursor1Time time="41050000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="243"></NameColumnWidth>
+      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="55" />
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/halt" type="logic">
+      <obj_property name="ElementShortName">halt</obj_property>
+      <obj_property name="ObjectShortName">halt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/data_v" type="logic">
+      <obj_property name="ElementShortName">data_v</obj_property>
+      <obj_property name="ObjectShortName">data_v</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/in_fea" type="array">
+      <obj_property name="ElementShortName">in_fea[399:0]</obj_property>
+      <obj_property name="ObjectShortName">in_fea[399:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/load_done" type="logic">
+      <obj_property name="ElementShortName">load_done</obj_property>
+      <obj_property name="ObjectShortName">load_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/raddr" type="array">
+      <obj_property name="ElementShortName">raddr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">raddr[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/in_fea_w" type="array">
+      <obj_property name="ElementShortName">in_fea_w[399:0]</obj_property>
+      <obj_property name="ObjectShortName">in_fea_w[399:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/wdata" type="array">
+      <obj_property name="ElementShortName">wdata[399:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata[399:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/data_v_reg" type="logic">
+      <obj_property name="ElementShortName">data_v_reg</obj_property>
+      <obj_property name="ObjectShortName">data_v_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/working_flag" type="array">
+      <obj_property name="ElementShortName">working_flag[2:0]</obj_property>
+      <obj_property name="ObjectShortName">working_flag[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/chn_loop" type="array">
+      <obj_property name="ElementShortName">chn_loop[5:0]</obj_property>
+      <obj_property name="ObjectShortName">chn_loop[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/row_loop" type="array">
+      <obj_property name="ElementShortName">row_loop[7:0]</obj_property>
+      <obj_property name="ObjectShortName">row_loop[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/col_loop" type="array">
+      <obj_property name="ElementShortName">col_loop[5:0]</obj_property>
+      <obj_property name="ObjectShortName">col_loop[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/pe_loop" type="array">
+      <obj_property name="ElementShortName">pe_loop[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pe_loop[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/RST" type="array">
+      <obj_property name="ElementShortName">RST[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RST[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/START" type="array">
+      <obj_property name="ElementShortName">START[31:0]</obj_property>
+      <obj_property name="ObjectShortName">START[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/HALT" type="array">
+      <obj_property name="ElementShortName">HALT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">HALT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/DONE" type="array">
+      <obj_property name="ElementShortName">DONE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DONE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/CHN_LOOP_UPPER" type="array">
+      <obj_property name="ElementShortName">CHN_LOOP_UPPER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CHN_LOOP_UPPER[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/COL_LOOP_UPPER" type="array">
+      <obj_property name="ElementShortName">COL_LOOP_UPPER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">COL_LOOP_UPPER[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/ROW_LOOP_UPPER" type="array">
+      <obj_property name="ElementShortName">ROW_LOOP_UPPER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ROW_LOOP_UPPER[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/PE_LOOP_UPPER" type="array">
+      <obj_property name="ElementShortName">PE_LOOP_UPPER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PE_LOOP_UPPER[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/en_mxbram" type="logic">
+      <obj_property name="ElementShortName">en_mxbram</obj_property>
+      <obj_property name="ObjectShortName">en_mxbram</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/halt" type="logic">
+      <obj_property name="ElementShortName">halt</obj_property>
+      <obj_property name="ObjectShortName">halt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/data_v" type="logic">
+      <obj_property name="ElementShortName">data_v</obj_property>
+      <obj_property name="ObjectShortName">data_v</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/matrix_para" type="array">
+      <obj_property name="ElementShortName">matrix_para[399:0]</obj_property>
+      <obj_property name="ObjectShortName">matrix_para[399:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/load_done" type="logic">
+      <obj_property name="ElementShortName">load_done</obj_property>
+      <obj_property name="ObjectShortName">load_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/raddr" type="array">
+      <obj_property name="ElementShortName">raddr[6:0]</obj_property>
+      <obj_property name="ObjectShortName">raddr[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/matrix_para_w" type="array">
+      <obj_property name="ElementShortName">matrix_para_w[399:0]</obj_property>
+      <obj_property name="ObjectShortName">matrix_para_w[399:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/wdata" type="array">
+      <obj_property name="ElementShortName">wdata[399:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata[399:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/data_v_reg" type="logic">
+      <obj_property name="ElementShortName">data_v_reg</obj_property>
+      <obj_property name="ObjectShortName">data_v_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/working_flag" type="array">
+      <obj_property name="ElementShortName">working_flag[2:0]</obj_property>
+      <obj_property name="ObjectShortName">working_flag[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/chn_loop" type="array">
+      <obj_property name="ElementShortName">chn_loop[5:0]</obj_property>
+      <obj_property name="ObjectShortName">chn_loop[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/row_loop" type="array">
+      <obj_property name="ElementShortName">row_loop[7:0]</obj_property>
+      <obj_property name="ObjectShortName">row_loop[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/col_loop" type="array">
+      <obj_property name="ElementShortName">col_loop[5:0]</obj_property>
+      <obj_property name="ObjectShortName">col_loop[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/pe_loop" type="array">
+      <obj_property name="ElementShortName">pe_loop[2:0]</obj_property>
+      <obj_property name="ObjectShortName">pe_loop[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/RST" type="array">
+      <obj_property name="ElementShortName">RST[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RST[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/START" type="array">
+      <obj_property name="ElementShortName">START[31:0]</obj_property>
+      <obj_property name="ObjectShortName">START[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/DISABLE" type="array">
+      <obj_property name="ElementShortName">DISABLE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DISABLE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/DONE" type="array">
+      <obj_property name="ElementShortName">DONE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DONE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/HALT" type="array">
+      <obj_property name="ElementShortName">HALT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">HALT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/NEXT_MX" type="array">
+      <obj_property name="ElementShortName">NEXT_MX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NEXT_MX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/CHN_LOOP_UPPER" type="array">
+      <obj_property name="ElementShortName">CHN_LOOP_UPPER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CHN_LOOP_UPPER[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/COL_LOOP_UPPER" type="array">
+      <obj_property name="ElementShortName">COL_LOOP_UPPER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">COL_LOOP_UPPER[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/ROW_LOOP_UPPER" type="array">
+      <obj_property name="ElementShortName">ROW_LOOP_UPPER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ROW_LOOP_UPPER[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/PE_LOOP_UPPER" type="array">
+      <obj_property name="ElementShortName">PE_LOOP_UPPER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PE_LOOP_UPPER[31:0]</obj_property>
+   </wvobject>
+</wave_config>

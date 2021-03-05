@@ -1,0 +1,1 @@
+ADDER_16P16.vhd,vhdl,xil_defaultlib,../../../../Huabei_JJH_Ar.srcs/sources_1/ip/ADDER_16P16/sim/ADDER_16P16.vhd,

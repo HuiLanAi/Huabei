@@ -122,12 +122,12 @@ assign adder5_in_b_w_l0 = in_add[383:352];
 
 
 
-ADDER_16P16 adder0_l0(.A(adder0_in_a_w_l0), .B(adder0_in_b_w_l0), .CE(adder_en_l0), .S(add_res0_w_l0), .clk(clk));
-ADDER_16P16 adder1_l0(.A(adder1_in_a_w_l0), .B(adder1_in_b_w_l0), .CE(adder_en_l0), .S(add_res1_w_l0), .clk(clk));
-ADDER_16P16 adder2_l0(.A(adder2_in_a_w_l0), .B(adder2_in_b_w_l0), .CE(adder_en_l0), .S(add_res2_w_l0), .clk(clk));
-ADDER_16P16 adder3_l0(.A(adder3_in_a_w_l0), .B(adder3_in_b_w_l0), .CE(adder_en_l0), .S(add_res3_w_l0), .clk(clk));
-ADDER_16P16 adder4_l0(.A(adder4_in_a_w_l0), .B(adder4_in_b_w_l0), .CE(adder_en_l0), .S(add_res4_w_l0), .clk(clk));
-ADDER_16P16 adder5_l0(.A(adder5_in_a_w_l0), .B(adder5_in_b_w_l0), .CE(adder_en_l0), .S(add_res5_w_l0), .clk(clk));
+ADDER_16P16 adder0_l0(.A(adder0_in_a_w_l0), .B(adder0_in_b_w_l0), .CE(adder_en_l0), .S(add_res0_w_l0), .clk(clk), .SCLR('d0));
+ADDER_16P16 adder1_l0(.A(adder1_in_a_w_l0), .B(adder1_in_b_w_l0), .CE(adder_en_l0), .S(add_res1_w_l0), .clk(clk), .SCLR('d0));
+ADDER_16P16 adder2_l0(.A(adder2_in_a_w_l0), .B(adder2_in_b_w_l0), .CE(adder_en_l0), .S(add_res2_w_l0), .clk(clk), .SCLR('d0));
+ADDER_16P16 adder3_l0(.A(adder3_in_a_w_l0), .B(adder3_in_b_w_l0), .CE(adder_en_l0), .S(add_res3_w_l0), .clk(clk), .SCLR('d0));
+ADDER_16P16 adder4_l0(.A(adder4_in_a_w_l0), .B(adder4_in_b_w_l0), .CE(adder_en_l0), .S(add_res4_w_l0), .clk(clk), .SCLR('d0));
+ADDER_16P16 adder5_l0(.A(adder5_in_a_w_l0), .B(adder5_in_b_w_l0), .CE(adder_en_l0), .S(add_res5_w_l0), .clk(clk), .SCLR('d0));
 
 
 
@@ -186,7 +186,7 @@ end
 // use busy_flag to control add_res_v
 always @ (busy_flag_l0) begin
     if(!rst) begin
-        addres_v_l0 = busy_flag_l0[2];
+        addres_v_l0 = busy_flag_l0[1];
     end
     else begin
         addres_v_l0 = 'd0;
@@ -361,53 +361,12 @@ end
 // use busy_flag to control add_res_v
 always @ (busy_flag_l1) begin
     if(!rst) begin
-        addres_v_l1 = busy_flag_l1[2];
+        addres_v_l1 = busy_flag_l1[1];
     end
     else begin
         addres_v_l1 = 'd0;
     end
 end
-
-
-
-
-// store last data in adder-tree's layer 1
-always @ (posedge clk) begin
-    if(!rst) begin
-        last_input_clk4 <= last_input_clk3;
-    end
-    else begin
-        last_input_clk4 <= 'd0;
-    end
-end
-
-always @ (posedge clk) begin
-    if(!rst) begin
-        last_input_clk5 <= last_input_clk4;
-    end
-    else begin
-        last_input_clk5 <= 'd0;
-    end
-end
-
-always @ (posedge clk) begin
-    if(!rst) begin
-        last_input_clk6 <= last_input_clk5;
-    end
-    else begin
-        last_input_clk6 <= 'd0;
-    end
-end
-
-always @ (posedge clk) begin
-    if(!rst) begin
-        last_input_clk7 <= last_input_clk6;
-    end
-    else begin
-        last_input_clk7 <= 'd0;
-    end
-end
-
 
 
 
@@ -436,9 +395,9 @@ end
 
 
 
-ADDER_16P16 adder0_l1(.A(adder0_in_a_w_l1), .B(adder0_in_b_w_l1), .CE(adder_en_l1), .S(add_res0_w_l1), .clk(clk));
-ADDER_16P16 adder1_l1(.A(adder1_in_a_w_l1), .B(adder1_in_b_w_l1), .CE(adder_en_l1), .S(add_res1_w_l1), .clk(clk));
-ADDER_16P16 adder2_l1(.A(adder2_in_a_w_l1), .B(adder2_in_b_w_l1), .CE(adder_en_l1), .S(add_res2_w_l1), .clk(clk));
+ADDER_16P16 adder0_l1(.A(adder0_in_a_w_l1), .B(adder0_in_b_w_l1), .CE(adder_en_l1), .S(add_res0_w_l1), .clk(clk), .SCLR('d0));
+ADDER_16P16 adder1_l1(.A(adder1_in_a_w_l1), .B(adder1_in_b_w_l1), .CE(adder_en_l1), .S(add_res1_w_l1), .clk(clk), .SCLR('d0));
+ADDER_16P16 adder2_l1(.A(adder2_in_a_w_l1), .B(adder2_in_b_w_l1), .CE(adder_en_l1), .S(add_res2_w_l1), .clk(clk), .SCLR('d0));
 
 
 
@@ -470,7 +429,7 @@ assign adder0_in_a_w_l2 = add_res0_l1;
 assign adder1_in_a_w_l2 = add_res1_l1;
 assign adder0_in_b_w_l2 = add_res2_l1;
 // put last data into process stream
-assign adder1_in_b_w_l2 = {16'b0, last_input_clk7};
+assign adder1_in_b_w_l2 = {16'b0, last_input_clk3};
 
 
 wire     [31:0]                          add_res0_w_l2;
@@ -511,7 +470,7 @@ end
 // use busy_flag to control add_res_v
 always @ (busy_flag_l2) begin
     if(!rst) begin
-        addres_v_l2 = busy_flag_l2[2];
+        addres_v_l2 = busy_flag_l2[1];
     end
     else begin
         addres_v_l2 = 'd0;
@@ -542,8 +501,8 @@ end
 
 
 
-ADDER_16P16 adder0_l2(.A(adder0_in_a_w_l2), .B(adder0_in_b_w_l2), .CE(adder_en_l2), .S(add_res0_w_l2), .clk(clk));
-ADDER_16P16 adder1_l2(.A(adder1_in_a_w_l2), .B(adder1_in_b_w_l2), .CE(adder_en_l2), .S(add_res1_w_l2), .clk(clk));
+ADDER_16P16 adder0_l2(.A(adder0_in_a_w_l2), .B(adder0_in_b_w_l2), .CE(adder_en_l2), .S(add_res0_w_l2), .clk(clk), .SCLR('d0));
+ADDER_16P16 adder1_l2(.A(adder1_in_a_w_l2), .B(adder1_in_b_w_l2), .CE(adder_en_l2), .S(add_res1_w_l2), .clk(clk), .SCLR('d0));
 
 
 
@@ -608,7 +567,7 @@ end
 // use busy_flag to control add_res_v
 always @ (busy_flag_l3) begin
     if(!rst) begin
-        addres_v_l3 = busy_flag_l3[2];
+        addres_v_l3 = busy_flag_l3[1];
     end
     else begin
         addres_v_l3 = 'd0;
@@ -636,7 +595,7 @@ end
 
 
 
-ADDER_16P16 adder0_l3(.A(adder0_in_a_w_l3), .B(adder0_in_b_w_l3), .CE(adder_en_l3), .S(add_res0_w_l3), .clk(clk));
+ADDER_16P16 adder0_l3(.A(adder0_in_a_w_l3), .B(adder0_in_b_w_l3), .CE(adder_en_l3), .S(add_res0_w_l3), .clk(clk), .SCLR('d0));
 
 
 
@@ -701,7 +660,7 @@ end
 // use busy_flag to control add_res_v
 always @ (busy_flag_l4) begin
     if(!rst) begin
-        addres_v_l4 = busy_flag_l4[2];
+        addres_v_l4 = busy_flag_l4[1];
     end
     else begin
         addres_v_l4 = 'd0;
@@ -713,7 +672,7 @@ assign add_res_v_w = addres_v_l4;
 
 
 
-ADDER_16P16 adder0_l4(.A(adder0_in_a_w_l4), .B(adder0_in_b_w_l4), .CE(adder_en_l4), .S(add_res0_w_l4), .clk(clk));
+ADDER_16P16 adder0_l4(.A(adder0_in_a_w_l4), .B(adder0_in_b_w_l4), .CE(adder_en_l4), .S(add_res0_w_l4), .clk(clk), .SCLR('d0));
 
 
 

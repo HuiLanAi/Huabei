@@ -1,0 +1,7 @@
+Running: xsim.dir/clk_rst_behav/xsimk.exe -simmode gui -wdb clk_rst_behav.wdb -simrunnum 0 -socket 52401
+Design successfully loaded
+Design Loading Memory Usage: 9196 KB (Peak: 9196 KB)
+Design Loading CPU Usage: 77 ms
+Simulation completed
+Simulation Memory Usage: 10848 KB (Peak: 10848 KB)
+Simulation CPU Usage: 202 ms
