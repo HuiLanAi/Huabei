@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/IN_FEA_BRAM_synth_1'
+HD_PWD='B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log IN_FEA_BRAM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source IN_FEA_BRAM.tcl
+EAStep vivado -log clk_rst.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_rst.tcl

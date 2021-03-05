@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Thu Mar  4 10:25:18 2021
+// Date        : Thu Mar  4 10:25:17 2021
 // Host        : DESKTOP-P4UPRAE running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/IN_FEA_BRAM/IN_FEA_BRAM_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top IN_FEA_BRAM -prefix
+//               IN_FEA_BRAM_ IN_FEA_BRAM_sim_netlist.v
 // Design      : IN_FEA_BRAM
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -197,7 +197,6 @@ module IN_FEA_BRAM
         .web(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module IN_FEA_BRAM_blk_mem_gen_generic_cstr
    (douta,
     clka,
@@ -272,7 +271,6 @@ module IN_FEA_BRAM_blk_mem_gen_generic_cstr
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module IN_FEA_BRAM_blk_mem_gen_prim_width
    (douta,
     clka,
@@ -482,7 +480,6 @@ module IN_FEA_BRAM_blk_mem_gen_prim_width__parameterized4
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
 module IN_FEA_BRAM_blk_mem_gen_prim_wrapper_init
    (douta,
     clka,
@@ -2152,7 +2149,6 @@ module IN_FEA_BRAM_blk_mem_gen_prim_wrapper_init__parameterized4
         .WEBWE({1'b0,1'b0,1'b0,1'b0,wea,wea,wea,wea}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module IN_FEA_BRAM_blk_mem_gen_top
    (douta,
     clka,
@@ -2212,7 +2208,7 @@ endmodule
 (* C_WEA_WIDTH = "1" *) (* C_WEB_WIDTH = "1" *) (* C_WRITE_DEPTH_A = "450" *) 
 (* C_WRITE_DEPTH_B = "450" *) (* C_WRITE_MODE_A = "WRITE_FIRST" *) (* C_WRITE_MODE_B = "WRITE_FIRST" *) 
 (* C_WRITE_WIDTH_A = "400" *) (* C_WRITE_WIDTH_B = "400" *) (* C_XDEVICEFAMILY = "kintexu" *) 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_2" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* downgradeipidentifiedwarnings = "yes" *) 
 module IN_FEA_BRAM_blk_mem_gen_v8_4_2
    (clka,
     rsta,
@@ -3204,7 +3200,6 @@ module IN_FEA_BRAM_blk_mem_gen_v8_4_2
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_2_synth" *) 
 module IN_FEA_BRAM_blk_mem_gen_v8_4_2_synth
    (douta,
     clka,

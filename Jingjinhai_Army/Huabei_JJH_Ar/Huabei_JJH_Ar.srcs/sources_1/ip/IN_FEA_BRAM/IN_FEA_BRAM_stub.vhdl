@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Thu Mar  4 10:25:18 2021
+-- Date        : Thu Mar  4 10:25:17 2021
 -- Host        : DESKTOP-P4UPRAE running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/IN_FEA_BRAM/IN_FEA_BRAM_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top IN_FEA_BRAM -prefix
+--               IN_FEA_BRAM_ IN_FEA_BRAM_stub.vhdl
 -- Design      : IN_FEA_BRAM
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xcku115-flvd1517-1-i

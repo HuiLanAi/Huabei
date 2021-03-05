@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Fri Mar  5 09:29:44 2021
+-- Date        : Fri Mar  5 09:29:43 2021
 -- Host        : DESKTOP-P4UPRAE running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/A_MATRIX_BRAM/A_MATRIX_BRAM_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top A_MATRIX_BRAM -prefix
+--               A_MATRIX_BRAM_ A_MATRIX_BRAM_sim_netlist.vhdl
 -- Design      : A_MATRIX_BRAM
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -24,8 +24,6 @@ entity A_MATRIX_BRAM_blk_mem_gen_prim_wrapper_init is
     dina : in STD_LOGIC_VECTOR ( 71 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of A_MATRIX_BRAM_blk_mem_gen_prim_wrapper_init : entity is "blk_mem_gen_prim_wrapper_init";
 end A_MATRIX_BRAM_blk_mem_gen_prim_wrapper_init;
 
 architecture STRUCTURE of A_MATRIX_BRAM_blk_mem_gen_prim_wrapper_init is
@@ -1918,8 +1916,6 @@ entity A_MATRIX_BRAM_blk_mem_gen_prim_width is
     dina : in STD_LOGIC_VECTOR ( 71 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of A_MATRIX_BRAM_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end A_MATRIX_BRAM_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of A_MATRIX_BRAM_blk_mem_gen_prim_width is
@@ -2104,8 +2100,6 @@ entity A_MATRIX_BRAM_blk_mem_gen_generic_cstr is
     dina : in STD_LOGIC_VECTOR ( 399 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of A_MATRIX_BRAM_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end A_MATRIX_BRAM_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of A_MATRIX_BRAM_blk_mem_gen_generic_cstr is
@@ -2185,8 +2179,6 @@ entity A_MATRIX_BRAM_blk_mem_gen_top is
     dina : in STD_LOGIC_VECTOR ( 399 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of A_MATRIX_BRAM_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end A_MATRIX_BRAM_blk_mem_gen_top;
 
 architecture STRUCTURE of A_MATRIX_BRAM_blk_mem_gen_top is
@@ -2216,8 +2208,6 @@ entity A_MATRIX_BRAM_blk_mem_gen_v8_4_2_synth is
     dina : in STD_LOGIC_VECTOR ( 399 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of A_MATRIX_BRAM_blk_mem_gen_v8_4_2_synth : entity is "blk_mem_gen_v8_4_2_synth";
 end A_MATRIX_BRAM_blk_mem_gen_v8_4_2_synth;
 
 architecture STRUCTURE of A_MATRIX_BRAM_blk_mem_gen_v8_4_2_synth is
@@ -2453,8 +2443,6 @@ entity A_MATRIX_BRAM_blk_mem_gen_v8_4_2 is
   attribute C_WRITE_WIDTH_B of A_MATRIX_BRAM_blk_mem_gen_v8_4_2 : entity is 400;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of A_MATRIX_BRAM_blk_mem_gen_v8_4_2 : entity is "kintexu";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of A_MATRIX_BRAM_blk_mem_gen_v8_4_2 : entity is "blk_mem_gen_v8_4_2";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of A_MATRIX_BRAM_blk_mem_gen_v8_4_2 : entity is "yes";
 end A_MATRIX_BRAM_blk_mem_gen_v8_4_2;

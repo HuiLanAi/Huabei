@@ -272,6 +272,11 @@ CONV1_WEI_63X3 conv1_wei_64_ocx_3ic(
 );
 
 
+
+wire    [1023:0]                    para_mult_res;
+wire                                para_mult_res_v;
+
+
 PARAMULT_1_64 parallel_mult_1_64(
     .clk                        (clk),
     .rst                        (rst),
@@ -279,7 +284,20 @@ PARAMULT_1_64 parallel_mult_1_64(
     .vecdata_v                  (conv1_wei_v_w),
     .halt                       (halt),
     .in_veca_data               (conv1_wei_w),
-    .in_sig_data                (fea_data_4conv1)
+    .in_sig_data                (fea_data_4conv1),
+    .mult_res_w                 (para_mult_res),
+    .mult_res_v_w               (para_mult_res_v)
+);
+
+
+
+
+REGHEAP_SELFADD_64x16b  chn_selfadd_reg_array(
+    .clk                        (clk),
+    .rst                        (rst),
+    .data_v                     (para_mult_res_v),
+    .in_data                    (para_mult_res),
+    .usr_rst                    ('d0)
 );
 
 
