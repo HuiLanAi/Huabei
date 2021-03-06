@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Fri Mar  5 21:44:39 2021
+// Date        : Sat Mar  6 13:55:47 2021
 // Host        : DESKTOP-P4UPRAE running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/CONV1_WEI_64BX3X3/CONV1_WEI_64BX3X3_sim_netlist.v
@@ -127,7 +127,7 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
 
   wire \<const0> ;
   wire [3:0]a;
-  wire [505:504]\^spo ;
+  wire [504:504]\^spo ;
 
   assign dpo[511] = \<const0> ;
   assign dpo[510] = \<const0> ;
@@ -1671,7 +1671,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[508] = \<const0> ;
   assign spo[507] = \<const0> ;
   assign spo[506] = \<const0> ;
-  assign spo[505:504] = \^spo [505:504];
+  assign spo[505] = \<const0> ;
+  assign spo[504] = \^spo [504];
   assign spo[503] = \<const0> ;
   assign spo[502] = \<const0> ;
   assign spo[501] = \<const0> ;
@@ -1686,7 +1687,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[492] = \<const0> ;
   assign spo[491] = \<const0> ;
   assign spo[490] = \<const0> ;
-  assign spo[489:488] = \^spo [505:504];
+  assign spo[489] = \<const0> ;
+  assign spo[488] = \^spo [504];
   assign spo[487] = \<const0> ;
   assign spo[486] = \<const0> ;
   assign spo[485] = \<const0> ;
@@ -1701,7 +1703,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[476] = \<const0> ;
   assign spo[475] = \<const0> ;
   assign spo[474] = \<const0> ;
-  assign spo[473:472] = \^spo [505:504];
+  assign spo[473] = \<const0> ;
+  assign spo[472] = \^spo [504];
   assign spo[471] = \<const0> ;
   assign spo[470] = \<const0> ;
   assign spo[469] = \<const0> ;
@@ -1716,7 +1719,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[460] = \<const0> ;
   assign spo[459] = \<const0> ;
   assign spo[458] = \<const0> ;
-  assign spo[457:456] = \^spo [505:504];
+  assign spo[457] = \<const0> ;
+  assign spo[456] = \^spo [504];
   assign spo[455] = \<const0> ;
   assign spo[454] = \<const0> ;
   assign spo[453] = \<const0> ;
@@ -1731,7 +1735,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[444] = \<const0> ;
   assign spo[443] = \<const0> ;
   assign spo[442] = \<const0> ;
-  assign spo[441:440] = \^spo [505:504];
+  assign spo[441] = \<const0> ;
+  assign spo[440] = \^spo [504];
   assign spo[439] = \<const0> ;
   assign spo[438] = \<const0> ;
   assign spo[437] = \<const0> ;
@@ -1746,7 +1751,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[428] = \<const0> ;
   assign spo[427] = \<const0> ;
   assign spo[426] = \<const0> ;
-  assign spo[425:424] = \^spo [505:504];
+  assign spo[425] = \<const0> ;
+  assign spo[424] = \^spo [504];
   assign spo[423] = \<const0> ;
   assign spo[422] = \<const0> ;
   assign spo[421] = \<const0> ;
@@ -1761,7 +1767,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[412] = \<const0> ;
   assign spo[411] = \<const0> ;
   assign spo[410] = \<const0> ;
-  assign spo[409:408] = \^spo [505:504];
+  assign spo[409] = \<const0> ;
+  assign spo[408] = \^spo [504];
   assign spo[407] = \<const0> ;
   assign spo[406] = \<const0> ;
   assign spo[405] = \<const0> ;
@@ -1776,7 +1783,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[396] = \<const0> ;
   assign spo[395] = \<const0> ;
   assign spo[394] = \<const0> ;
-  assign spo[393:392] = \^spo [505:504];
+  assign spo[393] = \<const0> ;
+  assign spo[392] = \^spo [504];
   assign spo[391] = \<const0> ;
   assign spo[390] = \<const0> ;
   assign spo[389] = \<const0> ;
@@ -1791,7 +1799,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[380] = \<const0> ;
   assign spo[379] = \<const0> ;
   assign spo[378] = \<const0> ;
-  assign spo[377:376] = \^spo [505:504];
+  assign spo[377] = \<const0> ;
+  assign spo[376] = \^spo [504];
   assign spo[375] = \<const0> ;
   assign spo[374] = \<const0> ;
   assign spo[373] = \<const0> ;
@@ -1806,7 +1815,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[364] = \<const0> ;
   assign spo[363] = \<const0> ;
   assign spo[362] = \<const0> ;
-  assign spo[361:360] = \^spo [505:504];
+  assign spo[361] = \<const0> ;
+  assign spo[360] = \^spo [504];
   assign spo[359] = \<const0> ;
   assign spo[358] = \<const0> ;
   assign spo[357] = \<const0> ;
@@ -1821,7 +1831,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[348] = \<const0> ;
   assign spo[347] = \<const0> ;
   assign spo[346] = \<const0> ;
-  assign spo[345:344] = \^spo [505:504];
+  assign spo[345] = \<const0> ;
+  assign spo[344] = \^spo [504];
   assign spo[343] = \<const0> ;
   assign spo[342] = \<const0> ;
   assign spo[341] = \<const0> ;
@@ -1836,7 +1847,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[332] = \<const0> ;
   assign spo[331] = \<const0> ;
   assign spo[330] = \<const0> ;
-  assign spo[329:328] = \^spo [505:504];
+  assign spo[329] = \<const0> ;
+  assign spo[328] = \^spo [504];
   assign spo[327] = \<const0> ;
   assign spo[326] = \<const0> ;
   assign spo[325] = \<const0> ;
@@ -1851,7 +1863,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[316] = \<const0> ;
   assign spo[315] = \<const0> ;
   assign spo[314] = \<const0> ;
-  assign spo[313:312] = \^spo [505:504];
+  assign spo[313] = \<const0> ;
+  assign spo[312] = \^spo [504];
   assign spo[311] = \<const0> ;
   assign spo[310] = \<const0> ;
   assign spo[309] = \<const0> ;
@@ -1866,7 +1879,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[300] = \<const0> ;
   assign spo[299] = \<const0> ;
   assign spo[298] = \<const0> ;
-  assign spo[297:296] = \^spo [505:504];
+  assign spo[297] = \<const0> ;
+  assign spo[296] = \^spo [504];
   assign spo[295] = \<const0> ;
   assign spo[294] = \<const0> ;
   assign spo[293] = \<const0> ;
@@ -1881,7 +1895,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[284] = \<const0> ;
   assign spo[283] = \<const0> ;
   assign spo[282] = \<const0> ;
-  assign spo[281:280] = \^spo [505:504];
+  assign spo[281] = \<const0> ;
+  assign spo[280] = \^spo [504];
   assign spo[279] = \<const0> ;
   assign spo[278] = \<const0> ;
   assign spo[277] = \<const0> ;
@@ -1896,7 +1911,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[268] = \<const0> ;
   assign spo[267] = \<const0> ;
   assign spo[266] = \<const0> ;
-  assign spo[265:264] = \^spo [505:504];
+  assign spo[265] = \<const0> ;
+  assign spo[264] = \^spo [504];
   assign spo[263] = \<const0> ;
   assign spo[262] = \<const0> ;
   assign spo[261] = \<const0> ;
@@ -1911,7 +1927,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[252] = \<const0> ;
   assign spo[251] = \<const0> ;
   assign spo[250] = \<const0> ;
-  assign spo[249:248] = \^spo [505:504];
+  assign spo[249] = \<const0> ;
+  assign spo[248] = \^spo [504];
   assign spo[247] = \<const0> ;
   assign spo[246] = \<const0> ;
   assign spo[245] = \<const0> ;
@@ -1926,7 +1943,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[236] = \<const0> ;
   assign spo[235] = \<const0> ;
   assign spo[234] = \<const0> ;
-  assign spo[233:232] = \^spo [505:504];
+  assign spo[233] = \<const0> ;
+  assign spo[232] = \^spo [504];
   assign spo[231] = \<const0> ;
   assign spo[230] = \<const0> ;
   assign spo[229] = \<const0> ;
@@ -1941,7 +1959,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[220] = \<const0> ;
   assign spo[219] = \<const0> ;
   assign spo[218] = \<const0> ;
-  assign spo[217:216] = \^spo [505:504];
+  assign spo[217] = \<const0> ;
+  assign spo[216] = \^spo [504];
   assign spo[215] = \<const0> ;
   assign spo[214] = \<const0> ;
   assign spo[213] = \<const0> ;
@@ -1956,7 +1975,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[204] = \<const0> ;
   assign spo[203] = \<const0> ;
   assign spo[202] = \<const0> ;
-  assign spo[201:200] = \^spo [505:504];
+  assign spo[201] = \<const0> ;
+  assign spo[200] = \^spo [504];
   assign spo[199] = \<const0> ;
   assign spo[198] = \<const0> ;
   assign spo[197] = \<const0> ;
@@ -1971,7 +1991,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[188] = \<const0> ;
   assign spo[187] = \<const0> ;
   assign spo[186] = \<const0> ;
-  assign spo[185:184] = \^spo [505:504];
+  assign spo[185] = \<const0> ;
+  assign spo[184] = \^spo [504];
   assign spo[183] = \<const0> ;
   assign spo[182] = \<const0> ;
   assign spo[181] = \<const0> ;
@@ -1986,7 +2007,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[172] = \<const0> ;
   assign spo[171] = \<const0> ;
   assign spo[170] = \<const0> ;
-  assign spo[169:168] = \^spo [505:504];
+  assign spo[169] = \<const0> ;
+  assign spo[168] = \^spo [504];
   assign spo[167] = \<const0> ;
   assign spo[166] = \<const0> ;
   assign spo[165] = \<const0> ;
@@ -2001,7 +2023,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[156] = \<const0> ;
   assign spo[155] = \<const0> ;
   assign spo[154] = \<const0> ;
-  assign spo[153:152] = \^spo [505:504];
+  assign spo[153] = \<const0> ;
+  assign spo[152] = \^spo [504];
   assign spo[151] = \<const0> ;
   assign spo[150] = \<const0> ;
   assign spo[149] = \<const0> ;
@@ -2016,7 +2039,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[140] = \<const0> ;
   assign spo[139] = \<const0> ;
   assign spo[138] = \<const0> ;
-  assign spo[137:136] = \^spo [505:504];
+  assign spo[137] = \<const0> ;
+  assign spo[136] = \^spo [504];
   assign spo[135] = \<const0> ;
   assign spo[134] = \<const0> ;
   assign spo[133] = \<const0> ;
@@ -2031,7 +2055,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[124] = \<const0> ;
   assign spo[123] = \<const0> ;
   assign spo[122] = \<const0> ;
-  assign spo[121:120] = \^spo [505:504];
+  assign spo[121] = \<const0> ;
+  assign spo[120] = \^spo [504];
   assign spo[119] = \<const0> ;
   assign spo[118] = \<const0> ;
   assign spo[117] = \<const0> ;
@@ -2046,7 +2071,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[108] = \<const0> ;
   assign spo[107] = \<const0> ;
   assign spo[106] = \<const0> ;
-  assign spo[105:104] = \^spo [505:504];
+  assign spo[105] = \<const0> ;
+  assign spo[104] = \^spo [504];
   assign spo[103] = \<const0> ;
   assign spo[102] = \<const0> ;
   assign spo[101] = \<const0> ;
@@ -2061,7 +2087,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[92] = \<const0> ;
   assign spo[91] = \<const0> ;
   assign spo[90] = \<const0> ;
-  assign spo[89:88] = \^spo [505:504];
+  assign spo[89] = \<const0> ;
+  assign spo[88] = \^spo [504];
   assign spo[87] = \<const0> ;
   assign spo[86] = \<const0> ;
   assign spo[85] = \<const0> ;
@@ -2076,7 +2103,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[76] = \<const0> ;
   assign spo[75] = \<const0> ;
   assign spo[74] = \<const0> ;
-  assign spo[73:72] = \^spo [505:504];
+  assign spo[73] = \<const0> ;
+  assign spo[72] = \^spo [504];
   assign spo[71] = \<const0> ;
   assign spo[70] = \<const0> ;
   assign spo[69] = \<const0> ;
@@ -2091,7 +2119,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[60] = \<const0> ;
   assign spo[59] = \<const0> ;
   assign spo[58] = \<const0> ;
-  assign spo[57:56] = \^spo [505:504];
+  assign spo[57] = \<const0> ;
+  assign spo[56] = \^spo [504];
   assign spo[55] = \<const0> ;
   assign spo[54] = \<const0> ;
   assign spo[53] = \<const0> ;
@@ -2106,7 +2135,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[44] = \<const0> ;
   assign spo[43] = \<const0> ;
   assign spo[42] = \<const0> ;
-  assign spo[41:40] = \^spo [505:504];
+  assign spo[41] = \<const0> ;
+  assign spo[40] = \^spo [504];
   assign spo[39] = \<const0> ;
   assign spo[38] = \<const0> ;
   assign spo[37] = \<const0> ;
@@ -2121,7 +2151,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[28] = \<const0> ;
   assign spo[27] = \<const0> ;
   assign spo[26] = \<const0> ;
-  assign spo[25:24] = \^spo [505:504];
+  assign spo[25] = \<const0> ;
+  assign spo[24] = \^spo [504];
   assign spo[23] = \<const0> ;
   assign spo[22] = \<const0> ;
   assign spo[21] = \<const0> ;
@@ -2136,7 +2167,8 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[12] = \<const0> ;
   assign spo[11] = \<const0> ;
   assign spo[10] = \<const0> ;
-  assign spo[9:8] = \^spo [505:504];
+  assign spo[9] = \<const0> ;
+  assign spo[8] = \^spo [504];
   assign spo[7] = \<const0> ;
   assign spo[6] = \<const0> ;
   assign spo[5] = \<const0> ;
@@ -2147,53 +2179,13 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[0] = \<const0> ;
   GND GND
        (.G(\<const0> ));
-  CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12_synth \synth_options.dist_mem_inst 
-       (.a(a),
-        .spo(\^spo ));
-endmodule
-
-(* ORIG_REF_NAME = "dist_mem_gen_v8_0_12_synth" *) 
-module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12_synth
-   (spo,
-    a);
-  output [1:0]spo;
-  input [3:0]a;
-
-  wire [3:0]a;
-  wire [1:0]spo;
-
-  CONV1_WEI_64BX3X3_rom \gen_rom.rom_inst 
-       (.a(a),
-        .spo(spo));
-endmodule
-
-(* ORIG_REF_NAME = "rom" *) 
-module CONV1_WEI_64BX3X3_rom
-   (spo,
-    a);
-  output [1:0]spo;
-  input [3:0]a;
-
-  wire [3:0]a;
-  wire [1:0]spo;
-
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT3 #(
     .INIT(8'h01)) 
     \spo[8]_INST_0 
-       (.I0(a[3]),
-        .I1(a[2]),
-        .I2(a[0]),
-        .O(spo[0]));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT4 #(
-    .INIT(16'h0102)) 
-    \spo[9]_INST_0 
        (.I0(a[1]),
-        .I1(a[3]),
-        .I2(a[2]),
-        .I3(a[0]),
-        .O(spo[1]));
+        .I1(a[2]),
+        .I2(a[3]),
+        .O(\^spo ));
 endmodule
 `ifndef GLBL
 `define GLBL

@@ -35,7 +35,7 @@ reg     [15:0]                                  in_b;
 
 
 always @ (posedge clk) begin
-    if(!rst && !usr_rst) begin
+    if(!rst) begin
         if(data_v) begin
             in_a <= in_data_a;
             in_b <= in_data_b;
@@ -51,7 +51,7 @@ end
 
 
 always @ (posedge clk) begin
-    if(!rst && !usr_rst) begin
+    if(!rst) begin
         if(addres_v) begin
             reg_a <= addres[15:0];
             reg_b <= addres[31:16];
@@ -86,7 +86,7 @@ wire    [31:0] adder0_in_a_w;
 wire    [31:0] adder0_in_b_w;
 
 
-assign adder0_in_a_w = {addres[31:16], addres[15:0]};
+assign adder0_in_a_w = usr_rst ? 32'b0 : {addres[31:16], addres[15:0]};
 // assign adder0_in_a_w = {reg_b, reg_a};
 assign adder0_in_b_w = {in_data_b, in_data_a};
 
@@ -96,7 +96,7 @@ wire     [31:0]                          addres;
 
 // use shift reg to control adder_en and add_res_v
 always @ (posedge clk) begin
-    if(!rst && !usr_rst) begin
+    if(!rst) begin
         if(data_v) begin
             busy_flag <= (busy_flag << 'd1) + 'b1;
         end
@@ -112,9 +112,9 @@ end
 
 
 // use busy_flag to control adder_en
-always @ (busy_flag) begin
-    if(!rst && !usr_rst) begin
-        adder_en = busy_flag[0];
+always @ (busy_flag or data_v) begin
+    if(!rst) begin
+        adder_en = busy_flag[0] || data_v;
     end
     else begin
         adder_en = 'd0;
@@ -124,7 +124,7 @@ end
 
 // use busy_flag to control add_res_v
 always @ (busy_flag) begin
-    if(!rst && !usr_rst) begin
+    if(!rst) begin
         addres_v = busy_flag[2];
     end
     else begin
@@ -137,7 +137,7 @@ assign add_res_v_w = addres_v;
 
 
 
-ADDER_16P16 adder(.A(adder0_in_a_w), .B(adder0_in_b_w), .CE(adder_en), .S(addres), .clk(clk), .SCLR(usr_rst || rst));
+ADDER_16P16 adder(.A(adder0_in_a_w), .B(adder0_in_b_w), .CE(adder_en), .S(addres), .clk(clk), .SCLR(rst));
 
 
 

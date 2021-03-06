@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Mar  5 21:44:08 2021
-# Process ID: 13096
+# Start of session at: Sat Mar  6 13:55:07 2021
+# Process ID: 17328
 # Current directory: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/CONV1_WEI_64BX3X3_synth_1
 # Command line: vivado.exe -log CONV1_WEI_64BX3X3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CONV1_WEI_64BX3X3.tcl
 # Log file: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/CONV1_WEI_64BX3X3_synth_1/CONV1_WEI_64BX3X3.vds

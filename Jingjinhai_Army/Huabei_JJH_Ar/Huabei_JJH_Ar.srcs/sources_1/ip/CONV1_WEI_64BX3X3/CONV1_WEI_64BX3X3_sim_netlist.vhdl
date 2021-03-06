@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Fri Mar  5 21:44:39 2021
+-- Date        : Sat Mar  6 13:55:47 2021
 -- Host        : DESKTOP-P4UPRAE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/CONV1_WEI_64BX3X3/CONV1_WEI_64BX3X3_sim_netlist.vhdl
@@ -10,67 +10,6 @@
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xcku115-flvd1517-1-i
 -- --------------------------------------------------------------------------------
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity CONV1_WEI_64BX3X3_rom is
-  port (
-    spo : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    a : in STD_LOGIC_VECTOR ( 3 downto 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of CONV1_WEI_64BX3X3_rom : entity is "rom";
-end CONV1_WEI_64BX3X3_rom;
-
-architecture STRUCTURE of CONV1_WEI_64BX3X3_rom is
-  attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \spo[8]_INST_0\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \spo[9]_INST_0\ : label is "soft_lutpair0";
-begin
-\spo[8]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"01"
-    )
-        port map (
-      I0 => a(3),
-      I1 => a(2),
-      I2 => a(0),
-      O => spo(0)
-    );
-\spo[9]_INST_0\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0102"
-    )
-        port map (
-      I0 => a(1),
-      I1 => a(3),
-      I2 => a(2),
-      I3 => a(0),
-      O => spo(1)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12_synth is
-  port (
-    spo : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    a : in STD_LOGIC_VECTOR ( 3 downto 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12_synth : entity is "dist_mem_gen_v8_0_12_synth";
-end CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12_synth;
-
-architecture STRUCTURE of CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12_synth is
-begin
-\gen_rom.rom_inst\: entity work.CONV1_WEI_64BX3X3_rom
-     port map (
-      a(3 downto 0) => a(3 downto 0),
-      spo(1 downto 0) => spo(1 downto 0)
-    );
-end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
@@ -165,7 +104,7 @@ end CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12;
 
 architecture STRUCTURE of CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12 is
   signal \<const0>\ : STD_LOGIC;
-  signal \^spo\ : STD_LOGIC_VECTOR ( 505 downto 504 );
+  signal \^spo\ : STD_LOGIC_VECTOR ( 504 to 504 );
 begin
   dpo(511) <= \<const0>\;
   dpo(510) <= \<const0>\;
@@ -1709,7 +1648,8 @@ begin
   spo(508) <= \<const0>\;
   spo(507) <= \<const0>\;
   spo(506) <= \<const0>\;
-  spo(505 downto 504) <= \^spo\(505 downto 504);
+  spo(505) <= \<const0>\;
+  spo(504) <= \^spo\(504);
   spo(503) <= \<const0>\;
   spo(502) <= \<const0>\;
   spo(501) <= \<const0>\;
@@ -1724,7 +1664,8 @@ begin
   spo(492) <= \<const0>\;
   spo(491) <= \<const0>\;
   spo(490) <= \<const0>\;
-  spo(489 downto 488) <= \^spo\(505 downto 504);
+  spo(489) <= \<const0>\;
+  spo(488) <= \^spo\(504);
   spo(487) <= \<const0>\;
   spo(486) <= \<const0>\;
   spo(485) <= \<const0>\;
@@ -1739,7 +1680,8 @@ begin
   spo(476) <= \<const0>\;
   spo(475) <= \<const0>\;
   spo(474) <= \<const0>\;
-  spo(473 downto 472) <= \^spo\(505 downto 504);
+  spo(473) <= \<const0>\;
+  spo(472) <= \^spo\(504);
   spo(471) <= \<const0>\;
   spo(470) <= \<const0>\;
   spo(469) <= \<const0>\;
@@ -1754,7 +1696,8 @@ begin
   spo(460) <= \<const0>\;
   spo(459) <= \<const0>\;
   spo(458) <= \<const0>\;
-  spo(457 downto 456) <= \^spo\(505 downto 504);
+  spo(457) <= \<const0>\;
+  spo(456) <= \^spo\(504);
   spo(455) <= \<const0>\;
   spo(454) <= \<const0>\;
   spo(453) <= \<const0>\;
@@ -1769,7 +1712,8 @@ begin
   spo(444) <= \<const0>\;
   spo(443) <= \<const0>\;
   spo(442) <= \<const0>\;
-  spo(441 downto 440) <= \^spo\(505 downto 504);
+  spo(441) <= \<const0>\;
+  spo(440) <= \^spo\(504);
   spo(439) <= \<const0>\;
   spo(438) <= \<const0>\;
   spo(437) <= \<const0>\;
@@ -1784,7 +1728,8 @@ begin
   spo(428) <= \<const0>\;
   spo(427) <= \<const0>\;
   spo(426) <= \<const0>\;
-  spo(425 downto 424) <= \^spo\(505 downto 504);
+  spo(425) <= \<const0>\;
+  spo(424) <= \^spo\(504);
   spo(423) <= \<const0>\;
   spo(422) <= \<const0>\;
   spo(421) <= \<const0>\;
@@ -1799,7 +1744,8 @@ begin
   spo(412) <= \<const0>\;
   spo(411) <= \<const0>\;
   spo(410) <= \<const0>\;
-  spo(409 downto 408) <= \^spo\(505 downto 504);
+  spo(409) <= \<const0>\;
+  spo(408) <= \^spo\(504);
   spo(407) <= \<const0>\;
   spo(406) <= \<const0>\;
   spo(405) <= \<const0>\;
@@ -1814,7 +1760,8 @@ begin
   spo(396) <= \<const0>\;
   spo(395) <= \<const0>\;
   spo(394) <= \<const0>\;
-  spo(393 downto 392) <= \^spo\(505 downto 504);
+  spo(393) <= \<const0>\;
+  spo(392) <= \^spo\(504);
   spo(391) <= \<const0>\;
   spo(390) <= \<const0>\;
   spo(389) <= \<const0>\;
@@ -1829,7 +1776,8 @@ begin
   spo(380) <= \<const0>\;
   spo(379) <= \<const0>\;
   spo(378) <= \<const0>\;
-  spo(377 downto 376) <= \^spo\(505 downto 504);
+  spo(377) <= \<const0>\;
+  spo(376) <= \^spo\(504);
   spo(375) <= \<const0>\;
   spo(374) <= \<const0>\;
   spo(373) <= \<const0>\;
@@ -1844,7 +1792,8 @@ begin
   spo(364) <= \<const0>\;
   spo(363) <= \<const0>\;
   spo(362) <= \<const0>\;
-  spo(361 downto 360) <= \^spo\(505 downto 504);
+  spo(361) <= \<const0>\;
+  spo(360) <= \^spo\(504);
   spo(359) <= \<const0>\;
   spo(358) <= \<const0>\;
   spo(357) <= \<const0>\;
@@ -1859,7 +1808,8 @@ begin
   spo(348) <= \<const0>\;
   spo(347) <= \<const0>\;
   spo(346) <= \<const0>\;
-  spo(345 downto 344) <= \^spo\(505 downto 504);
+  spo(345) <= \<const0>\;
+  spo(344) <= \^spo\(504);
   spo(343) <= \<const0>\;
   spo(342) <= \<const0>\;
   spo(341) <= \<const0>\;
@@ -1874,7 +1824,8 @@ begin
   spo(332) <= \<const0>\;
   spo(331) <= \<const0>\;
   spo(330) <= \<const0>\;
-  spo(329 downto 328) <= \^spo\(505 downto 504);
+  spo(329) <= \<const0>\;
+  spo(328) <= \^spo\(504);
   spo(327) <= \<const0>\;
   spo(326) <= \<const0>\;
   spo(325) <= \<const0>\;
@@ -1889,7 +1840,8 @@ begin
   spo(316) <= \<const0>\;
   spo(315) <= \<const0>\;
   spo(314) <= \<const0>\;
-  spo(313 downto 312) <= \^spo\(505 downto 504);
+  spo(313) <= \<const0>\;
+  spo(312) <= \^spo\(504);
   spo(311) <= \<const0>\;
   spo(310) <= \<const0>\;
   spo(309) <= \<const0>\;
@@ -1904,7 +1856,8 @@ begin
   spo(300) <= \<const0>\;
   spo(299) <= \<const0>\;
   spo(298) <= \<const0>\;
-  spo(297 downto 296) <= \^spo\(505 downto 504);
+  spo(297) <= \<const0>\;
+  spo(296) <= \^spo\(504);
   spo(295) <= \<const0>\;
   spo(294) <= \<const0>\;
   spo(293) <= \<const0>\;
@@ -1919,7 +1872,8 @@ begin
   spo(284) <= \<const0>\;
   spo(283) <= \<const0>\;
   spo(282) <= \<const0>\;
-  spo(281 downto 280) <= \^spo\(505 downto 504);
+  spo(281) <= \<const0>\;
+  spo(280) <= \^spo\(504);
   spo(279) <= \<const0>\;
   spo(278) <= \<const0>\;
   spo(277) <= \<const0>\;
@@ -1934,7 +1888,8 @@ begin
   spo(268) <= \<const0>\;
   spo(267) <= \<const0>\;
   spo(266) <= \<const0>\;
-  spo(265 downto 264) <= \^spo\(505 downto 504);
+  spo(265) <= \<const0>\;
+  spo(264) <= \^spo\(504);
   spo(263) <= \<const0>\;
   spo(262) <= \<const0>\;
   spo(261) <= \<const0>\;
@@ -1949,7 +1904,8 @@ begin
   spo(252) <= \<const0>\;
   spo(251) <= \<const0>\;
   spo(250) <= \<const0>\;
-  spo(249 downto 248) <= \^spo\(505 downto 504);
+  spo(249) <= \<const0>\;
+  spo(248) <= \^spo\(504);
   spo(247) <= \<const0>\;
   spo(246) <= \<const0>\;
   spo(245) <= \<const0>\;
@@ -1964,7 +1920,8 @@ begin
   spo(236) <= \<const0>\;
   spo(235) <= \<const0>\;
   spo(234) <= \<const0>\;
-  spo(233 downto 232) <= \^spo\(505 downto 504);
+  spo(233) <= \<const0>\;
+  spo(232) <= \^spo\(504);
   spo(231) <= \<const0>\;
   spo(230) <= \<const0>\;
   spo(229) <= \<const0>\;
@@ -1979,7 +1936,8 @@ begin
   spo(220) <= \<const0>\;
   spo(219) <= \<const0>\;
   spo(218) <= \<const0>\;
-  spo(217 downto 216) <= \^spo\(505 downto 504);
+  spo(217) <= \<const0>\;
+  spo(216) <= \^spo\(504);
   spo(215) <= \<const0>\;
   spo(214) <= \<const0>\;
   spo(213) <= \<const0>\;
@@ -1994,7 +1952,8 @@ begin
   spo(204) <= \<const0>\;
   spo(203) <= \<const0>\;
   spo(202) <= \<const0>\;
-  spo(201 downto 200) <= \^spo\(505 downto 504);
+  spo(201) <= \<const0>\;
+  spo(200) <= \^spo\(504);
   spo(199) <= \<const0>\;
   spo(198) <= \<const0>\;
   spo(197) <= \<const0>\;
@@ -2009,7 +1968,8 @@ begin
   spo(188) <= \<const0>\;
   spo(187) <= \<const0>\;
   spo(186) <= \<const0>\;
-  spo(185 downto 184) <= \^spo\(505 downto 504);
+  spo(185) <= \<const0>\;
+  spo(184) <= \^spo\(504);
   spo(183) <= \<const0>\;
   spo(182) <= \<const0>\;
   spo(181) <= \<const0>\;
@@ -2024,7 +1984,8 @@ begin
   spo(172) <= \<const0>\;
   spo(171) <= \<const0>\;
   spo(170) <= \<const0>\;
-  spo(169 downto 168) <= \^spo\(505 downto 504);
+  spo(169) <= \<const0>\;
+  spo(168) <= \^spo\(504);
   spo(167) <= \<const0>\;
   spo(166) <= \<const0>\;
   spo(165) <= \<const0>\;
@@ -2039,7 +2000,8 @@ begin
   spo(156) <= \<const0>\;
   spo(155) <= \<const0>\;
   spo(154) <= \<const0>\;
-  spo(153 downto 152) <= \^spo\(505 downto 504);
+  spo(153) <= \<const0>\;
+  spo(152) <= \^spo\(504);
   spo(151) <= \<const0>\;
   spo(150) <= \<const0>\;
   spo(149) <= \<const0>\;
@@ -2054,7 +2016,8 @@ begin
   spo(140) <= \<const0>\;
   spo(139) <= \<const0>\;
   spo(138) <= \<const0>\;
-  spo(137 downto 136) <= \^spo\(505 downto 504);
+  spo(137) <= \<const0>\;
+  spo(136) <= \^spo\(504);
   spo(135) <= \<const0>\;
   spo(134) <= \<const0>\;
   spo(133) <= \<const0>\;
@@ -2069,7 +2032,8 @@ begin
   spo(124) <= \<const0>\;
   spo(123) <= \<const0>\;
   spo(122) <= \<const0>\;
-  spo(121 downto 120) <= \^spo\(505 downto 504);
+  spo(121) <= \<const0>\;
+  spo(120) <= \^spo\(504);
   spo(119) <= \<const0>\;
   spo(118) <= \<const0>\;
   spo(117) <= \<const0>\;
@@ -2084,7 +2048,8 @@ begin
   spo(108) <= \<const0>\;
   spo(107) <= \<const0>\;
   spo(106) <= \<const0>\;
-  spo(105 downto 104) <= \^spo\(505 downto 504);
+  spo(105) <= \<const0>\;
+  spo(104) <= \^spo\(504);
   spo(103) <= \<const0>\;
   spo(102) <= \<const0>\;
   spo(101) <= \<const0>\;
@@ -2099,7 +2064,8 @@ begin
   spo(92) <= \<const0>\;
   spo(91) <= \<const0>\;
   spo(90) <= \<const0>\;
-  spo(89 downto 88) <= \^spo\(505 downto 504);
+  spo(89) <= \<const0>\;
+  spo(88) <= \^spo\(504);
   spo(87) <= \<const0>\;
   spo(86) <= \<const0>\;
   spo(85) <= \<const0>\;
@@ -2114,7 +2080,8 @@ begin
   spo(76) <= \<const0>\;
   spo(75) <= \<const0>\;
   spo(74) <= \<const0>\;
-  spo(73 downto 72) <= \^spo\(505 downto 504);
+  spo(73) <= \<const0>\;
+  spo(72) <= \^spo\(504);
   spo(71) <= \<const0>\;
   spo(70) <= \<const0>\;
   spo(69) <= \<const0>\;
@@ -2129,7 +2096,8 @@ begin
   spo(60) <= \<const0>\;
   spo(59) <= \<const0>\;
   spo(58) <= \<const0>\;
-  spo(57 downto 56) <= \^spo\(505 downto 504);
+  spo(57) <= \<const0>\;
+  spo(56) <= \^spo\(504);
   spo(55) <= \<const0>\;
   spo(54) <= \<const0>\;
   spo(53) <= \<const0>\;
@@ -2144,7 +2112,8 @@ begin
   spo(44) <= \<const0>\;
   spo(43) <= \<const0>\;
   spo(42) <= \<const0>\;
-  spo(41 downto 40) <= \^spo\(505 downto 504);
+  spo(41) <= \<const0>\;
+  spo(40) <= \^spo\(504);
   spo(39) <= \<const0>\;
   spo(38) <= \<const0>\;
   spo(37) <= \<const0>\;
@@ -2159,7 +2128,8 @@ begin
   spo(28) <= \<const0>\;
   spo(27) <= \<const0>\;
   spo(26) <= \<const0>\;
-  spo(25 downto 24) <= \^spo\(505 downto 504);
+  spo(25) <= \<const0>\;
+  spo(24) <= \^spo\(504);
   spo(23) <= \<const0>\;
   spo(22) <= \<const0>\;
   spo(21) <= \<const0>\;
@@ -2174,7 +2144,8 @@ begin
   spo(12) <= \<const0>\;
   spo(11) <= \<const0>\;
   spo(10) <= \<const0>\;
-  spo(9 downto 8) <= \^spo\(505 downto 504);
+  spo(9) <= \<const0>\;
+  spo(8) <= \^spo\(504);
   spo(7) <= \<const0>\;
   spo(6) <= \<const0>\;
   spo(5) <= \<const0>\;
@@ -2187,10 +2158,15 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-\synth_options.dist_mem_inst\: entity work.CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12_synth
-     port map (
-      a(3 downto 0) => a(3 downto 0),
-      spo(1 downto 0) => \^spo\(505 downto 504)
+\spo[8]_INST_0\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"01"
+    )
+        port map (
+      I0 => a(1),
+      I1 => a(2),
+      I2 => a(3),
+      O => \^spo\(504)
     );
 end STRUCTURE;
 library IEEE;

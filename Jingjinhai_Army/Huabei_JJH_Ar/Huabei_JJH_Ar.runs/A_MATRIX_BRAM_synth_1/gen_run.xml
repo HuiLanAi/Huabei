@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="A_MATRIX_BRAM_synth_1" LaunchPart="xcku115-flvd1517-1-i" LaunchTime="1614955909">
   <File Type="PA-TCL" Name="A_MATRIX_BRAM.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="A_MATRIX_BRAM_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="A_MATRIX_BRAM_reports.tcl"/>
   <File Type="RDS-RDS" Name="A_MATRIX_BRAM.vds"/>
-  <File Type="RDS-UTIL" Name="A_MATRIX_BRAM_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="A_MATRIX_BRAM_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="A_MATRIX_BRAM.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="A_MATRIX_BRAM_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="A_MATRIX_BRAM_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/A_MATRIX_BRAM">
     <File Path="$PSRCDIR/sources_1/ip/A_MATRIX_BRAM/A_MATRIX_BRAM.xci">
       <FileInfo>

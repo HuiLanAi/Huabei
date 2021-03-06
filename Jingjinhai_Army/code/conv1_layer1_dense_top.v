@@ -273,8 +273,12 @@ CONV1_WEI_63X3 conv1_wei_64_ocx_3ic(
 
 
 
-wire    [1023:0]                    para_mult_res;
-wire                                para_mult_res_v;
+
+
+wire                            para_mult_res_v;
+wire    [1023:0]                para_mult_res;
+
+
 
 
 PARAMULT_1_64 parallel_mult_1_64(
@@ -292,13 +296,18 @@ PARAMULT_1_64 parallel_mult_1_64(
 
 
 
-REGHEAP_SELFADD_64x16b  chn_selfadd_reg_array(
+
+LOOP3_REGHEAP loop3_regheap(
     .clk                        (clk),
     .rst                        (rst),
     .data_v                     (para_mult_res_v),
     .in_data                    (para_mult_res),
-    .usr_rst                    ('d0)
+    .halt                       (halt)
 );
+
+
+
+
 
 
 endmodule

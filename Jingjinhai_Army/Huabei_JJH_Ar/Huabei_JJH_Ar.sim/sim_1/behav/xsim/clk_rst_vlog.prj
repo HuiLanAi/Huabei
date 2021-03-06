@@ -17,6 +17,7 @@ verilog xil_defaultlib  \
 "../../../../../code/dyn_iss_demo.v" \
 "../../../../../code/conv1_wei_64x3chn.v" \
 "../../../../Huabei_JJH_Ar.srcs/sources_1/ip/IN_FEA_BRAM/sim/IN_FEA_BRAM.v" \
+"../../../../../code/loop3_regheap.v" \
 "../../../../../code/simtest4paramult_regheap.v" \
 
 # compile glbl module

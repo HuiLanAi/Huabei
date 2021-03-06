@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="11887447fs"></ZoomEndTime>
-      <Cursor1Time time="24009000fs"></Cursor1Time>
+      <ZoomStartTime time="53351000fs"></ZoomStartTime>
+      <ZoomEndTime time="68611001fs"></ZoomEndTime>
+      <Cursor1Time time="63311000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="176"></NameColumnWidth>
-      <ValueColumnWidth column_width="290"></ValueColumnWidth>
+      <ValueColumnWidth column_width="266"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="26" />
+   <WVObjectSize size="34" />
    <wvobject fp_name="/clk_rst/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
@@ -117,12 +117,44 @@
       <obj_property name="ElementShortName">mult_res_w[1023:0]</obj_property>
       <obj_property name="ObjectShortName">mult_res_w[1023:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/chn_selfadd_reg_array/reg_data_v_w" type="logic">
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/data_v" type="logic">
+      <obj_property name="ElementShortName">data_v</obj_property>
+      <obj_property name="ObjectShortName">data_v</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/in_data" type="array">
+      <obj_property name="ElementShortName">in_data[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">in_data[1023:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/reg_data_v_w" type="logic">
       <obj_property name="ElementShortName">reg_data_v_w</obj_property>
       <obj_property name="ObjectShortName">reg_data_v_w</obj_property>
    </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/chn_selfadd_reg_array/reg_data_w" type="array">
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/reg_data_w" type="array">
       <obj_property name="ElementShortName">reg_data_w[1023:0]</obj_property>
       <obj_property name="ObjectShortName">reg_data_w[1023:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/loop3_regdata_w" type="logic">
+      <obj_property name="ElementShortName">loop3_regdata_w</obj_property>
+      <obj_property name="ObjectShortName">loop3_regdata_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/loop3_regdata_v" type="logic">
+      <obj_property name="ElementShortName">loop3_regdata_v</obj_property>
+      <obj_property name="ObjectShortName">loop3_regdata_v</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/loop_cnt" type="array">
+      <obj_property name="ElementShortName">loop_cnt[1:0]</obj_property>
+      <obj_property name="ObjectShortName">loop_cnt[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/usr_rst" type="logic">
+      <obj_property name="ElementShortName">usr_rst</obj_property>
+      <obj_property name="ObjectShortName">usr_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/chn_selfadd_reg_array/regu_0/usr_rst" type="logic">
+      <obj_property name="ElementShortName">usr_rst</obj_property>
+      <obj_property name="ObjectShortName">usr_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/chn_selfadd_reg_array/regu_0/adder0_in_a_w" type="array">
+      <obj_property name="ElementShortName">adder0_in_a_w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">adder0_in_a_w[31:0]</obj_property>
    </wvobject>
 </wave_config>

@@ -64,7 +64,7 @@ SELFADD_REG_16bx2 regu_27(.clk(clk), .rst(rst), .usr_rst(usr_rst), .in_data_a(in
 SELFADD_REG_16bx2 regu_28(.clk(clk), .rst(rst), .usr_rst(usr_rst), .in_data_a(in_data[911:896]), .in_data_b(in_data[927:912]), .out_data_a_w(reg_data_w[911:896]), .out_data_b_w(reg_data_w[927:912]), .data_v(data_v));
 SELFADD_REG_16bx2 regu_29(.clk(clk), .rst(rst), .usr_rst(usr_rst), .in_data_a(in_data[943:928]), .in_data_b(in_data[959:944]), .out_data_a_w(reg_data_w[943:928]), .out_data_b_w(reg_data_w[959:944]), .data_v(data_v));
 SELFADD_REG_16bx2 regu_30(.clk(clk), .rst(rst), .usr_rst(usr_rst), .in_data_a(in_data[975:960]), .in_data_b(in_data[991:976]), .out_data_a_w(reg_data_w[975:960]), .out_data_b_w(reg_data_w[991:976]), .data_v(data_v));
-SELFADD_REG_16bx2 regu_31(.clk(clk), .rst(rst), .usr_rst(usr_rst), .in_data_a(in_data[1007:992]), .in_data_b(in_data[1023:1008]), .out_data_a_w(reg_data_w[1007:992]), .out_data_b_w(reg_data_w[1023:1008]));
+SELFADD_REG_16bx2 regu_31(.clk(clk), .rst(rst), .usr_rst(usr_rst), .in_data_a(in_data[1007:992]), .in_data_b(in_data[1023:1008]), .out_data_a_w(reg_data_w[1007:992]), .out_data_b_w(reg_data_w[1023:1008]), .data_v(data_v));
 
 
 
