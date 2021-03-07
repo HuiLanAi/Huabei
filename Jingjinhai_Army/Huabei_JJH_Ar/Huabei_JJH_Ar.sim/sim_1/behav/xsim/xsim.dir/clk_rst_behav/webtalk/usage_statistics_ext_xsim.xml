@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_ext_xsim.xml'  majorVersion='1' minorVersion='0' timeStamp='Fri Mar  5 22:22:32 2021'>
+<webTalkData  fileName='usage_statistics_ext_xsim.xml'  majorVersion='1' minorVersion='0' timeStamp='Sun Mar  7 10:02:57 2021'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="2405991" description="" />
-  <keyValuePair key="date_generated" value="Fri Mar  5 22:22:31 2021" description="" />
+  <keyValuePair key="date_generated" value="Sun Mar  7 10:02:56 2021" description="" />
   <keyValuePair key="os_platform" value="WIN64" description="" />
   <keyValuePair key="product_version" value="XSIM v2018.3 (64-bit)" description="" />
   <keyValuePair key="project_id" value="b2e45a7405bc41279b37bf8e879ef099" description="" />
-  <keyValuePair key="project_iteration" value="2" description="" />
+  <keyValuePair key="project_iteration" value="54" description="" />
   <keyValuePair key="random_id" value="eb8a24fe-67ec-431b-839d-edb2d302bc05" description="" />
   <keyValuePair key="registration_id" value="eb8a24fe-67ec-431b-839d-edb2d302bc05" description="" />
   <keyValuePair key="route_design" value="FALSE" description="" />
@@ -30,14 +30,24 @@
  </section>
  <section name="xsim" level="1" order="4" description="">
   <section name="command_line_options" level="2" order="1" description="">
-   <keyValuePair key="command" value="xsim" description="" />
+   <keyValuePair key="command" value="xelab" description="" />
+   <keyValuePair key="debug" value="typical" description="" />
+   <keyValuePair key="dpi_used" value="false" description="" />
+   <keyValuePair key="file_counter" value="44" description="" />
+   <keyValuePair key="gendll" value="false" description="" />
+   <keyValuePair key="hwcosim" value="false" description="" />
+   <keyValuePair key="sdfmodeling" value="false" description="" />
+   <keyValuePair key="vhdl2008" value="false" description="" />
   </section>
   <section name="usage" level="2" order="2" description="">
-   <keyValuePair key="iteration" value="1" description="" />
-   <keyValuePair key="runtime" value="1 us" description="" />
-   <keyValuePair key="simulation_memory" value="6320_KB" description="" />
-   <keyValuePair key="simulation_time" value="0.08_sec" description="" />
-   <keyValuePair key="trace_waveform" value="true" description="" />
+   <keyValuePair key="compiler_memory" value="349532_KB" description="" />
+   <keyValuePair key="compiler_time" value="33.53_sec" description="" />
+   <keyValuePair key="simulation_image_code" value="1504 KB" description="" />
+   <keyValuePair key="simulation_image_data" value="626 KB" description="" />
+   <keyValuePair key="total_instances" value="1042" description="" />
+   <keyValuePair key="total_nets" value="0" description="" />
+   <keyValuePair key="total_processes" value="10118" description="" />
+   <keyValuePair key="xilinx_hdl_libraries_used" value="secureip unimacro_ver unisims_ver " description="" />
   </section>
  </section>
 </section>

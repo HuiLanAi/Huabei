@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Sat Mar  6 13:55:47 2021
+// Date        : Sun Mar  7 10:13:57 2021
 // Host        : DESKTOP-P4UPRAE running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/CONV1_WEI_64BX3X3/CONV1_WEI_64BX3X3_sim_netlist.v
@@ -2179,13 +2179,44 @@ module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12
   assign spo[0] = \<const0> ;
   GND GND
        (.G(\<const0> ));
-  LUT3 #(
-    .INIT(8'h01)) 
-    \spo[8]_INST_0 
-       (.I0(a[1]),
-        .I1(a[2]),
-        .I2(a[3]),
-        .O(\^spo ));
+  CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12_synth \synth_options.dist_mem_inst 
+       (.a(a),
+        .spo(\^spo ));
+endmodule
+
+(* ORIG_REF_NAME = "dist_mem_gen_v8_0_12_synth" *) 
+module CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12_synth
+   (spo,
+    a);
+  output [0:0]spo;
+  input [3:0]a;
+
+  wire [3:0]a;
+  wire [0:0]spo;
+
+  CONV1_WEI_64BX3X3_rom \gen_rom.rom_inst 
+       (.a(a),
+        .spo(spo));
+endmodule
+
+(* ORIG_REF_NAME = "rom" *) 
+module CONV1_WEI_64BX3X3_rom
+   (spo,
+    a);
+  output [0:0]spo;
+  input [3:0]a;
+
+  wire [3:0]a;
+  wire [0:0]spo;
+
+  LUT4 #(
+    .INIT(16'h0015)) 
+    \rom[15]/i_ 
+       (.I0(a[2]),
+        .I1(a[1]),
+        .I2(a[0]),
+        .I3(a[3]),
+        .O(spo));
 endmodule
 `ifndef GLBL
 `define GLBL

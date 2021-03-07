@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Sat Mar  6 13:55:47 2021
+-- Date        : Sun Mar  7 10:13:57 2021
 -- Host        : DESKTOP-P4UPRAE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/CONV1_WEI_64BX3X3/CONV1_WEI_64BX3X3_sim_netlist.vhdl
@@ -10,6 +10,54 @@
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xcku115-flvd1517-1-i
 -- --------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity CONV1_WEI_64BX3X3_rom is
+  port (
+    spo : out STD_LOGIC_VECTOR ( 0 to 0 );
+    a : in STD_LOGIC_VECTOR ( 3 downto 0 )
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of CONV1_WEI_64BX3X3_rom : entity is "rom";
+end CONV1_WEI_64BX3X3_rom;
+
+architecture STRUCTURE of CONV1_WEI_64BX3X3_rom is
+begin
+\rom[15]/i_\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0015"
+    )
+        port map (
+      I0 => a(2),
+      I1 => a(1),
+      I2 => a(0),
+      I3 => a(3),
+      O => spo(0)
+    );
+end STRUCTURE;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12_synth is
+  port (
+    spo : out STD_LOGIC_VECTOR ( 0 to 0 );
+    a : in STD_LOGIC_VECTOR ( 3 downto 0 )
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12_synth : entity is "dist_mem_gen_v8_0_12_synth";
+end CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12_synth;
+
+architecture STRUCTURE of CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12_synth is
+begin
+\gen_rom.rom_inst\: entity work.CONV1_WEI_64BX3X3_rom
+     port map (
+      a(3 downto 0) => a(3 downto 0),
+      spo(0) => spo(0)
+    );
+end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
@@ -2158,15 +2206,10 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-\spo[8]_INST_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"01"
-    )
-        port map (
-      I0 => a(1),
-      I1 => a(2),
-      I2 => a(3),
-      O => \^spo\(504)
+\synth_options.dist_mem_inst\: entity work.CONV1_WEI_64BX3X3_dist_mem_gen_v8_0_12_synth
+     port map (
+      a(3 downto 0) => a(3 downto 0),
+      spo(0) => \^spo\(504)
     );
 end STRUCTURE;
 library IEEE;
