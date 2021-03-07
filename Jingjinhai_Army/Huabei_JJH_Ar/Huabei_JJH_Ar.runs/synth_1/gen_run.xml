@@ -168,8 +168,8 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="A_MATRIX_BRAM"/>
-  <BlockFileSet Type="BlockSrcs" Name="fifo_32bx4"/>
   <BlockFileSet Type="BlockSrcs" Name="CONV1_WEI_64BX3X3"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_32bx4"/>
+  <BlockFileSet Type="BlockSrcs" Name="A_MATRIX_BRAM"/>
   <BlockFileSet Type="BlockSrcs" Name="ADDER_16P16"/>
 </GenRun>

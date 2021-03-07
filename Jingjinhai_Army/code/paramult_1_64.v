@@ -17,7 +17,7 @@ This module also contains a fanout_16_1024 to boardcast the signal data
 into 64 republication to handle fan-out problems.
 ************************************************ */
 
-module PARAMULT_1_64(
+module PARAMULT_1x64(
     input                           clk,
     input                           rst, 
 

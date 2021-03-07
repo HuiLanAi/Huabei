@@ -70,9 +70,6 @@ WARNING: [VRFC 10-3676] redeclaration of ansi port 'data_v' is not allowed [B:/w
 WARNING: [VRFC 10-3380] identifier 'col_loop' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/global_in_fea.v:30]
 WARNING: [VRFC 10-3380] identifier 'pe_loop' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/global_in_fea.v:81]
 WARNING: [VRFC 10-3380] identifier 'row_loop' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/global_in_fea.v:82]
-INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/paramult_1_64.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PARAMULT_1_64
-WARNING: [VRFC 10-2096] empty statement in sequential block [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/paramult_1_64.v:105]
 INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/clk_rst.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module clk_rst
 INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/dyn_iss_demo.v" into library xil_defaultlib
@@ -86,12 +83,22 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army
 INFO: [VRFC 10-311] analyzing module LOOP3_REGHEAP
 WARNING: [VRFC 10-3380] identifier 'reg_data_w' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/loop3_regheap.v:31]
 WARNING: [VRFC 10-3380] identifier 'reg_data_v_w' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/loop3_regheap.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/paramult_16x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PARAMULT_16_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/bnmult_chn64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BNMULT_CHN64
+WARNING: [VRFC 10-3380] identifier 'bn_par_res_w' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/bnmult_chn64.v:191]
+WARNING: [VRFC 10-3380] identifier 'bn_par_res_v_w' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/bnmult_chn64.v:206]
+WARNING: [VRFC 10-3380] identifier 'bn_par_res_v_w' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/bnmult_chn64.v:257]
+INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/bnadd_chn64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BNADD_CHN64
+WARNING: [VRFC 10-3380] identifier 'bn_par_res_w' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/bnadd_chn64.v:211]
+WARNING: [VRFC 10-3380] identifier 'bn_par_res_v_w' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/bnadd_chn64.v:226]
+WARNING: [VRFC 10-3380] identifier 'bn_par_res_v_w' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/bnadd_chn64.v:277]
 INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/simtest4paramult_regheap.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module TB4PARAMULT_REGHEAP
 INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/paraadd_16+16.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module PARAADD_16P16
-INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/bnadd_chn64.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module BNADD_CHN64
-WARNING: [VRFC 10-3380] identifier 'bn_par_res_w' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/bnadd_chn64.v:207]
-WARNING: [VRFC 10-3380] identifier 'bn_par_res_v_w' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/bnadd_chn64.v:222]
-WARNING: [VRFC 10-3380] identifier 'bn_par_res_v_w' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/bnadd_chn64.v:273]
+INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/paramult_1_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PARAMULT_1x64
+WARNING: [VRFC 10-2096] empty statement in sequential block [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/paramult_1_64.v:105]

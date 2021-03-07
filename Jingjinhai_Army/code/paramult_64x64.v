@@ -14,7 +14,7 @@ The user who import this module should keep output stored for at least
 1 clk in register.
 ************************************************ */
 
-module PARAMULT_1_64(
+module PARAMULT_64x64(
     input                           clk,
     input                           rst, 
 
@@ -48,7 +48,7 @@ reg     [4:0]                           busy_flag;
 // use shifter to control busy_flag
 always @ (posedge clk) begin
     if(!rst) begin
-        if(brdcast_data_v_w) begin
+        if(data_v) begin
             busy_flag <= (busy_flag << 1) + 'b1;
         end
         else begin

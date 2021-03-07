@@ -281,7 +281,7 @@ wire    [1023:0]                para_mult_res;
 
 
 
-PARAMULT_1_64 parallel_mult_1_64(
+PARAMULT_1x64 parallel_mult_1x64(
     .clk                        (clk),
     .rst                        (rst),
     .sigdata_v                  (data_v_4conv1),
@@ -312,13 +312,29 @@ LOOP3_REGHEAP loop3_regheap(
 
 
 
+
+wire    [1023:0]                        bn_add_res_w;
+wire                                    bn_add_res_v_w;
+
+
 BNADD_CHN64 bn_add(
     .clk                        (clk),
     .rst                        (rst),
     .acc_res_w                  (loop3_regdata_w),
-    .acc_res_v_w                (loop3_regdata_v_w)
+    .acc_res_v_w                (loop3_regdata_v_w),
+    .bn_add_res_w               (bn_add_res_w),
+    .bn_add_res_v_w             (bn_add_res_v_w)
 );
 
+
+
+
+BNMULT_CHN64 bn_mult(
+    .clk                        (clk),
+    .rst                        (rst),
+    .bn_add_res_w               (bn_add_res_w),
+    .bn_add_res_v_w             (bn_add_res_v_w)
+);
 
 
 

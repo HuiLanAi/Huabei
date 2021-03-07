@@ -66,7 +66,7 @@ Compiling module xil_defaultlib.CONV1_WEI_64BX3X3
 Compiling module xil_defaultlib.CONV1_WEI_63X3
 Compiling module xil_defaultlib.FANOUT_16_64
 Compiling module xil_defaultlib.FANOUT_16_1024
-Compiling module xil_defaultlib.PARAMULT_1_64
+Compiling module xil_defaultlib.PARAMULT_1x64
 Compiling module xil_defaultlib.SELFADD_REG_16bx2_LOOP3
 Compiling module xil_defaultlib.REGHEAP_SELFADD_64x16b
 Compiling module xil_defaultlib.LOOP3_REGHEAP
@@ -74,6 +74,8 @@ Compiling module xil_defaultlib.PARAADD_16P16
 Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="k...
 Compiling module xil_defaultlib.BN_PARA_64CHN
 Compiling module xil_defaultlib.BNADD_CHN64
+Compiling module xil_defaultlib.PARAMULT_16_16
+Compiling module xil_defaultlib.BNMULT_CHN64
 Compiling module xil_defaultlib.CONV1_LAYER1_DENSE_TOP
 Compiling module xil_defaultlib.clk_rst
 Compiling module xil_defaultlib.glbl

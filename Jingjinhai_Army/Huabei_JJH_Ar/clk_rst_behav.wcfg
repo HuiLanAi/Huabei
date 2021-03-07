@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="61540000fs"></ZoomStartTime>
-      <ZoomEndTime time="78080001fs"></ZoomEndTime>
+      <ZoomStartTime time="81000000fs"></ZoomStartTime>
+      <ZoomEndTime time="92832254fs"></ZoomEndTime>
       <Cursor1Time time="65000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="176"></NameColumnWidth>
-      <ValueColumnWidth column_width="202"></ValueColumnWidth>
+      <ValueColumnWidth column_width="186"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="14" />
    <wvobject fp_name="/clk_rst/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -47,5 +47,33 @@
    <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/bn_add/bn_add_res_v" type="logic">
       <obj_property name="ElementShortName">bn_add_res_v</obj_property>
       <obj_property name="ObjectShortName">bn_add_res_v</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/bn_mult/bn_add_res_w" type="array">
+      <obj_property name="ElementShortName">bn_add_res_w[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">bn_add_res_w[1023:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/bn_mult/bn_add_res_v_w" type="logic">
+      <obj_property name="ElementShortName">bn_add_res_v_w</obj_property>
+      <obj_property name="ObjectShortName">bn_add_res_v_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/bn_mult/bn_par_res_v_w" type="logic">
+      <obj_property name="ElementShortName">bn_par_res_v_w</obj_property>
+      <obj_property name="ObjectShortName">bn_par_res_v_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/bn_mult/bn_par_res_w" type="array">
+      <obj_property name="ElementShortName">bn_par_res_w[255:0]</obj_property>
+      <obj_property name="ObjectShortName">bn_par_res_w[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/bn_mult/bn_compute_cnter" type="array">
+      <obj_property name="ElementShortName">bn_compute_cnter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">bn_compute_cnter[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/bn_mult/bn_mult_res" type="array">
+      <obj_property name="ElementShortName">bn_mult_res[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">bn_mult_res[1023:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/bn_mult/bn_mult_res_v" type="logic">
+      <obj_property name="ElementShortName">bn_mult_res_v</obj_property>
+      <obj_property name="ObjectShortName">bn_mult_res_v</obj_property>
    </wvobject>
 </wave_config>

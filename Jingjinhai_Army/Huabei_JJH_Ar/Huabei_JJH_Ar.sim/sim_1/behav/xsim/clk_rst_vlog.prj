@@ -13,15 +13,17 @@ verilog xil_defaultlib  \
 "../../../../../code/fanout_16_1024_5layer.v" \
 "../../../../../code/fanout_16_64_1layer.v" \
 "../../../../../code/global_in_fea.v" \
-"../../../../../code/paramult_1_64.v" \
 "../../../../../code/clk_rst.v" \
 "../../../../../code/dyn_iss_demo.v" \
 "../../../../../code/conv1_wei_64x3chn.v" \
 "../../../../Huabei_JJH_Ar.srcs/sources_1/ip/IN_FEA_BRAM/sim/IN_FEA_BRAM.v" \
 "../../../../../code/loop3_regheap.v" \
+"../../../../../code/paramult_16x16.v" \
+"../../../../../code/bnmult_chn64.v" \
+"../../../../../code/bnadd_chn64.v" \
 "../../../../../code/simtest4paramult_regheap.v" \
 "../../../../../code/paraadd_16+16.v" \
-"../../../../../code/bnadd_chn64.v" \
+"../../../../../code/paramult_1_64.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
