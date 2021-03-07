@@ -1,0 +1,21 @@
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// --------------------------------------------------------------------------------
+// Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+// Date        : Sun Mar  7 15:11:41 2021
+// Host        : DESKTOP-P4UPRAE running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/BN_PARA_64CHN/BN_PARA_64CHN_stub.v
+// Design      : BN_PARA_64CHN
+// Purpose     : Stub declaration of top-level module interface
+// Device      : xcku115-flvd1517-1-i
+// --------------------------------------------------------------------------------
+
+// This empty module with port declaration file causes synthesis tools to infer a black box for IP.
+// The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
+// Please paste the declaration into a Verilog source file or add the file as an additional source.
+(* x_core_info = "dist_mem_gen_v8_0_12,Vivado 2018.3" *)
+module BN_PARA_64CHN(a, spo)
+/* synthesis syn_black_box black_box_pad_pin="a[5:0],spo[255:0]" */;
+  input [5:0]a;
+  output [255:0]spo;
+endmodule

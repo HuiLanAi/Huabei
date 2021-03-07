@@ -11,166 +11,41 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="8683275fs"></ZoomEndTime>
-      <Cursor1Time time="59000000fs"></Cursor1Time>
+      <ZoomStartTime time="61540000fs"></ZoomStartTime>
+      <ZoomEndTime time="78080001fs"></ZoomEndTime>
+      <Cursor1Time time="65000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="176"></NameColumnWidth>
-      <ValueColumnWidth column_width="250"></ValueColumnWidth>
+      <ValueColumnWidth column_width="202"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="38" />
-   <wvobject fp_name="/clk_rst/rst" type="logic">
-      <obj_property name="ElementShortName">rst</obj_property>
-      <obj_property name="ObjectShortName">rst</obj_property>
-   </wvobject>
+   <WVObjectSize size="7" />
    <wvobject fp_name="/clk_rst/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/in_fea" type="array">
-      <obj_property name="ElementShortName">in_fea[399:0]</obj_property>
-      <obj_property name="ObjectShortName">in_fea[399:0]</obj_property>
+   <wvobject fp_name="/clk_rst/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/global_in_fea/data_v_reg" type="logic">
-      <obj_property name="ElementShortName">data_v_reg</obj_property>
-      <obj_property name="ObjectShortName">data_v_reg</obj_property>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/bn_add/paraadd_16p16/addres_w" type="array">
+      <obj_property name="ElementShortName">addres_w[255:0]</obj_property>
+      <obj_property name="ObjectShortName">addres_w[255:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/matrix_para" type="array">
-      <obj_property name="ElementShortName">matrix_para[399:0]</obj_property>
-      <obj_property name="ObjectShortName">matrix_para[399:0]</obj_property>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/bn_add/bn_add_res" type="array">
+      <obj_property name="ElementShortName">bn_add_res[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">bn_add_res[1023:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/a_matrix/data_v_reg" type="logic">
-      <obj_property name="ElementShortName">data_v_reg</obj_property>
-      <obj_property name="ObjectShortName">data_v_reg</obj_property>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/bn_add/paraadd_16p16/addres_v_w" type="logic">
+      <obj_property name="ElementShortName">addres_v_w</obj_property>
+      <obj_property name="ObjectShortName">addres_v_w</obj_property>
    </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_layer_dense_mxmult/working_flag" type="array">
-      <obj_property name="ElementShortName">working_flag[4:0]</obj_property>
-      <obj_property name="ObjectShortName">working_flag[4:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/bn_add/bn_compute_cnter" type="array">
+      <obj_property name="ElementShortName">bn_compute_cnter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">bn_compute_cnter[2:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_layer_dense_mxmult/mult_res_w" type="array">
-      <obj_property name="ElementShortName">mult_res_w[399:0]</obj_property>
-      <obj_property name="ObjectShortName">mult_res_w[399:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_layer_dense_mxmult/mult_res_v_w" type="logic">
-      <obj_property name="ElementShortName">mult_res_v_w</obj_property>
-      <obj_property name="ObjectShortName">mult_res_v_w</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/addertree_25wise_0/add_res_v_w" type="logic">
-      <obj_property name="ElementShortName">add_res_v_w</obj_property>
-      <obj_property name="ObjectShortName">add_res_v_w</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/addertree_25wise_0/add_res_w" type="array">
-      <obj_property name="ElementShortName">add_res_w[15:0]</obj_property>
-      <obj_property name="ObjectShortName">add_res_w[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/fea_data_4conv1" type="array">
-      <obj_property name="ElementShortName">fea_data_4conv1[15:0]</obj_property>
-      <obj_property name="ObjectShortName">fea_data_4conv1[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/data_v_4conv1" type="logic">
-      <obj_property name="ElementShortName">data_v_4conv1</obj_property>
-      <obj_property name="ObjectShortName">data_v_4conv1</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_wei_64_ocx_3ic/conv1_wei" type="array">
-      <obj_property name="ElementShortName">conv1_wei[1023:0]</obj_property>
-      <obj_property name="ObjectShortName">conv1_wei[1023:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_wei_64_ocx_3ic/conv1_wei_v" type="logic">
-      <obj_property name="ElementShortName">conv1_wei_v</obj_property>
-      <obj_property name="ObjectShortName">conv1_wei_v</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/conv1_wei_64_ocx_3ic/raddr" type="array">
-      <obj_property name="ElementShortName">raddr[3:0]</obj_property>
-      <obj_property name="ObjectShortName">raddr[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/parallel_mult_1_64/sigdata_v" type="logic">
-      <obj_property name="ElementShortName">sigdata_v</obj_property>
-      <obj_property name="ObjectShortName">sigdata_v</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/parallel_mult_1_64/in_sig_data" type="array">
-      <obj_property name="ElementShortName">in_sig_data[15:0]</obj_property>
-      <obj_property name="ObjectShortName">in_sig_data[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/parallel_mult_1_64/vecdata_v" type="logic">
-      <obj_property name="ElementShortName">vecdata_v</obj_property>
-      <obj_property name="ObjectShortName">vecdata_v</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/parallel_mult_1_64/in_veca_data" type="array">
-      <obj_property name="ElementShortName">in_veca_data[1023:0]</obj_property>
-      <obj_property name="ObjectShortName">in_veca_data[1023:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/parallel_mult_1_64/brdcast_data_v_w" type="logic">
-      <obj_property name="ElementShortName">brdcast_data_v_w</obj_property>
-      <obj_property name="ObjectShortName">brdcast_data_v_w</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/parallel_mult_1_64/brdcast_data_w" type="array">
-      <obj_property name="ElementShortName">brdcast_data_w[1023:0]</obj_property>
-      <obj_property name="ObjectShortName">brdcast_data_w[1023:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/parallel_mult_1_64/mult_res_v_w" type="logic">
-      <obj_property name="ElementShortName">mult_res_v_w</obj_property>
-      <obj_property name="ObjectShortName">mult_res_v_w</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/parallel_mult_1_64/mult_res_w" type="array">
-      <obj_property name="ElementShortName">mult_res_w[1023:0]</obj_property>
-      <obj_property name="ObjectShortName">mult_res_w[1023:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/chn_selfadd_reg_array/regu_0/data_v" type="logic">
-      <obj_property name="ElementShortName">data_v</obj_property>
-      <obj_property name="ObjectShortName">data_v</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/chn_selfadd_reg_array/regu_0/in_data_a" type="array">
-      <obj_property name="ElementShortName">in_data_a[15:0]</obj_property>
-      <obj_property name="ObjectShortName">in_data_a[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/chn_selfadd_reg_array/regu_0/in_data_b" type="array">
-      <obj_property name="ElementShortName">in_data_b[15:0]</obj_property>
-      <obj_property name="ObjectShortName">in_data_b[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/chn_selfadd_reg_array/regu_0/loop_cnt" type="array">
-      <obj_property name="ElementShortName">loop_cnt[1:0]</obj_property>
-      <obj_property name="ObjectShortName">loop_cnt[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/chn_selfadd_reg_array/regu_0/adder0_in_a_w" type="array">
-      <obj_property name="ElementShortName">adder0_in_a_w[31:0]</obj_property>
-      <obj_property name="ObjectShortName">adder0_in_a_w[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/chn_selfadd_reg_array/regu_0/adder0_in_b_w" type="array">
-      <obj_property name="ElementShortName">adder0_in_b_w[31:0]</obj_property>
-      <obj_property name="ObjectShortName">adder0_in_b_w[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/chn_selfadd_reg_array/regu_0/addres_v" type="logic">
-      <obj_property name="ElementShortName">addres_v</obj_property>
-      <obj_property name="ObjectShortName">addres_v</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/chn_selfadd_reg_array/regu_0/out_data_v_w" type="logic">
-      <obj_property name="ElementShortName">out_data_v_w</obj_property>
-      <obj_property name="ObjectShortName">out_data_v_w</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/chn_selfadd_reg_array/regu_0/addres" type="array">
-      <obj_property name="ElementShortName">addres[31:0]</obj_property>
-      <obj_property name="ObjectShortName">addres[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/chn_selfadd_reg_array/regu_0/adder/A" type="array">
-      <obj_property name="ElementShortName">A[31:0]</obj_property>
-      <obj_property name="ObjectShortName">A[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/chn_selfadd_reg_array/regu_0/adder/B" type="array">
-      <obj_property name="ElementShortName">B[31:0]</obj_property>
-      <obj_property name="ObjectShortName">B[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/chn_selfadd_reg_array/regu_0/adder/S" type="array">
-      <obj_property name="ElementShortName">S[31:0]</obj_property>
-      <obj_property name="ObjectShortName">S[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/reg_data_v_w" type="logic">
-      <obj_property name="ElementShortName">reg_data_v_w</obj_property>
-      <obj_property name="ObjectShortName">reg_data_v_w</obj_property>
-   </wvobject>
-   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/loop3_regheap/reg_data_w" type="array">
-      <obj_property name="ElementShortName">reg_data_w[1023:0]</obj_property>
-      <obj_property name="ObjectShortName">reg_data_w[1023:0]</obj_property>
+   <wvobject fp_name="/clk_rst/conv1_layer1_dense_top/bn_add/bn_add_res_v" type="logic">
+      <obj_property name="ElementShortName">bn_add_res_v</obj_property>
+      <obj_property name="ObjectShortName">bn_add_res_v</obj_property>
    </wvobject>
 </wave_config>

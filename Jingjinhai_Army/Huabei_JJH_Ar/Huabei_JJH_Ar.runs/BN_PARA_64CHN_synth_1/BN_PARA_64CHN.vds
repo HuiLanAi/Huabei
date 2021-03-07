@@ -1,0 +1,417 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar  7 15:11:11 2021
+# Process ID: 6936
+# Current directory: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/BN_PARA_64CHN_synth_1
+# Command line: vivado.exe -log BN_PARA_64CHN.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BN_PARA_64CHN.tcl
+# Log file: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/BN_PARA_64CHN_synth_1/BN_PARA_64CHN.vds
+# Journal file: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/BN_PARA_64CHN_synth_1\vivado.jou
+#-----------------------------------------------------------
+source BN_PARA_64CHN.tcl -notrace
+Command: synth_design -top BN_PARA_64CHN -part xcku115-flvd1517-1-i -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku115'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku115'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4924 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 470.086 ; gain = 97.133
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'BN_PARA_64CHN' [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/BN_PARA_64CHN/synth/BN_PARA_64CHN.vhd:66]
+	Parameter C_FAMILY bound to: kintexu - type: string 
+	Parameter C_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 64 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: BN_PARA_64CHN.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 256 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_12' declared at 'b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/BN_PARA_64CHN/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_12' [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/BN_PARA_64CHN/synth/BN_PARA_64CHN.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'BN_PARA_64CHN' (4#1) [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/BN_PARA_64CHN/synth/BN_PARA_64CHN.vhd:66]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[255]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[254]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[253]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[252]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[251]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[250]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[249]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[248]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[247]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[246]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[245]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[244]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[243]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[242]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[241]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[240]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[239]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[238]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[237]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[236]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[235]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[234]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[233]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[232]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[231]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[230]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[229]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[228]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[227]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[226]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[225]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[224]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[223]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[222]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[221]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[220]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[219]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[218]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[217]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[216]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[215]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[214]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[213]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[212]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[211]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[210]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[209]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[208]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[207]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[206]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[205]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[204]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[203]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[202]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[201]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[200]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[199]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[198]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[197]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[196]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[195]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[194]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[193]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[192]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[191]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[190]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[189]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[188]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[187]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[186]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[185]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[184]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[183]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[182]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[181]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[180]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[179]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[178]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[177]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[176]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[175]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[174]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[173]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[172]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[171]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[170]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[169]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[168]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[167]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[166]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[165]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[164]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[163]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[162]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[161]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[160]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[159]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[158]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[157]
+WARNING: [Synth 8-3331] design rom has unconnected port qspo[156]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 534.168 ; gain = 161.215
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 534.168 ; gain = 161.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 534.168 ; gain = 161.215
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xcku115-flvd1517-1-i
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/BN_PARA_64CHN/BN_PARA_64CHN_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/BN_PARA_64CHN/BN_PARA_64CHN_ooc.xdc] for cell 'U0'
+Parsing XDC File [B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/BN_PARA_64CHN_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/BN_PARA_64CHN_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1157.578 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1157.578 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1158.836 ; gain = 1.258
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1158.836 ; gain = 785.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku115-flvd1517-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1158.836 ; gain = 785.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/BN_PARA_64CHN_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1158.836 ; gain = 785.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1158.836 ; gain = 785.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 5520 (col length:120)
+BRAMs: 4320 (col length: RAMB18 240 RAMB36 120)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1158.836 ; gain = 785.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------------+------------------------------------------------------+---------------+----------------+
+|Module Name          | RTL Object                                           | Depth x Width | Implemented As | 
++---------------------+------------------------------------------------------+---------------+----------------+
+|rom                  | rom[63]                                              | 64x249        | LUT            | 
+|dist_mem_gen_v8_0_12 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[63] | 64x249        | LUT            | 
++---------------------+------------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1391.461 ; gain = 1018.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1391.461 ; gain = 1018.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1401.617 ; gain = 1028.664
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1401.617 ; gain = 1028.664
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1401.617 ; gain = 1028.664
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1401.617 ; gain = 1028.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1401.617 ; gain = 1028.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1401.617 ; gain = 1028.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1401.617 ; gain = 1028.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT4 |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------------------------------+---------------------------+------+
+|      |Instance                          |Module                     |Cells |
++------+----------------------------------+---------------------------+------+
+|1     |top                               |                           |     1|
+|2     |  U0                              |dist_mem_gen_v8_0_12       |     1|
+|3     |    \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_12_synth |     1|
+|4     |      \gen_rom.rom_inst           |rom                        |     1|
++------+----------------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1401.617 ; gain = 1028.664
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1040 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1401.617 ; gain = 403.996
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1401.617 ; gain = 1028.664
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1457.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+14 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1457.012 ; gain = 1084.059
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1457.012 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/BN_PARA_64CHN_synth_1/BN_PARA_64CHN.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP BN_PARA_64CHN, cache-ID = 1ce18e0c7f73a05d
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1461.363 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/BN_PARA_64CHN_synth_1/BN_PARA_64CHN.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file BN_PARA_64CHN_utilization_synth.rpt -pb BN_PARA_64CHN_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar  7 15:11:41 2021...

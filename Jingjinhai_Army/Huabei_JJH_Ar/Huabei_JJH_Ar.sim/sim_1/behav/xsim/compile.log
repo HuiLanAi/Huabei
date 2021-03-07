@@ -4,6 +4,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army
 INFO: [VRFC 10-311] analyzing module fifo_32bx4
 INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/CONV1_WEI_64BX3X3/sim/CONV1_WEI_64BX3X3.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module CONV1_WEI_64BX3X3
+INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/BN_PARA_64CHN/sim/BN_PARA_64CHN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BN_PARA_64CHN
 INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/selfadd_reg_16bx2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module SELFADD_REG_16bx2_LOOP3
 INFO: [VRFC 10-2458] undeclared symbol add_res_v_w, assumed default net type wire [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/selfadd_reg_16bx2.v:185]
@@ -86,3 +88,10 @@ WARNING: [VRFC 10-3380] identifier 'reg_data_w' is used before its declaration [
 WARNING: [VRFC 10-3380] identifier 'reg_data_v_w' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/loop3_regheap.v:32]
 INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/simtest4paramult_regheap.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module TB4PARAMULT_REGHEAP
+INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/paraadd_16+16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PARAADD_16P16
+INFO: [VRFC 10-2263] Analyzing Verilog file "B:/wd/Huabei/Huabei/Jingjinhai_Army/code/bnadd_chn64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BNADD_CHN64
+WARNING: [VRFC 10-3380] identifier 'bn_par_res_w' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/bnadd_chn64.v:207]
+WARNING: [VRFC 10-3380] identifier 'bn_par_res_v_w' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/bnadd_chn64.v:222]
+WARNING: [VRFC 10-3380] identifier 'bn_par_res_v_w' is used before its declaration [B:/wd/Huabei/Huabei/Jingjinhai_Army/code/bnadd_chn64.v:273]

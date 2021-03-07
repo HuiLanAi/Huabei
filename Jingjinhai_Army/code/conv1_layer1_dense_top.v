@@ -296,13 +296,27 @@ PARAMULT_1_64 parallel_mult_1_64(
 
 
 
+wire    [1023:0]                        loop3_regdata_w;
+wire                                    loop3_regdata_v_w;
+
 
 LOOP3_REGHEAP loop3_regheap(
     .clk                        (clk),
     .rst                        (rst),
     .data_v                     (para_mult_res_v),
     .in_data                    (para_mult_res),
-    .halt                       (halt)
+    .halt                       (halt),
+    .loop3_regdata_w            (loop3_regdata_w),
+    .loop3_regdata_v_w          (loop3_regdata_v_w)
+);
+
+
+
+BNADD_CHN64 bn_add(
+    .clk                        (clk),
+    .rst                        (rst),
+    .acc_res_w                  (loop3_regdata_w),
+    .acc_res_v_w                (loop3_regdata_v_w)
 );
 
 

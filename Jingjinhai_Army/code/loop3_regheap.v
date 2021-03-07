@@ -18,7 +18,7 @@ module LOOP3_REGHEAP(
     input   [1023:0]                    in_data,
     input                               halt,
 
-    output                              loop3_regdata_w,
+    output  [1023:0]                    loop3_regdata_w,
     output                              loop3_regdata_v_w
 );
 
