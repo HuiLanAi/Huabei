@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Mar  8 15:22:59 2021
+# Process ID: 8468
+# Current directory: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/MATRIX_ABC_ROM_synth_1
+# Command line: vivado.exe -log MATRIX_ABC_ROM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MATRIX_ABC_ROM.tcl
+# Log file: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/MATRIX_ABC_ROM_synth_1/MATRIX_ABC_ROM.vds
+# Journal file: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/MATRIX_ABC_ROM_synth_1\vivado.jou
+#-----------------------------------------------------------
+source MATRIX_ABC_ROM.tcl -notrace

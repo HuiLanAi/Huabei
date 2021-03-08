@@ -1,0 +1,748 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar  7 20:23:49 2021
+# Process ID: 14976
+# Current directory: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/FIFO4ADD_64CHN_synth_1
+# Command line: vivado.exe -log FIFO4ADD_64CHN.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIFO4ADD_64CHN.tcl
+# Log file: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/FIFO4ADD_64CHN_synth_1/FIFO4ADD_64CHN.vds
+# Journal file: B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/FIFO4ADD_64CHN_synth_1\vivado.jou
+#-----------------------------------------------------------
+source FIFO4ADD_64CHN.tcl -notrace
+Command: synth_design -top FIFO4ADD_64CHN -part xcku115-flvd1517-1-i -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku115'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku115'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14996 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 470.102 ; gain = 97.062
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIFO4ADD_64CHN' [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/FIFO4ADD_64CHN/synth/FIFO4ADD_64CHN.vhd:75]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 12 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 1024 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 1024 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: kintexu - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 0 - type: integer 
+	Parameter C_HAS_SRST bound to: 1 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 1 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 9 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 4 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 512x72 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 16 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 17 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 4088 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 4086 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 12 - type: integer 
+	Parameter C_RD_DEPTH bound to: 4096 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 12 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 12 - type: integer 
+	Parameter C_WR_DEPTH bound to: 4096 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 12 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 512x72 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 512x72 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_3' declared at 'b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/FIFO4ADD_64CHN/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38578' bound to instance 'U0' of component 'fifo_generator_v13_2_3' [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/FIFO4ADD_64CHN/synth/FIFO4ADD_64CHN.vhd:543]
+INFO: [Synth 8-256] done synthesizing module 'FIFO4ADD_64CHN' (10#1) [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/FIFO4ADD_64CHN/synth/FIFO4ADD_64CHN.vhd:75]
+WARNING: [Synth 8-3331] design builtin_extdepth has unconnected port INT_CLK
+WARNING: [Synth 8-3331] design builtin_extdepth has unconnected port WR_RST
+WARNING: [Synth 8-3331] design builtin_extdepth has unconnected port RD_RST
+WARNING: [Synth 8-3331] design output_blk has unconnected port ALMOST_FULL_I
+WARNING: [Synth 8-3331] design output_blk has unconnected port PROG_FULL_I
+WARNING: [Synth 8-3331] design output_blk has unconnected port ALMOST_EMPTY_I
+WARNING: [Synth 8-3331] design output_blk has unconnected port PROG_EMPTY_I
+WARNING: [Synth 8-3331] design output_blk has unconnected port WR_ACK_I
+WARNING: [Synth 8-3331] design output_blk has unconnected port OVERFLOW_I
+WARNING: [Synth 8-3331] design output_blk has unconnected port UNDERFLOW_I
+WARNING: [Synth 8-3331] design output_blk has unconnected port DATA_COUNT_I[8]
+WARNING: [Synth 8-3331] design output_blk has unconnected port DATA_COUNT_I[7]
+WARNING: [Synth 8-3331] design output_blk has unconnected port DATA_COUNT_I[6]
+WARNING: [Synth 8-3331] design output_blk has unconnected port DATA_COUNT_I[5]
+WARNING: [Synth 8-3331] design output_blk has unconnected port DATA_COUNT_I[4]
+WARNING: [Synth 8-3331] design output_blk has unconnected port DATA_COUNT_I[3]
+WARNING: [Synth 8-3331] design output_blk has unconnected port DATA_COUNT_I[2]
+WARNING: [Synth 8-3331] design output_blk has unconnected port DATA_COUNT_I[1]
+WARNING: [Synth 8-3331] design output_blk has unconnected port DATA_COUNT_I[0]
+WARNING: [Synth 8-3331] design output_blk has unconnected port WR_DATA_COUNT_I[8]
+WARNING: [Synth 8-3331] design output_blk has unconnected port WR_DATA_COUNT_I[7]
+WARNING: [Synth 8-3331] design output_blk has unconnected port WR_DATA_COUNT_I[6]
+WARNING: [Synth 8-3331] design output_blk has unconnected port WR_DATA_COUNT_I[5]
+WARNING: [Synth 8-3331] design output_blk has unconnected port WR_DATA_COUNT_I[4]
+WARNING: [Synth 8-3331] design output_blk has unconnected port WR_DATA_COUNT_I[3]
+WARNING: [Synth 8-3331] design output_blk has unconnected port WR_DATA_COUNT_I[2]
+WARNING: [Synth 8-3331] design output_blk has unconnected port WR_DATA_COUNT_I[1]
+WARNING: [Synth 8-3331] design output_blk has unconnected port WR_DATA_COUNT_I[0]
+WARNING: [Synth 8-3331] design output_blk has unconnected port RD_DATA_COUNT_I[8]
+WARNING: [Synth 8-3331] design output_blk has unconnected port RD_DATA_COUNT_I[7]
+WARNING: [Synth 8-3331] design output_blk has unconnected port RD_DATA_COUNT_I[6]
+WARNING: [Synth 8-3331] design output_blk has unconnected port RD_DATA_COUNT_I[5]
+WARNING: [Synth 8-3331] design output_blk has unconnected port RD_DATA_COUNT_I[4]
+WARNING: [Synth 8-3331] design output_blk has unconnected port RD_DATA_COUNT_I[3]
+WARNING: [Synth 8-3331] design output_blk has unconnected port RD_DATA_COUNT_I[2]
+WARNING: [Synth 8-3331] design output_blk has unconnected port RD_DATA_COUNT_I[1]
+WARNING: [Synth 8-3331] design output_blk has unconnected port RD_DATA_COUNT_I[0]
+WARNING: [Synth 8-3331] design output_blk has unconnected port SBITERR_I
+WARNING: [Synth 8-3331] design output_blk has unconnected port DBITERR_I
+WARNING: [Synth 8-3331] design input_blk has unconnected port RD_CLK
+WARNING: [Synth 8-3331] design input_blk has unconnected port WR_CLK
+WARNING: [Synth 8-3331] design input_blk has unconnected port INT_CLK
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH[11]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH[10]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH[9]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH[8]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH[7]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH[6]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH[5]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH[4]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH[3]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH[2]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH[1]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH[0]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_ASSERT[11]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_ASSERT[10]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_ASSERT[9]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_ASSERT[8]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_ASSERT[7]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_ASSERT[6]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_ASSERT[5]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_ASSERT[4]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_ASSERT[3]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_ASSERT[2]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_ASSERT[1]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_ASSERT[0]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_NEGATE[11]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_NEGATE[10]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_NEGATE[9]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_NEGATE[8]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_NEGATE[7]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_NEGATE[6]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_NEGATE[5]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_NEGATE[4]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_NEGATE[3]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_NEGATE[2]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_NEGATE[1]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_NEGATE[0]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH[11]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH[10]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH[9]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH[8]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH[7]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH[6]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH[5]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH[4]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH[3]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH[2]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH[1]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH[0]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH_ASSERT[11]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH_ASSERT[10]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH_ASSERT[9]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH_ASSERT[8]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH_ASSERT[7]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH_ASSERT[6]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH_ASSERT[5]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH_ASSERT[4]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH_ASSERT[3]
+WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_FULL_THRESH_ASSERT[2]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 633.605 ; gain = 260.566
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 633.605 ; gain = 260.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 633.605 ; gain = 260.566
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xcku115-flvd1517-1-i
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/FIFO4ADD_64CHN/FIFO4ADD_64CHN_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/FIFO4ADD_64CHN/FIFO4ADD_64CHN_ooc.xdc] for cell 'U0'
+Parsing XDC File [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/FIFO4ADD_64CHN/FIFO4ADD_64CHN.xdc] for cell 'U0'
+Finished Parsing XDC File [b:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.srcs/sources_1/ip/FIFO4ADD_64CHN/FIFO4ADD_64CHN.xdc] for cell 'U0'
+Parsing XDC File [B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/FIFO4ADD_64CHN_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/FIFO4ADD_64CHN_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1298.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1299.027 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.255 . Memory (MB): peak = 1300.656 ; gain = 2.609
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1300.656 ; gain = 927.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku115-flvd1517-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1300.656 ; gain = 927.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/FIFO4ADD_64CHN_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1300.656 ; gain = 927.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1300.656 ; gain = 927.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 30    
++---Registers : 
+	               72 Bit    Registers := 15    
+	                8 Bit    Registers := 30    
+	                3 Bit    Registers := 45    
+	                1 Bit    Registers := 169   
++---Muxes : 
+	   2 Input     72 Bit        Muxes := 30    
+	   2 Input      1 Bit        Muxes := 495   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module builtin_extdepth 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               72 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     72 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 33    
+Module builtin_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 5520 (col length:120)
+BRAMs: 4320 (col length: RAMB18 240 RAMB36 120)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1300.656 ; gain = 927.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1438.277 ; gain = 1065.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1527.805 ; gain = 1154.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1567.738 ; gain = 1194.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1567.738 ; gain = 1194.699
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1567.738 ; gain = 1194.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1567.738 ; gain = 1194.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1567.738 ; gain = 1194.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1567.738 ; gain = 1194.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1567.738 ; gain = 1194.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |FIFO36E2 |   120|
+|2     |LUT1     |    60|
+|3     |LUT2     |    61|
+|4     |LUT3     |    75|
+|5     |LUT4     |    45|
+|6     |LUT5     |   150|
+|7     |LUT6     |  5646|
+|8     |MUXF7    |  2063|
+|9     |FDRE     |  1416|
+|10    |FDSE     |    30|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------------------------------------------------------+-------------------------------+------+
+|      |Instance                                                        |Module                         |Cells |
++------+----------------------------------------------------------------+-------------------------------+------+
+|1     |top                                                             |                               |  9666|
+|2     |  U0                                                            |fifo_generator_v13_2_3         |  9666|
+|3     |    inst_fifo_gen                                               |fifo_generator_v13_2_3_synth   |  9666|
+|4     |      \gconvfifo.rf                                             |fifo_generator_top             |  9666|
+|5     |        \gbi.bi                                                 |fifo_generator_v13_2_3_builtin |  9666|
+|6     |          \v8_fifo.fblk                                         |builtin_top                    |  9665|
+|7     |            \rst_val_sym.gextw_sym[10].inst_extd                |builtin_extdepth               |   674|
+|8     |              \gmult_prim.gll_chain.gp1[0].gbldc_reg.inst_prim  |builtin_prim_125               |     1|
+|9     |              \gmult_prim.gll_chain.gp1[1].gbldc_reg.inst_prim  |builtin_prim_126               |     9|
+|10    |              \gmult_prim.gll_chain.gp1[2].gbldc_reg.inst_prim  |builtin_prim_127               |     7|
+|11    |              \gmult_prim.gll_chain.gp1[3].gbldc_reg.inst_prim  |builtin_prim_128               |   376|
+|12    |              \gmult_prim.gll_chain.gp1[4].gbldc_reg.inst_prim  |builtin_prim_129               |     3|
+|13    |              \gmult_prim.gll_chain.gp1[5].gbldc_reg.inst_prim  |builtin_prim_130               |     2|
+|14    |              \gmult_prim.gll_chain.gp1[6].gbldc_reg.inst_prim  |builtin_prim_131               |     3|
+|15    |              \gmult_prim.gll_chain.gp1[7].gbldc_reg.inst_prim  |builtin_prim_132               |   158|
+|16    |            \rst_val_sym.gextw_sym[11].inst_extd                |builtin_extdepth_0             |   674|
+|17    |              \gmult_prim.gll_chain.gp1[0].gbldc_reg.inst_prim  |builtin_prim_117               |     1|
+|18    |              \gmult_prim.gll_chain.gp1[1].gbldc_reg.inst_prim  |builtin_prim_118               |     9|
+|19    |              \gmult_prim.gll_chain.gp1[2].gbldc_reg.inst_prim  |builtin_prim_119               |     7|
+|20    |              \gmult_prim.gll_chain.gp1[3].gbldc_reg.inst_prim  |builtin_prim_120               |   376|
+|21    |              \gmult_prim.gll_chain.gp1[4].gbldc_reg.inst_prim  |builtin_prim_121               |     3|
+|22    |              \gmult_prim.gll_chain.gp1[5].gbldc_reg.inst_prim  |builtin_prim_122               |     2|
+|23    |              \gmult_prim.gll_chain.gp1[6].gbldc_reg.inst_prim  |builtin_prim_123               |     3|
+|24    |              \gmult_prim.gll_chain.gp1[7].gbldc_reg.inst_prim  |builtin_prim_124               |   158|
+|25    |            \rst_val_sym.gextw_sym[12].inst_extd                |builtin_extdepth_1             |   674|
+|26    |              \gmult_prim.gll_chain.gp1[0].gbldc_reg.inst_prim  |builtin_prim_109               |     1|
+|27    |              \gmult_prim.gll_chain.gp1[1].gbldc_reg.inst_prim  |builtin_prim_110               |     9|
+|28    |              \gmult_prim.gll_chain.gp1[2].gbldc_reg.inst_prim  |builtin_prim_111               |     7|
+|29    |              \gmult_prim.gll_chain.gp1[3].gbldc_reg.inst_prim  |builtin_prim_112               |   376|
+|30    |              \gmult_prim.gll_chain.gp1[4].gbldc_reg.inst_prim  |builtin_prim_113               |     3|
+|31    |              \gmult_prim.gll_chain.gp1[5].gbldc_reg.inst_prim  |builtin_prim_114               |     2|
+|32    |              \gmult_prim.gll_chain.gp1[6].gbldc_reg.inst_prim  |builtin_prim_115               |     3|
+|33    |              \gmult_prim.gll_chain.gp1[7].gbldc_reg.inst_prim  |builtin_prim_116               |   158|
+|34    |            \rst_val_sym.gextw_sym[13].inst_extd                |builtin_extdepth_2             |   674|
+|35    |              \gmult_prim.gll_chain.gp1[0].gbldc_reg.inst_prim  |builtin_prim_101               |     1|
+|36    |              \gmult_prim.gll_chain.gp1[1].gbldc_reg.inst_prim  |builtin_prim_102               |     9|
+|37    |              \gmult_prim.gll_chain.gp1[2].gbldc_reg.inst_prim  |builtin_prim_103               |     7|
+|38    |              \gmult_prim.gll_chain.gp1[3].gbldc_reg.inst_prim  |builtin_prim_104               |   376|
+|39    |              \gmult_prim.gll_chain.gp1[4].gbldc_reg.inst_prim  |builtin_prim_105               |     3|
+|40    |              \gmult_prim.gll_chain.gp1[5].gbldc_reg.inst_prim  |builtin_prim_106               |     2|
+|41    |              \gmult_prim.gll_chain.gp1[6].gbldc_reg.inst_prim  |builtin_prim_107               |     3|
+|42    |              \gmult_prim.gll_chain.gp1[7].gbldc_reg.inst_prim  |builtin_prim_108               |   158|
+|43    |            \rst_val_sym.gextw_sym[14].inst_extd                |builtin_extdepth_3             |   674|
+|44    |              \gmult_prim.gll_chain.gp1[0].gbldc_reg.inst_prim  |builtin_prim_93                |     1|
+|45    |              \gmult_prim.gll_chain.gp1[1].gbldc_reg.inst_prim  |builtin_prim_94                |     9|
+|46    |              \gmult_prim.gll_chain.gp1[2].gbldc_reg.inst_prim  |builtin_prim_95                |     7|
+|47    |              \gmult_prim.gll_chain.gp1[3].gbldc_reg.inst_prim  |builtin_prim_96                |   376|
+|48    |              \gmult_prim.gll_chain.gp1[4].gbldc_reg.inst_prim  |builtin_prim_97                |     3|
+|49    |              \gmult_prim.gll_chain.gp1[5].gbldc_reg.inst_prim  |builtin_prim_98                |     2|
+|50    |              \gmult_prim.gll_chain.gp1[6].gbldc_reg.inst_prim  |builtin_prim_99                |     3|
+|51    |              \gmult_prim.gll_chain.gp1[7].gbldc_reg.inst_prim  |builtin_prim_100               |   158|
+|52    |            \rst_val_sym.gextw_sym[15].inst_extd                |builtin_extdepth_4             |   226|
+|53    |              \gmult_prim.gll_chain.gp1[0].gbldc_reg.inst_prim  |builtin_prim_85                |     1|
+|54    |              \gmult_prim.gll_chain.gp1[1].gbldc_reg.inst_prim  |builtin_prim_86                |     8|
+|55    |              \gmult_prim.gll_chain.gp1[2].gbldc_reg.inst_prim  |builtin_prim_87                |     7|
+|56    |              \gmult_prim.gll_chain.gp1[3].gbldc_reg.inst_prim  |builtin_prim_88                |    96|
+|57    |              \gmult_prim.gll_chain.gp1[4].gbldc_reg.inst_prim  |builtin_prim_89                |     4|
+|58    |              \gmult_prim.gll_chain.gp1[5].gbldc_reg.inst_prim  |builtin_prim_90                |     2|
+|59    |              \gmult_prim.gll_chain.gp1[6].gbldc_reg.inst_prim  |builtin_prim_91                |     3|
+|60    |              \gmult_prim.gll_chain.gp1[7].gbldc_reg.inst_prim  |builtin_prim_92                |    46|
+|61    |            \rst_val_sym.gextw_sym[1].inst_extd                 |builtin_extdepth_5             |   676|
+|62    |              \gmult_prim.gll_chain.gp1[0].gbldc_reg.inst_prim  |builtin_prim_77                |     1|
+|63    |              \gmult_prim.gll_chain.gp1[1].gbldc_reg.inst_prim  |builtin_prim_78                |    10|
+|64    |              \gmult_prim.gll_chain.gp1[2].gbldc_reg.inst_prim  |builtin_prim_79                |     7|
+|65    |              \gmult_prim.gll_chain.gp1[3].gbldc_reg.inst_prim  |builtin_prim_80                |   376|
+|66    |              \gmult_prim.gll_chain.gp1[4].gbldc_reg.inst_prim  |builtin_prim_81                |     3|
+|67    |              \gmult_prim.gll_chain.gp1[5].gbldc_reg.inst_prim  |builtin_prim_82                |     2|
+|68    |              \gmult_prim.gll_chain.gp1[6].gbldc_reg.inst_prim  |builtin_prim_83                |     3|
+|69    |              \gmult_prim.gll_chain.gp1[7].gbldc_reg.inst_prim  |builtin_prim_84                |   158|
+|70    |            \rst_val_sym.gextw_sym[2].inst_extd                 |builtin_extdepth_6             |   674|
+|71    |              \gmult_prim.gll_chain.gp1[0].gbldc_reg.inst_prim  |builtin_prim_69                |     1|
+|72    |              \gmult_prim.gll_chain.gp1[1].gbldc_reg.inst_prim  |builtin_prim_70                |     9|
+|73    |              \gmult_prim.gll_chain.gp1[2].gbldc_reg.inst_prim  |builtin_prim_71                |     7|
+|74    |              \gmult_prim.gll_chain.gp1[3].gbldc_reg.inst_prim  |builtin_prim_72                |   376|
+|75    |              \gmult_prim.gll_chain.gp1[4].gbldc_reg.inst_prim  |builtin_prim_73                |     3|
+|76    |              \gmult_prim.gll_chain.gp1[5].gbldc_reg.inst_prim  |builtin_prim_74                |     2|
+|77    |              \gmult_prim.gll_chain.gp1[6].gbldc_reg.inst_prim  |builtin_prim_75                |     3|
+|78    |              \gmult_prim.gll_chain.gp1[7].gbldc_reg.inst_prim  |builtin_prim_76                |   158|
+|79    |            \rst_val_sym.gextw_sym[3].inst_extd                 |builtin_extdepth_7             |   674|
+|80    |              \gmult_prim.gll_chain.gp1[0].gbldc_reg.inst_prim  |builtin_prim_61                |     1|
+|81    |              \gmult_prim.gll_chain.gp1[1].gbldc_reg.inst_prim  |builtin_prim_62                |     9|
+|82    |              \gmult_prim.gll_chain.gp1[2].gbldc_reg.inst_prim  |builtin_prim_63                |     7|
+|83    |              \gmult_prim.gll_chain.gp1[3].gbldc_reg.inst_prim  |builtin_prim_64                |   376|
+|84    |              \gmult_prim.gll_chain.gp1[4].gbldc_reg.inst_prim  |builtin_prim_65                |     3|
+|85    |              \gmult_prim.gll_chain.gp1[5].gbldc_reg.inst_prim  |builtin_prim_66                |     2|
+|86    |              \gmult_prim.gll_chain.gp1[6].gbldc_reg.inst_prim  |builtin_prim_67                |     3|
+|87    |              \gmult_prim.gll_chain.gp1[7].gbldc_reg.inst_prim  |builtin_prim_68                |   158|
+|88    |            \rst_val_sym.gextw_sym[4].inst_extd                 |builtin_extdepth_8             |   674|
+|89    |              \gmult_prim.gll_chain.gp1[0].gbldc_reg.inst_prim  |builtin_prim_53                |     1|
+|90    |              \gmult_prim.gll_chain.gp1[1].gbldc_reg.inst_prim  |builtin_prim_54                |     9|
+|91    |              \gmult_prim.gll_chain.gp1[2].gbldc_reg.inst_prim  |builtin_prim_55                |     7|
+|92    |              \gmult_prim.gll_chain.gp1[3].gbldc_reg.inst_prim  |builtin_prim_56                |   376|
+|93    |              \gmult_prim.gll_chain.gp1[4].gbldc_reg.inst_prim  |builtin_prim_57                |     3|
+|94    |              \gmult_prim.gll_chain.gp1[5].gbldc_reg.inst_prim  |builtin_prim_58                |     2|
+|95    |              \gmult_prim.gll_chain.gp1[6].gbldc_reg.inst_prim  |builtin_prim_59                |     3|
+|96    |              \gmult_prim.gll_chain.gp1[7].gbldc_reg.inst_prim  |builtin_prim_60                |   158|
+|97    |            \rst_val_sym.gextw_sym[5].inst_extd                 |builtin_extdepth_9             |   674|
+|98    |              \gmult_prim.gll_chain.gp1[0].gbldc_reg.inst_prim  |builtin_prim_45                |     1|
+|99    |              \gmult_prim.gll_chain.gp1[1].gbldc_reg.inst_prim  |builtin_prim_46                |     9|
+|100   |              \gmult_prim.gll_chain.gp1[2].gbldc_reg.inst_prim  |builtin_prim_47                |     7|
+|101   |              \gmult_prim.gll_chain.gp1[3].gbldc_reg.inst_prim  |builtin_prim_48                |   376|
+|102   |              \gmult_prim.gll_chain.gp1[4].gbldc_reg.inst_prim  |builtin_prim_49                |     3|
+|103   |              \gmult_prim.gll_chain.gp1[5].gbldc_reg.inst_prim  |builtin_prim_50                |     2|
+|104   |              \gmult_prim.gll_chain.gp1[6].gbldc_reg.inst_prim  |builtin_prim_51                |     3|
+|105   |              \gmult_prim.gll_chain.gp1[7].gbldc_reg.inst_prim  |builtin_prim_52                |   158|
+|106   |            \rst_val_sym.gextw_sym[6].inst_extd                 |builtin_extdepth_10            |   674|
+|107   |              \gmult_prim.gll_chain.gp1[0].gbldc_reg.inst_prim  |builtin_prim_37                |     1|
+|108   |              \gmult_prim.gll_chain.gp1[1].gbldc_reg.inst_prim  |builtin_prim_38                |     9|
+|109   |              \gmult_prim.gll_chain.gp1[2].gbldc_reg.inst_prim  |builtin_prim_39                |     7|
+|110   |              \gmult_prim.gll_chain.gp1[3].gbldc_reg.inst_prim  |builtin_prim_40                |   376|
+|111   |              \gmult_prim.gll_chain.gp1[4].gbldc_reg.inst_prim  |builtin_prim_41                |     3|
+|112   |              \gmult_prim.gll_chain.gp1[5].gbldc_reg.inst_prim  |builtin_prim_42                |     2|
+|113   |              \gmult_prim.gll_chain.gp1[6].gbldc_reg.inst_prim  |builtin_prim_43                |     3|
+|114   |              \gmult_prim.gll_chain.gp1[7].gbldc_reg.inst_prim  |builtin_prim_44                |   158|
+|115   |            \rst_val_sym.gextw_sym[7].inst_extd                 |builtin_extdepth_11            |   674|
+|116   |              \gmult_prim.gll_chain.gp1[0].gbldc_reg.inst_prim  |builtin_prim_29                |     1|
+|117   |              \gmult_prim.gll_chain.gp1[1].gbldc_reg.inst_prim  |builtin_prim_30                |     9|
+|118   |              \gmult_prim.gll_chain.gp1[2].gbldc_reg.inst_prim  |builtin_prim_31                |     7|
+|119   |              \gmult_prim.gll_chain.gp1[3].gbldc_reg.inst_prim  |builtin_prim_32                |   376|
+|120   |              \gmult_prim.gll_chain.gp1[4].gbldc_reg.inst_prim  |builtin_prim_33                |     3|
+|121   |              \gmult_prim.gll_chain.gp1[5].gbldc_reg.inst_prim  |builtin_prim_34                |     2|
+|122   |              \gmult_prim.gll_chain.gp1[6].gbldc_reg.inst_prim  |builtin_prim_35                |     3|
+|123   |              \gmult_prim.gll_chain.gp1[7].gbldc_reg.inst_prim  |builtin_prim_36                |   158|
+|124   |            \rst_val_sym.gextw_sym[8].inst_extd                 |builtin_extdepth_12            |   674|
+|125   |              \gmult_prim.gll_chain.gp1[0].gbldc_reg.inst_prim  |builtin_prim_21                |     1|
+|126   |              \gmult_prim.gll_chain.gp1[1].gbldc_reg.inst_prim  |builtin_prim_22                |     9|
+|127   |              \gmult_prim.gll_chain.gp1[2].gbldc_reg.inst_prim  |builtin_prim_23                |     7|
+|128   |              \gmult_prim.gll_chain.gp1[3].gbldc_reg.inst_prim  |builtin_prim_24                |   376|
+|129   |              \gmult_prim.gll_chain.gp1[4].gbldc_reg.inst_prim  |builtin_prim_25                |     3|
+|130   |              \gmult_prim.gll_chain.gp1[5].gbldc_reg.inst_prim  |builtin_prim_26                |     2|
+|131   |              \gmult_prim.gll_chain.gp1[6].gbldc_reg.inst_prim  |builtin_prim_27                |     3|
+|132   |              \gmult_prim.gll_chain.gp1[7].gbldc_reg.inst_prim  |builtin_prim_28                |   158|
+|133   |            \rst_val_sym.gextw_sym[9].inst_extd                 |builtin_extdepth_13            |   674|
+|134   |              \gmult_prim.gll_chain.gp1[0].gbldc_reg.inst_prim  |builtin_prim                   |     1|
+|135   |              \gmult_prim.gll_chain.gp1[1].gbldc_reg.inst_prim  |builtin_prim_14                |     9|
+|136   |              \gmult_prim.gll_chain.gp1[2].gbldc_reg.inst_prim  |builtin_prim_15                |     7|
+|137   |              \gmult_prim.gll_chain.gp1[3].gbldc_reg.inst_prim  |builtin_prim_16                |   376|
+|138   |              \gmult_prim.gll_chain.gp1[4].gbldc_reg.inst_prim  |builtin_prim_17                |     3|
+|139   |              \gmult_prim.gll_chain.gp1[5].gbldc_reg.inst_prim  |builtin_prim_18                |     2|
+|140   |              \gmult_prim.gll_chain.gp1[6].gbldc_reg.inst_prim  |builtin_prim_19                |     3|
+|141   |              \gmult_prim.gll_chain.gp1[7].gbldc_reg.inst_prim  |builtin_prim_20                |   158|
++------+----------------------------------------------------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1567.738 ; gain = 1194.699
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 502 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:46 . Memory (MB): peak = 1567.738 ; gain = 527.648
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1567.738 ; gain = 1194.699
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2063 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1582.395 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1582.395 ; gain = 1210.152
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1582.395 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/FIFO4ADD_64CHN_synth_1/FIFO4ADD_64CHN.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP FIFO4ADD_64CHN, cache-ID = 466894459587e045
+INFO: [Coretcl 2-1174] Renamed 140 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1582.395 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'B:/wd/Huabei/Huabei/Jingjinhai_Army/Huabei_JJH_Ar/Huabei_JJH_Ar.runs/FIFO4ADD_64CHN_synth_1/FIFO4ADD_64CHN.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FIFO4ADD_64CHN_utilization_synth.rpt -pb FIFO4ADD_64CHN_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar  7 20:25:07 2021...

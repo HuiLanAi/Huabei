@@ -72,7 +72,7 @@ always @ (posedge clk) begin
             if(!en_mxbram)
                 state <= DISABLE;
             else if (!halt) begin
-                if (col_loop == COL_LOOP_UPPER) begin
+                if (row_loop == ROW_LOOP_UPPER) begin
                     state <= NEXT_MX;
                 end
                 else begin
@@ -93,7 +93,7 @@ always @ (posedge clk) begin
                 else if (halt) begin
                     state <= HALT;
                 end
-                else if (col_loop == COL_LOOP_UPPER) begin
+                else if (row_loop == ROW_LOOP_UPPER) begin
                     state <= NEXT_MX;
                 end
                 else begin
@@ -187,16 +187,43 @@ always @ (posedge clk) begin
             else if (chn_loop == CHN_LOOP_UPPER && col_loop != COL_LOOP_UPPER - 1)
                 raddr <= raddr + 'd1;
             // change line
-            else if (chn_loop == CHN_LOOP_UPPER && col_loop == COL_LOOP_UPPER - 1) 
-                raddr <= 'd0;
+            else if (chn_loop == CHN_LOOP_UPPER && col_loop == COL_LOOP_UPPER - 1) begin
+                case (raddr)
+                'd24: begin
+                    raddr <= 'd0;
+                end
+                'd49: begin
+                    raddr <= 'd25;
+                end
+                'd74: begin
+                    raddr <= 'd50;
+                end
+                default: begin
+                    raddr <= 'd0;
+                end
+                endcase
+                
+            end
         end
 
         NEXT_MX: begin
-            raddr <= raddr + 'd1;
+            case(pe_loop)
+            'b10: begin
+                raddr <= 'd50;
+            end
+
+            'b01: begin
+                raddr <= 'd25;
+            end
+
+            default: begin
+                raddr <= 'd0;
+            end
+
+            endcase
         end
 
         RST: begin
-            // raddr <= 9'b1111_1111_1;
             raddr <= 'd0;
         end
 
@@ -269,7 +296,7 @@ always @ (posedge clk) begin
         case (state)
         START: begin
             if(col_loop == COL_LOOP_UPPER) begin
-                col_loop <= 'd1;
+                col_loop <= 'd0;
             end
             else if(chn_loop == CHN_LOOP_UPPER) begin
                 col_loop <= col_loop + 'd1;
@@ -409,12 +436,9 @@ end
 // BARM stores the three different A matrix, 25*25*3*2B = 3750B
 // out-width = 25x2B = 400bit 
 // depth = 25*3 = 75
-A_MATRIX_BRAM a_matrix_bram(
-    .clka                       (clk),
-    .addra                      (raddr),
-    .ena                        (~halt && en_mxbram),
-    .wea                        ('d0),
-    .douta                      (matrix_para_w)                
+MATRIX_ABC_ROM matrix_rom(
+    .a                          (raddr),
+    .spo                        (matrix_para_w)                
 );
 
 

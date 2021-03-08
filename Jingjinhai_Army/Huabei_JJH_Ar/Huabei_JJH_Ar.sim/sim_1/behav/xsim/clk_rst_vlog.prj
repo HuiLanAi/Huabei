@@ -1,9 +1,11 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
 "../../../../Huabei_JJH_Ar.srcs/sources_1/ip/A_MATRIX_BRAM/sim/A_MATRIX_BRAM.v" \
-"../../../../Huabei_JJH_Ar.srcs/sources_1/ip/fifo_32bx4/sim/fifo_32bx4.v" \
 "../../../../Huabei_JJH_Ar.srcs/sources_1/ip/CONV1_WEI_64BX3X3/sim/CONV1_WEI_64BX3X3.v" \
 "../../../../Huabei_JJH_Ar.srcs/sources_1/ip/BN_PARA_64CHN/sim/BN_PARA_64CHN.v" \
+"../../../../Huabei_JJH_Ar.srcs/sources_1/ip/FIFO4ADD_64CHN/sim/FIFO4ADD_64CHN.v" \
+"../../../../Huabei_JJH_Ar.srcs/sources_1/ip/IN_FEA_BRAM/sim/IN_FEA_BRAM.v" \
+"../../../../Huabei_JJH_Ar.srcs/sources_1/ip/MATRIX_ABC_ROM/sim/MATRIX_ABC_ROM.v" \
 "../../../../../code/selfadd_reg_16bx2.v" \
 "../../../../../code/regheap_64_16b.v" \
 "../../../../../code/25element_wise_adder_tree.v" \
@@ -13,17 +15,19 @@ verilog xil_defaultlib  \
 "../../../../../code/fanout_16_1024_5layer.v" \
 "../../../../../code/fanout_16_64_1layer.v" \
 "../../../../../code/global_in_fea.v" \
+"../../../../../code/paramult_1_64.v" \
 "../../../../../code/clk_rst.v" \
 "../../../../../code/dyn_iss_demo.v" \
 "../../../../../code/conv1_wei_64x3chn.v" \
-"../../../../Huabei_JJH_Ar.srcs/sources_1/ip/IN_FEA_BRAM/sim/IN_FEA_BRAM.v" \
 "../../../../../code/loop3_regheap.v" \
 "../../../../../code/paramult_16x16.v" \
 "../../../../../code/bnmult_chn64.v" \
 "../../../../../code/bnadd_chn64.v" \
 "../../../../../code/simtest4paramult_regheap.v" \
 "../../../../../code/paraadd_16+16.v" \
-"../../../../../code/paramult_1_64.v" \
+"../../../../../code/interPE_fifo_ctrl_chn64.v" \
+"../../../../../code/paraadd_8+8.v" \
+"../../../../../code/partial_sum_chn64.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

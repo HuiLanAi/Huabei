@@ -187,7 +187,7 @@ assign add_res_v_w = addres_v;
 
 
 
-ADDER_16P16 adder(.A(adder0_in_a_w), .B(adder0_in_b_w), .CE(adder_en), .S(addres), .clk(clk), .SCLR(rst));
+ADDER_16P16 adder(.A(adder0_in_a_w), .B(adder0_in_b_w), .CE(adder_en), .S(addres), .CLK(clk), .SCLR(rst));
 
 
 

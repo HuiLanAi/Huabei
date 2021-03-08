@@ -51,6 +51,7 @@ parameter PE_LOOP_UPPER = 4;
 
 reg     [2:0]                    working_flag;
 reg                              data_v;
+reg                              pe_change;
 
 
 
@@ -59,7 +60,7 @@ reg                              data_v;
 always @ (posedge clk) begin
     if(!rst) begin
         if(state == RST) begin
-            if(start)
+            if(start || pe_loop != 'd0)
                 state <= START;
             else 
                 state <= RST;

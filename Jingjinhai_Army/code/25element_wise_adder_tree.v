@@ -122,12 +122,12 @@ assign adder5_in_b_w_l0 = in_add[383:352];
 
 
 
-ADDER_16P16 adder0_l0(.A(adder0_in_a_w_l0), .B(adder0_in_b_w_l0), .CE(adder_en_l0), .S(add_res0_w_l0), .clk(clk), .SCLR('d0));
-ADDER_16P16 adder1_l0(.A(adder1_in_a_w_l0), .B(adder1_in_b_w_l0), .CE(adder_en_l0), .S(add_res1_w_l0), .clk(clk), .SCLR('d0));
-ADDER_16P16 adder2_l0(.A(adder2_in_a_w_l0), .B(adder2_in_b_w_l0), .CE(adder_en_l0), .S(add_res2_w_l0), .clk(clk), .SCLR('d0));
-ADDER_16P16 adder3_l0(.A(adder3_in_a_w_l0), .B(adder3_in_b_w_l0), .CE(adder_en_l0), .S(add_res3_w_l0), .clk(clk), .SCLR('d0));
-ADDER_16P16 adder4_l0(.A(adder4_in_a_w_l0), .B(adder4_in_b_w_l0), .CE(adder_en_l0), .S(add_res4_w_l0), .clk(clk), .SCLR('d0));
-ADDER_16P16 adder5_l0(.A(adder5_in_a_w_l0), .B(adder5_in_b_w_l0), .CE(adder_en_l0), .S(add_res5_w_l0), .clk(clk), .SCLR('d0));
+ADDER_16P16 adder0_l0(.A(adder0_in_a_w_l0), .B(adder0_in_b_w_l0), .CE(adder_en_l0), .S(add_res0_w_l0), .CLK(clk), .SCLR('d0));
+ADDER_16P16 adder1_l0(.A(adder1_in_a_w_l0), .B(adder1_in_b_w_l0), .CE(adder_en_l0), .S(add_res1_w_l0), .CLK(clk), .SCLR('d0));
+ADDER_16P16 adder2_l0(.A(adder2_in_a_w_l0), .B(adder2_in_b_w_l0), .CE(adder_en_l0), .S(add_res2_w_l0), .CLK(clk), .SCLR('d0));
+ADDER_16P16 adder3_l0(.A(adder3_in_a_w_l0), .B(adder3_in_b_w_l0), .CE(adder_en_l0), .S(add_res3_w_l0), .CLK(clk), .SCLR('d0));
+ADDER_16P16 adder4_l0(.A(adder4_in_a_w_l0), .B(adder4_in_b_w_l0), .CE(adder_en_l0), .S(add_res4_w_l0), .CLK(clk), .SCLR('d0));
+ADDER_16P16 adder5_l0(.A(adder5_in_a_w_l0), .B(adder5_in_b_w_l0), .CE(adder_en_l0), .S(add_res5_w_l0), .CLK(clk), .SCLR('d0));
 
 
 
@@ -395,9 +395,9 @@ end
 
 
 
-ADDER_16P16 adder0_l1(.A(adder0_in_a_w_l1), .B(adder0_in_b_w_l1), .CE(adder_en_l1), .S(add_res0_w_l1), .clk(clk), .SCLR('d0));
-ADDER_16P16 adder1_l1(.A(adder1_in_a_w_l1), .B(adder1_in_b_w_l1), .CE(adder_en_l1), .S(add_res1_w_l1), .clk(clk), .SCLR('d0));
-ADDER_16P16 adder2_l1(.A(adder2_in_a_w_l1), .B(adder2_in_b_w_l1), .CE(adder_en_l1), .S(add_res2_w_l1), .clk(clk), .SCLR('d0));
+ADDER_16P16 adder0_l1(.A(adder0_in_a_w_l1), .B(adder0_in_b_w_l1), .CE(adder_en_l1), .S(add_res0_w_l1), .CLK(clk), .SCLR('d0));
+ADDER_16P16 adder1_l1(.A(adder1_in_a_w_l1), .B(adder1_in_b_w_l1), .CE(adder_en_l1), .S(add_res1_w_l1), .CLK(clk), .SCLR('d0));
+ADDER_16P16 adder2_l1(.A(adder2_in_a_w_l1), .B(adder2_in_b_w_l1), .CE(adder_en_l1), .S(add_res2_w_l1), .CLK(clk), .SCLR('d0));
 
 
 
@@ -501,8 +501,8 @@ end
 
 
 
-ADDER_16P16 adder0_l2(.A(adder0_in_a_w_l2), .B(adder0_in_b_w_l2), .CE(adder_en_l2), .S(add_res0_w_l2), .clk(clk), .SCLR('d0));
-ADDER_16P16 adder1_l2(.A(adder1_in_a_w_l2), .B(adder1_in_b_w_l2), .CE(adder_en_l2), .S(add_res1_w_l2), .clk(clk), .SCLR('d0));
+ADDER_16P16 adder0_l2(.A(adder0_in_a_w_l2), .B(adder0_in_b_w_l2), .CE(adder_en_l2), .S(add_res0_w_l2), .CLK(clk), .SCLR('d0));
+ADDER_16P16 adder1_l2(.A(adder1_in_a_w_l2), .B(adder1_in_b_w_l2), .CE(adder_en_l2), .S(add_res1_w_l2), .CLK(clk), .SCLR('d0));
 
 
 
@@ -595,7 +595,7 @@ end
 
 
 
-ADDER_16P16 adder0_l3(.A(adder0_in_a_w_l3), .B(adder0_in_b_w_l3), .CE(adder_en_l3), .S(add_res0_w_l3), .clk(clk), .SCLR('d0));
+ADDER_16P16 adder0_l3(.A(adder0_in_a_w_l3), .B(adder0_in_b_w_l3), .CE(adder_en_l3), .S(add_res0_w_l3), .CLK(clk), .SCLR('d0));
 
 
 
@@ -672,7 +672,7 @@ assign add_res_v_w = addres_v_l4;
 
 
 
-ADDER_16P16 adder0_l4(.A(adder0_in_a_w_l4), .B(adder0_in_b_w_l4), .CE(adder_en_l4), .S(add_res0_w_l4), .clk(clk), .SCLR('d0));
+ADDER_16P16 adder0_l4(.A(adder0_in_a_w_l4), .B(adder0_in_b_w_l4), .CE(adder_en_l4), .S(add_res0_w_l4), .CLK(clk), .SCLR('d0));
 
 
 

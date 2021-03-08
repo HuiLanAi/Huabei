@@ -1,0 +1,2 @@
+FIFO4ADD_64CHN.v,verilog,xil_defaultlib,../../../../Huabei_JJH_Ar.srcs/sources_1/ip/FIFO4ADD_64CHN/sim/FIFO4ADD_64CHN.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
